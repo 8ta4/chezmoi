@@ -73,6 +73,9 @@ ZSH_THEME="robbyrussell"
 plugins=(
   git
   zsh-autosuggestions
+  # Note that zsh-syntax-highlighting must be the last plugin sourced.
+  # https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#:~:text=Note%20that%20zsh%2Dsyntax%2Dhighlighting%20must%20be%20the%20last%20plugin%20sourced. 
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
