@@ -28,4 +28,7 @@ git clone https://github.com/8ta4/chezmoi.git "$chezmoi_directory"
 
 # Change directory to cloned repo
 cd "$chezmoi_directory"
+
 brew bundle
+
+chezmoi apply
