@@ -1,3 +1,5 @@
+brew "chezmoi"
+
 cask "alacritty"
 cask "google-chrome"
 cask "karabiner-elements"
