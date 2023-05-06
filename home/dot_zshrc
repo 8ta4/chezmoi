@@ -100,6 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias vi='nvim'
+alias vim='nvim'
 
 ## Atuin
 # https://github.com/ellie/atuin#:~:text=Once%20the%20binary,init%20zsh)%22'%20%3E%3E%20~%2F.zshrc
