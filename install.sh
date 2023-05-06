@@ -2,7 +2,7 @@
 
 set -e
 
-## Install Homebrew
+## Homebrew
 # Need sudo access on macOS
 # https://github.com/Homebrew/install/blob/fc8acb0828f89f8aa83162000db1b49de71fa5d8/install.sh#L228
 # This will prompt you for the password once, and then subsequent sudo commands will not require a password as long as the authentication is cached.
@@ -14,7 +14,6 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 # Add Homebrew to your PATH
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-## Run brew bundle
 # Define the variable for the chezmoi directory
 chezmoi_directory="$HOME/.local/share/chezmoi"
 
@@ -31,6 +30,7 @@ cd "$chezmoi_directory"
 
 brew bundle
 
+## Oh My Zsh
 # Check if the .oh-my-zsh directory exists and remove it if it does
 if [ -d "$HOME/.oh-my-zsh" ]; then
   rm -rf "$HOME/.oh-my-zsh"
@@ -41,5 +41,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+## chezmoi
 chezmoi apply --force
 
