@@ -103,6 +103,10 @@ source $ZSH/oh-my-zsh.sh
 alias vi='nvim'
 alias vim='nvim'
 
+# https://stackoverflow.com/questions/2596805/how-do-i-make-git-use-the-editor-of-my-choice-for-editing-commit-messages#:~:text=export%20visual%3Dvim%20export%20editor%3D%22%24visual%22
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+
 ## Atuin
 # https://github.com/ellie/atuin#:~:text=Once%20the%20binary,init%20zsh)%22'%20%3E%3E%20~%2F.zshrc
 eval "$(atuin init zsh)"
