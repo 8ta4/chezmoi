@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 ## Atuin
+# https://github.com/ellie/atuin#:~:text=Once%20the%20binary,init%20zsh)%22'%20%3E%3E%20~%2F.zshrc
 eval "$(atuin init zsh)"
 
 ## autojump 
