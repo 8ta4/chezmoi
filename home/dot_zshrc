@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 ## Atuin
-echo 'eval "$(atuin init zsh)"' >> ~/.zshrc
+eval "$(atuin init zsh)"
 
 ## zsh-autosuggestions
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
