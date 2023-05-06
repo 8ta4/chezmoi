@@ -14,6 +14,7 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 # Add Homebrew to your PATH
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+## Run brew bundle
 # Remove existing chezmoi directory if it exists
 if [ -d "$HOME/chezmoi" ]; then
   rm -rf "$HOME/chezmoi"
@@ -21,3 +22,7 @@ fi
 
 # Clone GitHub repo to ~/chezmoi
 git clone https://github.com/8ta4/chezmoi.git "$HOME/chezmoi"
+
+# Change directory to cloned repo
+cd "$HOME/chezmoi"
+brew bundle
