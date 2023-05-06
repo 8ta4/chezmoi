@@ -33,4 +33,10 @@ brew bundle
 
 chezmoi apply
 
+# Check if the .oh-my-zsh directory exists and remove it if it does
+if [ -d "$HOME/.oh-my-zsh" ]; then
+  rm -rf "$HOME/.oh-my-zsh"
+fi
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
