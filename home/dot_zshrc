@@ -104,6 +104,9 @@ source $ZSH/oh-my-zsh.sh
 ## Atuin
 eval "$(atuin init zsh)"
 
+## autojump 
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+
 ## zsh-autosuggestions
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 

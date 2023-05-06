@@ -1,4 +1,5 @@
 brew "atuin"
+brew "autojump"
 brew "chezmoi"
 brew "tmux"
 brew "zsh-syntax-highlighting"
