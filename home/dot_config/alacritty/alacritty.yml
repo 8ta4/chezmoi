@@ -1,0 +1,7 @@
+# https://stackoverflow.com/a/64712197
+key_bindings:
+  - { key: Left, mods: Alt, chars: "\x1bb" }
+  - { key: Right, mods: Alt, chars: "\x1bf" }
+  # https://en.wikipedia.org/wiki/C0_and_C1_control_codes#Basic_ASCII_control_codes
+  - { key: Left, mods: Command, chars: "\x01" }
+  - { key: Right, mods: Command, chars: "\x05" }
