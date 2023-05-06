@@ -31,12 +31,14 @@ cd "$chezmoi_directory"
 
 brew bundle
 
-chezmoi apply
-
 # Check if the .oh-my-zsh directory exists and remove it if it does
 if [ -d "$HOME/.oh-my-zsh" ]; then
   rm -rf "$HOME/.oh-my-zsh"
 fi
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+chezmoi apply --force
 
