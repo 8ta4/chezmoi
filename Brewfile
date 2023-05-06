@@ -1,5 +1,7 @@
 brew "atuin"
 brew "chezmoi"
+brew "zsh-syntax-highlighting"
+brew "zsh-autosuggestions"
 
 cask "alacritty"
 cask "google-chrome"
