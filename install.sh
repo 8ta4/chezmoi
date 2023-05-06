@@ -15,14 +15,17 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ## Run brew bundle
+# Define the variable for the chezmoi directory
+chezmoi_directory="$HOME/.local/share/chezmoi"
+
 # Remove existing chezmoi directory if it exists
-if [ -d "$HOME/chezmoi" ]; then
-  rm -rf "$HOME/chezmoi"
+if [ -d "$chezmoi_directory" ]; then
+  rm -rf "$chezmoi_directory"
 fi
 
-# Clone GitHub repo to ~/chezmoi
-git clone https://github.com/8ta4/chezmoi.git "$HOME/chezmoi"
+# Clone GitHub repo to the chezmoi directory
+git clone https://github.com/8ta4/chezmoi.git "$chezmoi_directory"
 
 # Change directory to cloned repo
-cd "$HOME/chezmoi"
+cd "$chezmoi_directory"
 brew bundle
