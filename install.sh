@@ -40,6 +40,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ## .tmux
 cd
+
+# Check if the .tmux directory exists and remove it if it does
+if [ -d "$HOME/.tmux" ]; then
+  rm -rf "$HOME/.tmux"
+fi
 git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
 
