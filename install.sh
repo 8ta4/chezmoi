@@ -48,6 +48,10 @@ fi
 git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
 
+## Neovim
+# https://github.com/neovim/neovim/blob/d48cd9a0aa9dc2c79a218174708c7c7278a6e6f3/runtime/doc/provider.txt#L37C14-L40
+python3 -m pip install --user --upgrade pynvim
+
 ## chezmoi
 chezmoi apply --force
 
