@@ -1,5 +1,6 @@
 brew "atuin"
 brew "chezmoi"
+brew "tmux"
 brew "zsh-syntax-highlighting"
 brew "zsh-autosuggestions"
 
