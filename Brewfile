@@ -1,3 +1,4 @@
+brew "atuin"
 brew "chezmoi"
 
 cask "alacritty"
