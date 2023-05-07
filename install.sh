@@ -48,6 +48,18 @@ fi
 git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
 
+## Neovim
+# https://github.com/neovim/neovim/blob/d48cd9a0aa9dc2c79a218174708c7c7278a6e6f3/runtime/doc/provider.txt#L37C14-L40
+python3 -m pip install --user --upgrade pynvim
+
+## vimrc
+# https://github.com/amix/vimrc/blob/8bf90b12d004e5bf9be3bd69139fabef3d4361ac/README.md?plain=1#L19-L20
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
+
+## Visual Studio Code
+./code.sh
+
 ## chezmoi
 chezmoi apply --force
 

@@ -100,10 +100,18 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias vi='nvim'
+alias vim='nvim'
+
+# https://stackoverflow.com/questions/2596805/how-do-i-make-git-use-the-editor-of-my-choice-for-editing-commit-messages#:~:text=export%20visual%3Dvim%20export%20editor%3D%22%24visual%22
+export VISUAL=nvim
+export EDITOR="$VISUAL"
 
 ## Atuin
-# https://github.com/ellie/atuin#:~:text=Once%20the%20binary,init%20zsh)%22'%20%3E%3E%20~%2F.zshrc
-eval "$(atuin init zsh)"
+# https://github.com/ellie/atuin/blob/a38fc6e8989d41772170165a8757f43e593c5e70/README.md?plain=1#L232
+# https://github.com/ellie/atuin/blob/a38fc6e8989d41772170165a8757f43e593c5e70/docs/docs/config/key-binding.md?plain=1#L12
+# Bind ctrl-r but not up arrow
+eval "$(atuin init zsh --disable-up-arrow)"
 
 ## autojump 
 # https://github.com/Homebrew/homebrew-core/blob/45a3934a0bee140e609858af1547318bb9399a64/Formula/autojump.rb#L34-L35
