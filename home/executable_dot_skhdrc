@@ -143,3 +143,22 @@
 
 # toggle sticky(+float), topmost, picture-in-picture
 # alt - p : yabai -m window --toggle sticky --toggle topmost --toggle pip
+
+# https://i3wm.org/docs/refcard.html
+# https://github.com/julian-heng/yabai-config/blob/a3776dd27c32e02afecf3f2913c4ac9f65d29925/skhdrc#L11-L21
+# Navigation
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east
+
+# Moving windows
+shift + alt - h : yabai -m window --warp west
+shift + alt - j : yabai -m window --warp south
+shift + alt - k : yabai -m window --warp north
+shift + alt - l : yabai -m window --warp east
+
+# https://github.com/julian-heng/yabai-config/blob/a3776dd27c32e02afecf3f2913c4ac9f65d29925/skhdrc#L73-L75
+# Make window native fullscreen
+alt - f         : yabai -m window --toggle zoom-fullscreen
+shift + alt - f : yabai -m window --toggle native-fullscreen
