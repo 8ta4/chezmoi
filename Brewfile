@@ -19,3 +19,7 @@ cask "microsoft-edge"
 cask "obs"
 cask "utm"
 cask "visual-studio-code"
+
+tap "koekeishiya/formulae"
+brew "yabai"
+brew "skhd"
