@@ -58,7 +58,7 @@ git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 ## Visual Studio Code
-./code.sh
+"$chezmoi_directory/code.sh"
 
 ## chezmoi
 chezmoi apply --force
