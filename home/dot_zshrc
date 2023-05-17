@@ -117,6 +117,9 @@ eval "$(atuin init zsh --disable-up-arrow)"
 # https://github.com/Homebrew/homebrew-core/blob/45a3934a0bee140e609858af1547318bb9399a64/Formula/autojump.rb#L34-L35
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
+## direnv
+eval "$(direnv hook zsh)"
+
 ## fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
