@@ -158,6 +158,11 @@ shift + alt - j : yabai -m window --warp south
 shift + alt - k : yabai -m window --warp north
 shift + alt - l : yabai -m window --warp east
 
+# https://github.com/julian-heng/yabai-config/blob/a3776dd27c32e02afecf3f2913c4ac9f65d29925/skhdrc#L48-L50
+# Rotate on X and Y Axis
+shift + alt - x : yabai -m space --mirror x-axis
+shift + alt - y : yabai -m space --mirror y-axis
+
 # https://github.com/julian-heng/yabai-config/blob/a3776dd27c32e02afecf3f2913c4ac9f65d29925/skhdrc#L73-L75
 # Make window native fullscreen
 alt - f         : yabai -m window --toggle zoom-fullscreen
