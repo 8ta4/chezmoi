@@ -1,4 +1,5 @@
 # https://en.wikipedia.org/wiki/Control_character#:~:text=0x1b%20(escape%2C%20esc%2C%20%5Ce%20(gcc%20only)%2C%20%5E%5B).
+# https://tiswww.case.edu/php/chet/readline/rluserman.html#:~:text=M%2Df,backward%20a%20word.
 # https://stackoverflow.com/a/64712197
 key_bindings:
   - { key: Left, mods: Alt, chars: "\eb" }
