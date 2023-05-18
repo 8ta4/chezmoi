@@ -1,7 +1,9 @@
+# https://en.wikipedia.org/wiki/Control_character#:~:text=0x1b%20(escape%2C%20esc%2C%20%5Ce%20(gcc%20only)%2C%20%5E%5B).
+# https://tiswww.case.edu/php/chet/readline/rluserman.html#:~:text=M%2Df,backward%20a%20word.
 # https://stackoverflow.com/a/64712197
 key_bindings:
-  - { key: Left, mods: Alt, chars: "\x1bb" }
-  - { key: Right, mods: Alt, chars: "\x1bf" }
-  # https://en.wikipedia.org/wiki/C0_and_C1_control_codes#Basic_ASCII_control_codes
-  - { key: Left, mods: Command, chars: "\x01" }
-  - { key: Right, mods: Command, chars: "\x05" }
+  - { key: Left, mods: Alt, chars: "\eb" }
+  - { key: Right, mods: Alt, chars: "\ef" }
+  # https://www.xfree86.org/current/ctlseqs.html#:~:text=Their%20mode%20is,DECCKM%20escape%20sequence%3A
+  - { key: Left, mods: Command, chars: "\e[H" }
+  - { key: Right, mods: Command, chars: "\e[F" }
