@@ -165,8 +165,10 @@ shift + alt - y : yabai -m space --mirror y-axis
 
 # https://github.com/julian-heng/yabai-config/blob/a3776dd27c32e02afecf3f2913c4ac9f65d29925/skhdrc#L73-L75
 # Make window native fullscreen
-alt - f         : yabai -m window --toggle zoom-fullscreen
 shift + alt - f : yabai -m window --toggle native-fullscreen
+
+# https://i3wm.org/docs/refcard.html#:~:text=Modifying%20windows-,%2B,toggle%20fullscreen,-%2B
+alt - f         : yabai -m window --toggle zoom-fullscreen && yabai -m window --toggle float
 
 # https://i3wm.org/docs/refcard.html#:~:text=%2B%20Shift%20%2B%20r,restart%20i3%20inplace
 shift + alt - r : yabai --stop-service; yabai --start-service
