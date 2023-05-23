@@ -1,1 +1,11 @@
+## Fig
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zprofile.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zprofile.pre.zsh"
+
+## Brew
+# https://github.com/Homebrew/install/blob/716a1d024f32890ef75ea82c18a769abc24e9475/install.sh#L1022
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+## Fig
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zprofile.post.zsh" ]] && builtin source "$HOME/.fig/shell/zprofile.post.zsh"
