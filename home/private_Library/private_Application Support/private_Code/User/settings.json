@@ -2,5 +2,8 @@
     "terminal.integrated.env.osx": {
         "FIG_NEW_SESSION": "1"
     },
-    "editor.accessibilitySupport": "off"
+    "editor.accessibilitySupport": "off",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
