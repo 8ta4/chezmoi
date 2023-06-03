@@ -1,2 +1,7 @@
-## Homebrew
+# Homebrew
 Brewfile.lock.json
+
+# Devenv
+.devenv*
+devenv.local.nix
+
