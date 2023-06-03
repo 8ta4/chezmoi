@@ -1,12 +1,13 @@
 function install_extensions() {
   editor=$1
   extensions=(
-    "asvetliakov.vscode-neovim"
-    "esbenp.prettier-vscode"
+    "GitHub.copilot-nightly"
     "GitHub.vscode-github-actions"
+    "asvetliakov.vscode-neovim"
+    "betterthantomorrow.calva"
+    "esbenp.prettier-vscode"
     "haskell.haskell"
     "redhat.vscode-yaml"
-    "betterthantomorrow.calva"
   )
   for extension in "${extensions[@]}"; do
     $editor --force --install-extension $extension
