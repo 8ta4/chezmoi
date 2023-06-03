@@ -1,7 +1,8 @@
-# Homebrew
+## Homebrew
 Brewfile.lock.json
 
-# Devenv
+## Devenv
+# https://github.com/cachix/devenv/blob/873e7901efcefe8f0000975adc8b3b9b58c41fc4/src/devenv.nix#L213-L214
 .devenv*
 devenv.local.nix
 
