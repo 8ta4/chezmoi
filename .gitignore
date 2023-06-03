@@ -6,3 +6,5 @@ Brewfile.lock.json
 .devenv*
 devenv.local.nix
 
+# https://devenv.sh/pre-commit-hooks/#managing-the-pre-commit-configyaml-file
+.pre-commit-config.yaml
