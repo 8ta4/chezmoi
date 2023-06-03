@@ -1,6 +1,17 @@
-code --force --install-extension asvetliakov.vscode-neovim
-code --force --install-extension esbenp.prettier-vscode
-code --force --install-extension GitHub.vscode-github-actions
-code --force --install-extension haskell.haskell
-code --force --install-extension redhat.vscode-yaml
-code --force --install-extension betterthantomorrow.calva	
+function install_extensions() {
+  editor=$1
+  extensions=(
+    "asvetliakov.vscode-neovim"
+    "esbenp.prettier-vscode"
+    "GitHub.vscode-github-actions"
+    "haskell.haskell"
+    "redhat.vscode-yaml"
+    "betterthantomorrow.calva"
+  )
+  for extension in "${extensions[@]}"; do
+    $editor --force --install-extension $extension
+  done
+}
+
+install_extensions "code"
+install_extensions "code-insiders"
