@@ -28,3 +28,6 @@ cask "visual-studio-code"
 tap "koekeishiya/formulae"
 brew "yabai"
 brew "skhd"
+
+tap "homebrew/cask-versions"
+cask "visual-studio-code-insiders"
