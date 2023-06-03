@@ -68,3 +68,14 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 ## chezmoi
 chezmoi apply --force
 
+## devenv
+# https://devenv.sh/getting-started/#installation
+nix profile install nixpkgs#cachix
+
+# https://github.com/cachix/cachix/blob/049b2a688783766ea16895bd25e9f35ca914fd60/cachix/src/Cachix/Client/InstallationMode.hs#L106-L109
+echo "trusted-users = root $USER" | sudo tee -a /etc/nix/nix.conf && sudo pkill nix-daemon
+
+cachix use devenv
+
+nix profile install --accept-flake-config github:cachix/devenv/latest
+
