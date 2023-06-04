@@ -27,7 +27,9 @@
     prettier.enable = true;
     shellcheck = {
       enable = true;
-      excludes = [ "^.+.zsh$" ];
+      # https://www.shellcheck.net/wiki/SC1071
+      excludes = [ "\.zsh$" ];
+      # https://github.com/cachix/pre-commit-hooks.nix/issues/105
       types_or = [ "shell" ];
     };
     # https://github.com/cachix/pre-commit-hooks.nix/issues/31#issuecomment-744657870
