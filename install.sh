@@ -39,6 +39,7 @@ fi
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 ## .tmux
+# https://github.com/gpakosz/.tmux#:~:text=~%2F.config%2Ftmux-,Installing%20in%20~%3A,f%20.tmux%2F.tmux.conf,-%24%20cp%20.tmux%2F.tmux
 cd
 
 # Check if the .tmux directory exists and remove it if it does
