@@ -22,6 +22,9 @@
   # pre-commit.hooks.shellcheck.enable = true;
   pre-commit.hooks = {
     prettier.enable = true;
+    shellcheck.enable = true;
+    # https://github.com/cachix/pre-commit-hooks.nix/issues/105
+    shellcheck.types_or = [];
   };
 
   # https://devenv.sh/processes/
