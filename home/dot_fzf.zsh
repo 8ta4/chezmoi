@@ -1,3 +1,4 @@
+# https://github.com/junegunn/fzf/blob/master/install
 # Setup fzf
 # ---------
 if [[ ! "$PATH" == */opt/homebrew/opt/fzf/bin* ]]; then
