@@ -46,7 +46,7 @@ if [ -d "$HOME/.tmux" ]; then
   rm -rf "$HOME/.tmux"
 fi
 git clone https://github.com/gpakosz/.tmux.git
-ln -s -f .tmux/.tmux.conf
+ln -s -f "$HOME/.tmux/.tmux.conf" "$HOME/.tmux.conf"
 
 ## Neovim
 # https://github.com/neovim/neovim/blob/d48cd9a0aa9dc2c79a218174708c7c7278a6e6f3/runtime/doc/provider.txt#L37C14-L40
@@ -78,4 +78,3 @@ echo "trusted-users = root $USER" | sudo tee -a /etc/nix/nix.conf && sudo pkill 
 cachix use devenv
 
 nix profile install --accept-flake-config github:cachix/devenv/latest
-
