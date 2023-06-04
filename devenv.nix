@@ -23,8 +23,9 @@
   pre-commit.hooks = {
     prettier.enable = true;
     shellcheck.enable = true;
+    shellcheck.excludes = [ "^.+.zsh$" ];
     # https://github.com/cachix/pre-commit-hooks.nix/issues/105
-    shellcheck.types_or = [];
+    shellcheck.types_or = [ "shell" ];
   };
 
   # https://devenv.sh/processes/
