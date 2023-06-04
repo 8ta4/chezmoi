@@ -39,6 +39,7 @@ fi
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 ## .tmux
+# https://github.com/gpakosz/.tmux#:~:text=~%2F.config%2Ftmux-,Installing%20in%20~%3A,f%20.tmux%2F.tmux.conf,-%24%20cp%20.tmux%2F.tmux
 cd
 
 # Check if the .tmux directory exists and remove it if it does
@@ -46,7 +47,7 @@ if [ -d "$HOME/.tmux" ]; then
   rm -rf "$HOME/.tmux"
 fi
 git clone https://github.com/gpakosz/.tmux.git
-ln -s -f .tmux/.tmux.conf
+ln -s -f "$HOME/.tmux/.tmux.conf" "$HOME/.tmux.conf"
 
 ## Neovim
 # https://github.com/neovim/neovim/blob/d48cd9a0aa9dc2c79a218174708c7c7278a6e6f3/runtime/doc/provider.txt#L37C14-L40
@@ -78,4 +79,3 @@ echo "trusted-users = root $USER" | sudo tee -a /etc/nix/nix.conf && sudo pkill 
 cachix use devenv
 
 nix profile install --accept-flake-config github:cachix/devenv/latest
-

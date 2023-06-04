@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function install_extensions() {
   editor=$1
   extensions=(
@@ -10,7 +12,7 @@ function install_extensions() {
     "redhat.vscode-yaml"
   )
   for extension in "${extensions[@]}"; do
-    $editor --force --install-extension $extension
+    "$editor" --force --install-extension "$extension"
   done
 }
 
