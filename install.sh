@@ -71,7 +71,11 @@ chezmoi apply --force
 
 ## devenv
 # https://devenv.sh/getting-started/#installation
-nix profile install nixpkgs#cachix
+
+# Check if cachix is already installed
+if ! command -v cachix &> /dev/null; then
+  nix profile install nixpkgs#cachix
+fi
 
 # https://github.com/cachix/cachix/blob/049b2a688783766ea16895bd25e9f35ca914fd60/cachix/src/Cachix/Client/InstallationMode.hs#L106-L109
 echo "trusted-users = root $USER" | sudo tee -a /etc/nix/nix.conf && sudo pkill nix-daemon
