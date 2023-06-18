@@ -9,6 +9,7 @@ function install_extensions() {
     "betterthantomorrow.calva"
     "esbenp.prettier-vscode"
     "haskell.haskell"
+    "redhat.vscode-xml"
     "redhat.vscode-yaml"
   )
   for extension in "${extensions[@]}"; do
