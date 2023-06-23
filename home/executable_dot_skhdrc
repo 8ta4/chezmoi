@@ -173,3 +173,5 @@ alt - f         : yabai -m window --toggle zoom-fullscreen && yabai -m window --
 # https://i3wm.org/docs/refcard.html#:~:text=%2B%20Shift%20%2B%20r,restart%20i3%20inplace
 shift + alt - r : yabai --stop-service; yabai --start-service
 
+## Alfred
+cmd - space : open -a "Alfred 5"
