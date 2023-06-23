@@ -83,3 +83,6 @@ echo "trusted-users = root $USER" | sudo tee -a /etc/nix/nix.conf && sudo pkill 
 cachix use devenv
 
 nix profile install --accept-flake-config github:cachix/devenv/latest
+
+## PlistBuddy
+"$chezmoi_directory/plist.sh"
