@@ -11,10 +11,12 @@
 /usr/libexec/PlistBuddy -c "Add ':AllowClipboardAccess' bool 'true'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
 
 # option + left arrow to jump word left
+/usr/libexec/PlistBuddy -c "Delete ':New Bookmarks:0:Keyboard Map:0xf702-0x280000'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
 /usr/libexec/PlistBuddy -c "Add ':New Bookmarks:0:Keyboard Map:0xf702-0x280000-0x0:Action' integer '10'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
 /usr/libexec/PlistBuddy -c "Add ':New Bookmarks:0:Keyboard Map:0xf702-0x280000-0x0:Text' string 'b'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
 
 # option + right arrow to jump word right
+/usr/libexec/PlistBuddy -c "Delete ':New Bookmarks:0:Keyboard Map:0xf703-0x280000'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
 /usr/libexec/PlistBuddy -c "Add ':New Bookmarks:0:Keyboard Map:0xf703-0x280000-0x0:Action' integer '10'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
 /usr/libexec/PlistBuddy -c "Add ':New Bookmarks:0:Keyboard Map:0xf703-0x280000-0x0:Text' string 'f'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
 
