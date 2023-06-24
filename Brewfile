@@ -15,7 +15,6 @@ brew "zsh-syntax-highlighting"
 brew "zsh-autosuggestions"
 
 cask "alfred"
-cask "fig"
 cask "google-chrome"
 cask "iterm2"
 cask "karabiner-elements"
