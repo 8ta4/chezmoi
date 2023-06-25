@@ -126,6 +126,10 @@ eval "$(direnv hook zsh)"
 ## fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+## zsh-autocomplete
+# https://formulae.brew.sh/formula/zsh-autocomplete#:~:text=1.%20Add%20at,autocomplete.plugin.zsh
+source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
 ## zsh-autosuggestions
 # https://github.com/Homebrew/homebrew-core/blob/45a3934a0bee140e609858af1547318bb9399a64/Formula/zsh-autosuggestions.rb#L21-L23
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
