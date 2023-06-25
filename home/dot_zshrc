@@ -128,11 +128,11 @@ eval "$(direnv hook zsh)"
 
 ## zsh-autosuggestions
 # https://github.com/Homebrew/homebrew-core/blob/45a3934a0bee140e609858af1547318bb9399a64/Formula/zsh-autosuggestions.rb#L21-L23
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ## zsh-syntax-highlighting
-# https://github.com/Homebrew/homebrew-core/blob/45a3934a0bee140e609858af1547318bb9399a64/Formula/zsh-syntax-highlighting.rb#L32-L33
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# https://formulae.brew.sh/formula/zsh-syntax-highlighting#:~:text=To%20activate%20the,syntax-highlighting.zsh
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ## tmux
 if [ -z "$TMUX" ]; then
