@@ -31,3 +31,7 @@
 # option + delete to delete word left
 /usr/libexec/PlistBuddy -c "Add ':New Bookmarks:0:Keyboard Map:0x7f-0x80000-0x0:Action' integer '11'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
 /usr/libexec/PlistBuddy -c "Add ':New Bookmarks:0:Keyboard Map:0x7f-0x80000-0x0:Text' string '0x1b 0x7f'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
+
+# command + delete to delete to beginning of line
+/usr/libexec/PlistBuddy -c "Add ':New Bookmarks:0:Keyboard Map:0x7f-0x100000-0x0:Action' integer '11'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
+/usr/libexec/PlistBuddy -c "Add ':New Bookmarks:0:Keyboard Map:0x7f-0x100000-0x0:Text' string '0x15'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
