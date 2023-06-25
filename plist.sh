@@ -35,3 +35,7 @@
 # command + delete to delete to beginning of line
 /usr/libexec/PlistBuddy -c "Add ':New Bookmarks:0:Keyboard Map:0x7f-0x100000-0x0:Action' integer '11'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
 /usr/libexec/PlistBuddy -c "Add ':New Bookmarks:0:Keyboard Map:0x7f-0x100000-0x0:Text' string '0x15'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
+
+# Reuse previous session's directory
+# https://apple.stackexchange.com/a/148514
+/usr/libexec/PlistBuddy -c "Set ':New Bookmarks:0:Custom Directory' 'Recycle'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
