@@ -27,3 +27,7 @@
 # command + right arrow to jump to end of line
 /usr/libexec/PlistBuddy -c "Add ':New Bookmarks:0:Keyboard Map:0xf703-0x300000-0x0:Action' integer '11'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
 /usr/libexec/PlistBuddy -c "Add ':New Bookmarks:0:Keyboard Map:0xf703-0x300000-0x0:Text' string '0x5'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
+
+# option + delete to delete word left
+/usr/libexec/PlistBuddy -c "Add ':New Bookmarks:0:Keyboard Map:0x7f-0x80000-0x0:Action' integer '11'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
+/usr/libexec/PlistBuddy -c "Add ':New Bookmarks:0:Keyboard Map:0x7f-0x80000-0x0:Text' string '0x1b 0x7f'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
