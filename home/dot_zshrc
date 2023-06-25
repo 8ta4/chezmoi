@@ -116,8 +116,8 @@ export EDITOR="$VISUAL"
 eval "$(atuin init zsh --disable-up-arrow)"
 
 ## autojump
-# https://github.com/Homebrew/homebrew-core/blob/45a3934a0bee140e609858af1547318bb9399a64/Formula/autojump.rb#L34-L35
-[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+# https://formulae.brew.sh/formula/autojump#:~:text=oriented%20programming%20language-,Add%20the%20following%20line,profile.d%2Fautojump.sh,-If%20you%20use
+[ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && . $HOMEBREW_PREFIX/etc/profile.d/autojump.sh
 
 ## direnv
 # https://direnv.net/docs/hook.html#zsh
