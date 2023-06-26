@@ -14,12 +14,6 @@ No, I have CDO. It's like OCD, but with the letters in alphabetical order, like 
 
 You can actually watch the whole development process of this configuration on [8ta4's YouTube channel](https://www.youtube.com/@8ta4/streams).
 
-## Prerequisites
-
-> What do I need to use this configuration on my macOS?
-
-You'll need [Nix](https://nixos.org/download.html#nix-install-macos) to use this configuration on macOS.
-
 ## Installation
 
 > How do I install this configuration on my macOS?
