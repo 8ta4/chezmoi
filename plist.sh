@@ -6,6 +6,10 @@
 # Disable Spotlight hotkey
 /usr/libexec/PlistBuddy -c "Set ':AppleSymbolicHotKeys:64:enabled' 'false'" "$HOME/Library/Preferences/com.apple.symbolichotkeys.plist"
 
+# Disable the "press and hold" feature on macOS
+# https://apple.stackexchange.com/a/46363
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 ## iTerm2
 # Enable clipboard access in "Prefs > General > Selection > Applications in terminal may access clipboard".
 /usr/libexec/PlistBuddy -c "Add ':AllowClipboardAccess' bool 'true'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
