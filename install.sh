@@ -6,6 +6,7 @@ set -e
 # Need sudo access on macOS
 # https://github.com/Homebrew/install/blob/fc8acb0828f89f8aa83162000db1b49de71fa5d8/install.sh#L228
 # This will prompt you for the password once, and then subsequent sudo commands will not require a password as long as the authentication is cached.
+# TODO: Make authentication caching work
 sudo true
 
 # Install brew non-interactively using NONINTERACTIVE environment variable
