@@ -10,6 +10,9 @@
 # https://apple.stackexchange.com/a/46363
 defaults write -g ApplePressAndHoldEnabled -bool false
 
+/usr/libexec/PlistBuddy -c "Set ':KeyRepeat' '2.000000'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
+/usr/libexec/PlistBuddy -c "Set ':InitialKeyRepeat' '15.000000'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
+
 ## iTerm2
 # Enable clipboard access in "Prefs > General > Selection > Applications in terminal may access clipboard".
 /usr/libexec/PlistBuddy -c "Add ':AllowClipboardAccess' bool 'true'" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
