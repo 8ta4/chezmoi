@@ -13,7 +13,7 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 /usr/libexec/PlistBuddy -c "Set ':KeyRepeat' '2.000000'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
 /usr/libexec/PlistBuddy -c "Set ':InitialKeyRepeat' '15.000000'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
 
-/usr/libexec/PlistBuddy -c "Set ':autohide' 'true'" "$HOME/Library/Preferences/com.apple.dock.plist"
+/usr/libexec/PlistBuddy -c "Add ':autohide' bool 'true'" "$HOME/Library/Preferences/com.apple.dock.plist"
 
 ## iTerm2
 # Enable clipboard access in "Prefs > General > Selection > Applications in terminal may access clipboard".
