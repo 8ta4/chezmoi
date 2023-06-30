@@ -42,6 +42,9 @@ brew bundle
 # https://github.com/koekeishiya/skhd#:~:text=koekeishiya%2Fformulae%2Fskhd-,skhd%20--start-service
 skhd --start-service
 
+# https://github.com/koekeishiya/homebrew-formulae/blob/73dfc99a762d9adcf89611535f5a72f7f724fae5/yabai.rb#L28-L29
+yabai --start-service
+
 ## .tmux
 # https://github.com/gpakosz/.tmux#:~:text=~%2F.config%2Ftmux-,Installing%20in%20~%3A,f%20.tmux%2F.tmux.conf,-%24%20cp%20.tmux%2F.tmux
 cd
