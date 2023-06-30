@@ -39,14 +39,6 @@ cd "$chezmoi_directory"
 
 brew bundle
 
-## Oh My Zsh
-# Check if the .oh-my-zsh directory exists and remove it if it does
-if [ -d "$HOME/.oh-my-zsh" ]; then
-  rm -rf "$HOME/.oh-my-zsh"
-fi
-
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-
 ## .tmux
 # https://github.com/gpakosz/.tmux#:~:text=~%2F.config%2Ftmux-,Installing%20in%20~%3A,f%20.tmux%2F.tmux.conf,-%24%20cp%20.tmux%2F.tmux
 cd
@@ -61,6 +53,14 @@ ln -s -f "$HOME/.tmux/.tmux.conf" "$HOME/.tmux.conf"
 ## Neovim
 # https://github.com/neovim/neovim/blob/d48cd9a0aa9dc2c79a218174708c7c7278a6e6f3/runtime/doc/provider.txt#L37C14-L40
 python3 -m pip install --user --upgrade pynvim
+
+## Oh My Zsh
+# Check if the .oh-my-zsh directory exists and remove it if it does
+if [ -d "$HOME/.oh-my-zsh" ]; then
+  rm -rf "$HOME/.oh-my-zsh"
+fi
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 ## vimrc
 # Check if the .vim_runtime directory exists and remove it if it does
