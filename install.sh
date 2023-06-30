@@ -6,8 +6,16 @@ set -e
 # Need sudo access on macOS
 # https://github.com/Homebrew/install/blob/fc8acb0828f89f8aa83162000db1b49de71fa5d8/install.sh#L228
 # This will prompt you for the password once, and then subsequent sudo commands will not require a password as long as the authentication is cached.
-# TODO: Make authentication caching work
-sudo true
+sudo -v
+
+# TODO: Update link
+# https://unix.stackexchange.com/questions/261103/how-do-i-maintain-sudo-in-a-bash-script
+# https://www.sudo.ws/docs/man/1.8.24/sudo.man/
+while true; do
+  sleep 60
+  sudo -n true
+  kill -0 "$$" 2>/dev/null || exit
+done &
 
 # Install brew non-interactively using NONINTERACTIVE environment variable
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -31,13 +39,11 @@ cd "$chezmoi_directory"
 
 brew bundle
 
-## Oh My Zsh
-# Check if the .oh-my-zsh directory exists and remove it if it does
-if [ -d "$HOME/.oh-my-zsh" ]; then
-  rm -rf "$HOME/.oh-my-zsh"
-fi
+# https://github.com/koekeishiya/skhd#:~:text=koekeishiya%2Fformulae%2Fskhd-,skhd%20--start-service
+skhd --start-service
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+# https://github.com/koekeishiya/homebrew-formulae/blob/73dfc99a762d9adcf89611535f5a72f7f724fae5/yabai.rb#L28-L29
+yabai --start-service
 
 ## .tmux
 # https://github.com/gpakosz/.tmux#:~:text=~%2F.config%2Ftmux-,Installing%20in%20~%3A,f%20.tmux%2F.tmux.conf,-%24%20cp%20.tmux%2F.tmux
@@ -53,6 +59,14 @@ ln -s -f "$HOME/.tmux/.tmux.conf" "$HOME/.tmux.conf"
 ## Neovim
 # https://github.com/neovim/neovim/blob/d48cd9a0aa9dc2c79a218174708c7c7278a6e6f3/runtime/doc/provider.txt#L37C14-L40
 python3 -m pip install --user --upgrade pynvim
+
+## Oh My Zsh
+# Check if the .oh-my-zsh directory exists and remove it if it does
+if [ -d "$HOME/.oh-my-zsh" ]; then
+  rm -rf "$HOME/.oh-my-zsh"
+fi
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 ## vimrc
 # Check if the .vim_runtime directory exists and remove it if it does
