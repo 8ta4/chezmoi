@@ -12,6 +12,6 @@
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 /usr/libexec/PlistBuddy -c "Delete ':KeyRepeat'" -c "Add ':KeyRepeat' real '2.000000'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
-/usr/libexec/PlistBuddy -c "Set ':InitialKeyRepeat' '15.000000'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
+/usr/libexec/PlistBuddy -c "Delete ':InitialKeyRepeat'" -c "Add ':InitialKeyRepeat' real '15.000000'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
 
 /usr/libexec/PlistBuddy -c "Delete ':autohide'" -c "Add ':autohide' bool 'true'" "$HOME/Library/Preferences/com.apple.dock.plist"
