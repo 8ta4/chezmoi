@@ -8,9 +8,8 @@ set -e
 # This will prompt you for the password once, and then subsequent sudo commands will not require a password as long as the authentication is cached.
 sudo -v
 
-# TODO: Update link
-# https://unix.stackexchange.com/questions/261103/how-do-i-maintain-sudo-in-a-bash-script
-# https://www.sudo.ws/docs/man/1.8.24/sudo.man/
+# https://unix.stackexchange.com/questions/261103/how-do-i-maintain-sudo-in-a-bash-script#:~:text=To%20%22keep%20it,null%20%7C%7C%20exit%0Adone%20%26
+# https://www.sudo.ws/docs/man/1.8.24/sudo.man/#:~:text=this%20limit%20is%20policy-specific%3B%20the%20default%20password%20prompt%20timeout%20for%20the%20sudoers%20security%20policy%20is%205%20minutes.
 while true; do
   sleep 60
   sudo -n true
