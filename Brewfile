@@ -16,6 +16,7 @@ brew "zsh-autocomplete"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
+cask "alacritty"
 cask "alfred"
 cask "displaylink"
 cask "dropbox"
