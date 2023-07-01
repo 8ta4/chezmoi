@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# TODO: If the property already exists, update its value instead of adding a new one
 ## macOS
 /usr/libexec/PlistBuddy -c "Add ':AppleInterfaceStyle' string 'Dark'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
 
