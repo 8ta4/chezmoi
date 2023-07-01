@@ -1,0 +1,1 @@
+Configure alacritty to reuse previous session's directory
