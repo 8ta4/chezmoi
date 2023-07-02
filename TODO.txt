@@ -1,2 +1,1 @@
-Configure Alacritty to reuse the previous session's directory
 Install and configure a file manager
