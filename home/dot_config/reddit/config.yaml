@@ -94,3 +94,18 @@ https://www.reddit.com/r/selfhosted/comments/13tkasa/seeking_advice_on_developin
 
     Thank you for your time and input!
   threshold: 0.5019776821136476
+https://www.reddit.com/r/LanguageTechnology/comments/13sqmks/seeking_advice_on_developing_a_tool_to_monitor/:
+  text: |
+    Seeking Advice on Developing a Tool to Monitor and Notify Users of Relevant Social Media Comments
+    I have been working on a tool that aims to monitor and notify users of relevant social media comments related to a specific product. I have documented my thoughts and ideas for this tool in this GitHub repository. The tool uses natural language processing and machine learning techniques to find and notify users of similar Reddit posts.
+
+    I would like to ask for advice on the following aspects:
+
+    Are there any existing tools or approaches that can help me with this task, or if there are any suggestions for how to effectively use NLP and machine learning techniques for this purpose?
+
+    Any insights or resources related to NLP and machine learning in the context of social media monitoring would be greatly appreciated.
+
+    They say NLP can predict our behavior. If only it could predict my next terrible joke, I'd save so much embarrassment.
+
+    Please feel free to review the documentation and provide any feedback or suggestions. Thank you!
+  threshold: 0.5186600685119630
