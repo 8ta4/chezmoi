@@ -1,0 +1,73 @@
+https://www.reddit.com/r/socialmedia/comments/10z01nv/best_social_media_listening_tools/:
+  text: |
+    Best Social Media Listening Tools
+    Professional Discussion
+    I kinda feel like social media listening tools in the market are popping up in the market everyday & demand is also increasing. These are my favourite tools for social listening:
+
+    1. Mention
+    It’s one of the most used social listening tool as I always come across this tool in a conversation about social listening.
+
+    Overall the tool is recommended by me because the resources & features they provide can help you better than other tools in the market.
+
+    2. Brandwatch
+    Brandwatch is a social media management tool, but they acquired Falcon, A social listening tool. Now, it’s the part of their platform and you can schedule & listen to your audience within their platform.
+
+    One of the reasons I recommend them is they do great job at CX & collaborate well with HigherEd. If you work in HigherEd, I will recommend you to go for Brandwatch.
+
+    3. Syften
+    Syften can help you track conversations around your product & business on reddit, quora, hacker news & others.
+
+    I don’t dislike the tool, but it’s best for SaaS owners, startups. It’s a scrappy social listening tool but it works. That’s why I mentioned it here.
+
+    4. Brand 24
+    Brand 24 is another great social listening tool with a better reporting process. You can track mentions across all main marketing channels & get reported.
+
+    I myself came across brand24 recently through reddit suggestions. From what I have heard so far. It deserves to be here.
+
+    5. Tweetdeck
+    It’s the best tool to track conversations around your brand on Twitter.
+
+    But some features like reporting & better CX isn’t the best part of Tweetdeck. As Twitter isn’t fully focused on users utilising this feature.
+
+    But if your brand audience is active on twitter, this tool can deliver most accurate results.
+
+    6. Gummy Search
+    It’s one of the best tool to track conversations across reddit & you can also get analysis of sub-reddits where your target audience is active.
+
+    Recommended to SaaS founders, startups & entrepreneurs to track conversations around their business.
+
+    Honourable mentions
+    Agorapulse & Sproutsocial are also famous for social listening but they are overall social media management tools. That’s why you might consider moving to them completely if your current tool lacks social listening features.
+
+    Awario is a social listening tool with similar features to tools mentioned above but not a standout. That’s why it didn’t make the list.
+
+    Google Alerts is one of my favourites but the tracking is limited to Google only.
+
+    Thanks for reading. You can share your favourite social listening tool below & join r/marketingcurated for more tools & resource suggestions.
+  threshold: 0.5595506429672242
+https://www.reddit.com/r/mac/comments/13d9rfd/monitoring_plist_changes_and_generating/:
+  text: |
+    Monitoring plist changes and generating `PlistBuddy` commands
+    Question
+    I am looking for a tool or method to monitor plist changes on my Mac and generate the corresponding PlistBuddy commands when preferences are changed in macOS or apps. I want to avoid using defaults write since some preference values are nested. (Plists are like onions, they have layers upon layers, and just when you think you've peeled them all, another one appears to make you cry.)
+
+    I've found these repositories, but they don't exactly do what I want:
+
+    macos-defaults
+
+    plistwatch
+
+    My ideal workflow is as follows:
+
+    Start the monitoring tool.
+
+    Change preferences in macOS or apps.
+
+    The tool shows PlistBuddy commands.
+
+    Copy and paste the commands into my setup script.
+
+    This would be similar to how Karabiner-EventViewer works for a different problem.
+
+    Any suggestions on how to achieve this or existing tools that can help me with this workflow?
+  threshold: 0.11965304613113404
