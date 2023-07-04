@@ -44,7 +44,7 @@ https://www.reddit.com/r/socialmedia/comments/10z01nv/best_social_media_listenin
     Google Alerts is one of my favourites but the tracking is limited to Google only.
 
     Thanks for reading. You can share your favourite social listening tool below & join r/marketingcurated for more tools & resource suggestions.
-  threshold: 0.5595506429672242
+  threshold: 0.5751820802688600
 https://www.reddit.com/r/mac/comments/13d9rfd/monitoring_plist_changes_and_generating/:
   text: |
     Monitoring plist changes and generating `PlistBuddy` commands
@@ -70,7 +70,7 @@ https://www.reddit.com/r/mac/comments/13d9rfd/monitoring_plist_changes_and_gener
     This would be similar to how Karabiner-EventViewer works for a different problem.
 
     Any suggestions on how to achieve this or existing tools that can help me with this workflow?
-  threshold: 0.11965304613113404
+  threshold: 0.28200268745422364
 https://www.reddit.com/r/selfhosted/comments/13tkasa/seeking_advice_on_developing_a_selfhosted_tool/:
   text: |
     Seeking advice on developing a self-hosted tool for monitoring and notifying users of relevant social media comments
