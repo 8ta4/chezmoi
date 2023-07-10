@@ -1,4 +1,3 @@
-
 tell application "UTM"
     -- Find the existing VM named "macOS"
     set vm to virtual machine named "macOS"
