@@ -70,7 +70,7 @@ https://www.reddit.com/r/mac/comments/13d9rfd/monitoring_plist_changes_and_gener
     This would be similar to how Karabiner-EventViewer works for a different problem.
 
     Any suggestions on how to achieve this or existing tools that can help me with this workflow?
-  threshold: 0.28200268745422364
+  threshold: 0.3411819338798524
 https://www.reddit.com/r/selfhosted/comments/13tkasa/seeking_advice_on_developing_a_selfhosted_tool/:
   text: |
     Seeking advice on developing a self-hosted tool for monitoring and notifying users of relevant social media comments
