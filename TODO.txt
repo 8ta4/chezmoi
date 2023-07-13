@@ -1,0 +1,1 @@
+Set up Alacritty so that pressing Option-Shift-Delete deletes the next word.
