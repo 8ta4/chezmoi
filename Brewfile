@@ -32,10 +32,12 @@ cask "obs"
 cask "utm"
 cask "visual-studio-code"
 
+tap "koekeishiya/formulae"
 # This Brewfile specifies each package with its fully qualified name
 # to avoid any possible name conflicts now or in the future.
 # https://github.com/Homebrew/brew/blob/3b3300546b5a4e40b74f4ee33cf225cca280defe/docs/Taps.md?plain=1#L59-L62
 brew "koekeishiya/formulae/skhd"
 brew "koekeishiya/formulae/yabai"
 
+tap "homebrew/cask-versions"
 cask "homebrew/cask-versions/visual-studio-code-insiders"
