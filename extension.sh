@@ -1,0 +1,14 @@
+#!/bin/bash
+
+extension install chrome cjpalhdlnbpafiamejdnhcphjbkeiagm
+extension install chrome dbepggeogbaibhgnhhndojpepiihcmeb
+extension install chrome edibdbjcniadpccecjdfdjjppcpchdlm
+extension install chrome eimadpbcbfnmbkopoojfekhnkhdbieeh
+extension install chrome gebbhagfogifgggkldgodflihgfeippi
+extension install chrome mnjggcdmjocbbbhaepdhchncahnbgone
+extension install chrome mpbjkejclgfgadiemmefgebjfooflfhl
+extension install chrome mpiodijhokgodhhofbcjdecpffjipkle
+extension install chrome nffaoalbilbmmfgbnbgppjihopabppdk
+extension install chrome noondiphcddnnabmjcihcjfbhfklnnep
+extension install chrome oboonakemofpalcgghocfoadofidjkkk
+extension install chrome pbcodcjpfjdpcineamnnmbkkmkdpajjg
