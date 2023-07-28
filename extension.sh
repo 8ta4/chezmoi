@@ -18,6 +18,9 @@ extension install chrome pbcodcjpfjdpcineamnnmbkkmkdpajjg
 # Password Alert
 extension install chrome noondiphcddnnabmjcihcjfbhfklnnep
 
+# Redirector
+extension install chrome ocgpenflpmgnfapjedencafcfakcekcd extension/ocgpenflpmgnfapjedencafcfakcekcd.js
+
 # Return YouTube Dislike
 extension install chrome gebbhagfogifgggkldgodflihgfeippi
 
