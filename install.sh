@@ -59,7 +59,7 @@ ln -s -f "$HOME/.tmux/.tmux.conf" "$HOME/.tmux.conf"
 # Change directory to cloned repo
 cd "$chezmoi_directory"
 
-"$chezmoi_directory/extension.sh"
+./extension.sh
 
 ## Neovim
 # https://github.com/neovim/neovim/blob/d48cd9a0aa9dc2c79a218174708c7c7278a6e6f3/runtime/doc/provider.txt#L37C14-L40
