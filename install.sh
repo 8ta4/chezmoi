@@ -56,6 +56,9 @@ git clone https://github.com/gpakosz/.tmux.git
 ln -s -f "$HOME/.tmux/.tmux.conf" "$HOME/.tmux.conf"
 
 ## extension
+# Change directory to cloned repo
+cd "$chezmoi_directory"
+
 "$chezmoi_directory/extension.sh"
 
 ## Neovim
