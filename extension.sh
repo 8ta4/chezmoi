@@ -34,7 +34,7 @@ extension install chrome mnjggcdmjocbbbhaepdhchncahnbgone
 extension install chrome cjpalhdlnbpafiamejdnhcphjbkeiagm
 
 # Video Speed Controller
-extension install chrome nffaoalbilbmmfgbnbgppjihopabppdk
+extension install chrome nffaoalbilbmmfgbnbgppjihopabppdk extension/nffaoalbilbmmfgbnbgppjihopabppdk.js
 
 # Vimium
-extension install chrome dbepggeogbaibhgnhhndojpepiihcmeb
+extension install chrome dbepggeogbaibhgnhhndojpepiihcmeb extension/dbepggeogbaibhgnhhndojpepiihcmeb.js
