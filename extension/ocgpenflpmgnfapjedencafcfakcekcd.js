@@ -18,6 +18,7 @@ chrome.storage.local.set({
       processMatches: "noProcessing",
       redirectUrl: "https://google.com/search?q=$1",
     },
+    // https://github.com/einaregilsson/Redirector#use-duckduckgocom-bangs-on-google
     {
       appliesTo: ["main_frame"],
       description: "Redirect any Google query with a !bang to DDG",
