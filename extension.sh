@@ -4,7 +4,7 @@
 extension install chrome mpbjkejclgfgadiemmefgebjfooflfhl
 
 # Dark Reader
-extension install chrome eimadpbcbfnmbkopoojfekhnkhdbieeh
+extension install chrome eimadpbcbfnmbkopoojfekhnkhdbieeh extension/eimadpbcbfnmbkopoojfekhnkhdbieeh.js
 
 # I still don't care about cookies
 extension install chrome edibdbjcniadpccecjdfdjjppcpchdlm
