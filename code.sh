@@ -9,6 +9,7 @@ function install_extensions() {
     "betterthantomorrow.calva"
     "esbenp.prettier-vscode"
     "haskell.haskell"
+    "nwolverson.ide-purescript"
     "redhat.vscode-xml"
     "redhat.vscode-yaml"
   )
