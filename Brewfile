@@ -31,6 +31,7 @@ cask "microsoft-office"
 cask "obs"
 cask "utm"
 cask "visual-studio-code"
+cask "xmind"
 
 tap "8ta4/extension"
 # This Brewfile specifies each package with its fully qualified name
