@@ -1,8 +1,5 @@
 #!/bin/bash
 
-## Alfred
-/usr/libexec/PlistBuddy -c "Delete ':ejectKeywordEnabled'" -c "Add ':ejectKeywordEnabled' bool 'true'" "$HOME/Library/Application Support/Alfred/Alfred.alfredpreferences/preferences/features/system/prefs.plist"
-
 ## macOS
 /usr/libexec/PlistBuddy -c "Delete ':AppleInterfaceStyle'" -c "Add ':AppleInterfaceStyle' string 'Dark'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
 
