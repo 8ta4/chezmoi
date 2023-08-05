@@ -109,3 +109,20 @@ https://www.reddit.com/r/LanguageTechnology/comments/13sqmks/seeking_advice_on_d
 
     Please feel free to review the documentation and provide any feedback or suggestions. Thank you!
   threshold: 0.5384714603424073
+https://www.reddit.com/r/chrome_extensions/comments/15074p2/how_do_you_install_configure_and_detect_changes/:
+  text: |
+    How do you install, configure, and detect changes in Chrome extensions programmatically?
+    I'm working on a project that allows you to install, configure, and detect changes in Chrome extensions programmatically. I'm using Playwright and the chrome.* API for extension management.
+
+    I'm looking for feedback. I even asked ChatGPT. It said, "Use your brain, you {headless: true}."
+
+    I haven't started coding yet, but you can see my progress on GitHub.
+
+    Here's how it works:
+
+    To install an extension, it creates a preferences file and uses Playwright to enable the extension with the chrome.management.setEnabled method.
+
+    To configure an extension, it uses Playwright to set the configuration values with the chrome.storage.sync.set method and other methods as needed.
+
+    To detect changes in an extension, it uses Playwright to get the extension ID with the chrome.management.getAll method. Then, it uses Playwright to listen for changes with the chrome.storage.sync.addListener method and other methods as needed, generating JavaScript code based on the changes. Finally, it uses WebSocket to send the generated code to a logger.
+  threshold: 0.4755420386791230
