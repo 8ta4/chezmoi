@@ -125,4 +125,4 @@ https://www.reddit.com/r/chrome_extensions/comments/15074p2/how_do_you_install_c
     To configure an extension, it uses Playwright to set the configuration values with the chrome.storage.sync.set method and other methods as needed.
 
     To detect changes in an extension, it uses Playwright to get the extension ID with the chrome.management.getAll method. Then, it uses Playwright to listen for changes with the chrome.storage.sync.addListener method and other methods as needed, generating JavaScript code based on the changes. Finally, it uses WebSocket to send the generated code to a logger.
-  threshold: 0.4755420386791230
+  threshold: 0.497287392616273
