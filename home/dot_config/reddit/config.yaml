@@ -44,7 +44,7 @@ https://www.reddit.com/r/socialmedia/comments/10z01nv/best_social_media_listenin
     Google Alerts is one of my favourites but the tracking is limited to Google only.
 
     Thanks for reading. You can share your favourite social listening tool below & join r/marketingcurated for more tools & resource suggestions.
-  threshold: 0.5751820802688600
+  threshold: 0.5856844186782838
 https://www.reddit.com/r/mac/comments/13d9rfd/monitoring_plist_changes_and_generating/:
   text: |
     Monitoring plist changes and generating `PlistBuddy` commands
@@ -125,4 +125,18 @@ https://www.reddit.com/r/chrome_extensions/comments/15074p2/how_do_you_install_c
     To configure an extension, it uses Playwright to set the configuration values with the chrome.storage.sync.set method and other methods as needed.
 
     To detect changes in an extension, it uses Playwright to get the extension ID with the chrome.management.getAll method. Then, it uses Playwright to listen for changes with the chrome.storage.sync.addListener method and other methods as needed, generating JavaScript code based on the changes. Finally, it uses WebSocket to send the generated code to a logger.
-  threshold: 0.497287392616273
+  threshold: 0.6333256959915162
+https://www.reddit.com/r/socialmedia/comments/15kbryt/the_best_social_media_content_discovery_tool/:
+  text: |
+    The Best Social Media content discovery tool
+    Professional Discussion
+    Hi,
+
+    I'm looking for a tool to use that helps us find relevant content from others on social media platforms in order to interact with them. An example usecase for us is;
+
+    We search for the hashtag #procurement and find people who are posting about this on Twitter. And from the app we can respond directly via our connected account.
+
+    We've been trying out Tweethunter briefly but it's only Twitter and it's not doing amazing.
+
+    Is anybody are of such a tool? Thank you!
+  threshold: 0.11742028594017030
