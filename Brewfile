@@ -20,7 +20,6 @@ brew "zsh-syntax-highlighting"
 
 cask "alacritty"
 cask "alfred"
-cask "displaylink"
 cask "dropbox"
 cask "google-chrome"
 cask "karabiner-elements"
