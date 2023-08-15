@@ -30,6 +30,10 @@ extension install chrome mpiodijhokgodhhofbcjdecpffjipkle
 # SponsorBlock for YouTube - Skip Sponsorships
 extension install chrome mnjggcdmjocbbbhaepdhchncahnbgone
 
+# Tabliss - A Beautiful New Tab
+extension install chrome hipekcciheckooncpjeljhnekcoolahp extension/hipekcciheckooncpjeljhnekcoolahp.js
+extension install edge lklaendlmlfkaabeleddanafeinnenih extension/hipekcciheckooncpjeljhnekcoolahp.js
+
 # uBlock Origin
 extension install chrome cjpalhdlnbpafiamejdnhcphjbkeiagm
 
