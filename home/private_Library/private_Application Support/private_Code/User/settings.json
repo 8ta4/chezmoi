@@ -5,5 +5,8 @@
   "editor.accessibilitySupport": "off",
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
