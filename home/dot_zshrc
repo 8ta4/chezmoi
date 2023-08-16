@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi='nvim'
 alias vim='nvim'
-# https://github.com/jesseduffield/lazygit#:~:text=you%20can%20also%20add%20an%20alias%20for%20this%20with%20echo%20%22alias%20lg%3D'lazygit'%22%20%3E%3E%20~%2F.zshrc
+# https://github.com/jesseduffield/lazygit/blob/7402be98b66fd5819e856a2771a49a889b5ba837/README.md?plain=1#L367-L368
 alias lg='lazygit'
 
 # https://stackoverflow.com/questions/2596805/how-do-i-make-git-use-the-editor-of-my-choice-for-editing-commit-messages#:~:text=export%20visual%3Dvim%20export%20editor%3D%22%24visual%22
@@ -127,7 +127,7 @@ eval "$(direnv hook zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 ## nnn
-# https://github.com/jarun/nnn/wiki/Basic-use-cases#:~:text=pick%20the%20appropriate%20file%20for%20your%20shell%20from%20misc%2Fquitcd%20and%20add%20the%20contents%20to%20your%20shell's%20rc%20file.
+# https://github.com/jarun/nnn/wiki/Basic-use-cases/fab5618549abf7602cd31ca3db314e3242456e30#:~:text=Pick%20the%20appropriate%20file%20for%20your%20shell%20from%20misc/quitcd%20and%20add%20the%20contents%20to%20your%20shell%27s%20rc%20file.
 # https://raw.githubusercontent.com/jarun/nnn/53e4fec75b9a78ad5bef60467f431ecb92d96ee0/misc/quitcd/quitcd.bash_sh_zsh
 n ()
 {
@@ -169,7 +169,7 @@ eval $(thefuck --alias)
 source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 ## zsh-autosuggestions
-# https://github.com/Homebrew/homebrew-core/blob/45a3934a0bee140e609858af1547318bb9399a64/Formula/zsh-autosuggestions.rb#L21-L23
+# https://formulae.brew.sh/formula/zsh-autosuggestions#:~:text=To%20activate%20the,zsh-autosuggestions.zsh
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ## zsh-syntax-highlighting
