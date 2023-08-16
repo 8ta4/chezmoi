@@ -17,6 +17,7 @@ brew "tmux"
 brew "zsh-autocomplete"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
+brew "zsh-you-should-use"
 
 cask "alacritty"
 cask "alfred"
