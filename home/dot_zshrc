@@ -176,6 +176,10 @@ source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # https://formulae.brew.sh/formula/zsh-syntax-highlighting#:~:text=To%20activate%20the,syntax-highlighting.zsh
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+## zsh-you-should-use
+# https://formulae.brew.sh/formula/zsh-you-should-use#:~:text=To%20activate%20You,use.plugin.zsh
+source $HOMEBREW_PREFIX/share/zsh-you-should-use/you-should-use.plugin.zsh
+
 ## tmux
 if [ -z "$TMUX" ]; then
   tmux
