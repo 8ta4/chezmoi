@@ -2,6 +2,7 @@
 
 set -e
 
+## Rosetta 2
 # Install Rosetta 2 to ensure compatibility with 'foxitreader' on Apple Silicon Macs
 softwareupdate --install-rosetta --agree-to-license
 
