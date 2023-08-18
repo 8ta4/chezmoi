@@ -2,6 +2,9 @@
 
 set -e
 
+# Install Rosetta 2 to ensure compatibility with 'foxitreader' on Apple Silicon Macs
+softwareupdate --install-rosetta --agree-to-license
+
 ## Homebrew
 # Need sudo access on macOS
 # https://github.com/Homebrew/install/blob/fc8acb0828f89f8aa83162000db1b49de71fa5d8/install.sh#L228
