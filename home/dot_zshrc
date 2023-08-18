@@ -71,7 +71,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(colored-man-pages copyfile extract git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,10 +100,14 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vi='nvim'
-alias vim='nvim'
+# https://github.com/sharkdp/bat/blob/00b7e3b864a49762d7f666ac970f992386392e33/README.md?plain=1#L58-L60
+alias cat='bat --paging=never'
+
 # https://github.com/jesseduffield/lazygit/blob/7402be98b66fd5819e856a2771a49a889b5ba837/README.md?plain=1#L367-L368
 alias lg='lazygit'
+
+alias vi='nvim'
+alias vim='nvim'
 
 # https://stackoverflow.com/questions/2596805/how-do-i-make-git-use-the-editor-of-my-choice-for-editing-commit-messages#:~:text=export%20visual%3Dvim%20export%20editor%3D%22%24visual%22
 export VISUAL=nvim

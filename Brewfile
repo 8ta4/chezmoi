@@ -1,5 +1,6 @@
 brew "atuin"
 brew "autojump"
+brew "bat"
 brew "chezmoi"
 brew "direnv"
 brew "fd"
