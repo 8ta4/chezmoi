@@ -109,12 +109,6 @@ alias lg='lazygit'
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
-## Atuin
-# https://github.com/ellie/atuin/blob/a38fc6e8989d41772170165a8757f43e593c5e70/README.md?plain=1#L232
-# https://github.com/ellie/atuin/blob/a38fc6e8989d41772170165a8757f43e593c5e70/docs/docs/config/key-binding.md?plain=1#L12
-# Bind ctrl-r but not up arrow
-eval "$(atuin init zsh --disable-up-arrow)"
-
 ## autojump
 # https://formulae.brew.sh/formula/autojump#:~:text=oriented%20programming%20language-,Add%20the%20following%20line,profile.d%2Fautojump.sh,-If%20you%20use
 [ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && . $HOMEBREW_PREFIX/etc/profile.d/autojump.sh
@@ -179,6 +173,20 @@ source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 ## zsh-you-should-use
 # https://formulae.brew.sh/formula/zsh-you-should-use#:~:text=To%20activate%20You,use.plugin.zsh
 source $HOMEBREW_PREFIX/share/zsh-you-should-use/you-should-use.plugin.zsh
+
+## zsh-vi-mode
+# zsh-vi-mode is initialized first to avoid conflicts with Atuin's key bindings
+# ZVM_INIT_MODE is set to "sourcing" to fix a lazy-loading behavior in zsh-vi-mode
+# that can cause unpredictable key binding behavior even when the load order is correctly set.
+ZVM_INIT_MODE=sourcing
+# https://formulae.brew.sh/formula/zsh-vi-mode#:~:text=To%20activate%20the,mode.plugin.zsh
+source $HOMEBREW_PREFIX/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
+## Atuin
+# Atuin is initialized after zsh-vi-mode, allowing it to override the Ctrl+r binding from zsh-vi-mode.
+# https://github.com/atuinsh/atuin/blob/a38fc6e8989d41772170165a8757f43e593c5e70/docs/docs/config/key-binding.md?plain=1#L11-L12
+# Bind ctrl-r but not up arrow
+eval "$(atuin init zsh --disable-up-arrow)"
 
 ## tmux
 if [ -z "$TMUX" ]; then

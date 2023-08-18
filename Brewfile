@@ -19,6 +19,7 @@ brew "zsh-autocomplete"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 brew "zsh-you-should-use"
+brew "zsh-vi-mode"
 
 cask "alacritty"
 cask "alfred"
