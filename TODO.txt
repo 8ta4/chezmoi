@@ -1,3 +1,4 @@
+Use Alfred to open a file with Neovim
 Set up Alacritty so that pressing Option-Shift-Delete deletes the next word.
 Keep track of the last used working directory and automatically jumps into it for new shells, unless the starting directory is not `$HOME`. https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/fe4b5659863c388786986d70fa6d1bb66b00afb6/plugins/last-working-dir/README.md
 Add a script to disable Karabiner-Elements and skhd before starting a livestream.
