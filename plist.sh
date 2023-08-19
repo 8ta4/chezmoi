@@ -20,3 +20,9 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 /usr/libexec/PlistBuddy -c "Delete ':InitialKeyRepeat'" -c "Add ':InitialKeyRepeat' real '15.000000'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
 
 /usr/libexec/PlistBuddy -c "Delete ':autohide'" -c "Add ':autohide' bool 'true'" "$HOME/Library/Preferences/com.apple.dock.plist"
+
+# Create a solid black image with the resolution of your screen
+convert -size 1x1 xc:black "$HOME/.black.png"
+
+# Set the wallpaper to the black image
+osascript -e "tell application \"System Events\" to tell every desktop to set picture to \"$HOME/.black.png\""
