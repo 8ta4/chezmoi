@@ -4,8 +4,6 @@
 /usr/libexec/PlistBuddy -c "Delete ':Preferences.General.SingleKey'" -c "Add ':Preferences.General.SingleKey' string '1'" "$HOME/Library/Preferences/com.foxit-software.Foxit PDF Reader.plist"
 
 ## macOS
-/usr/libexec/PlistBuddy -c "Delete ':AppleInterfaceStyle'" -c "Add ':AppleInterfaceStyle' string 'Dark'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
-
 # Disable Spotlight hotkey
 /usr/libexec/PlistBuddy -c "Delete ':AppleSymbolicHotKeys:64:enabled'" -c "Add ':AppleSymbolicHotKeys:64:enabled' bool 'false'" "$HOME/Library/Preferences/com.apple.symbolichotkeys.plist"
 
@@ -20,3 +18,11 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 /usr/libexec/PlistBuddy -c "Delete ':InitialKeyRepeat'" -c "Add ':InitialKeyRepeat' real '15.000000'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
 
 /usr/libexec/PlistBuddy -c "Delete ':autohide'" -c "Add ':autohide' bool 'true'" "$HOME/Library/Preferences/com.apple.dock.plist"
+
+/usr/libexec/PlistBuddy -c "Delete ':AppleInterfaceStyle'" -c "Add ':AppleInterfaceStyle' string 'Dark'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
+
+# Create a solid black image with the resolution of your screen
+convert -size 1x1 xc:black "$HOME/.black.png"
+
+# Set the wallpaper to the black image
+osascript -e "tell application \"System Events\" to tell every desktop to set picture to \"$HOME/.black.png\""

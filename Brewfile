@@ -8,6 +8,8 @@ brew "fzf"
 brew "gh"
 brew "gibo"
 brew "git-delta"
+# I use imagemagick to create and set a black wallpaper
+brew "imagemagick"
 brew "lazygit"
 brew "neovim"
 brew "nnn"

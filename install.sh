@@ -108,5 +108,5 @@ cachix use devenv
 
 nix profile install --accept-flake-config github:cachix/devenv/latest
 
-## PlistBuddy
-"$chezmoi_directory/plist.sh"
+## preferences
+"$chezmoi_directory/preferences.sh"
