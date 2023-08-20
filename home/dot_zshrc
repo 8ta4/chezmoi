@@ -88,6 +88,10 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
+# https://stackoverflow.com/questions/2596805/how-do-i-make-git-use-the-editor-of-my-choice-for-editing-commit-messages#:~:text=export%20visual%3Dvim%20export%20editor%3D%22%24visual%22
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -108,10 +112,6 @@ alias lg='lazygit'
 
 alias vi='nvim'
 alias vim='nvim'
-
-# https://stackoverflow.com/questions/2596805/how-do-i-make-git-use-the-editor-of-my-choice-for-editing-commit-messages#:~:text=export%20visual%3Dvim%20export%20editor%3D%22%24visual%22
-export VISUAL=nvim
-export EDITOR="$VISUAL"
 
 ## autojump
 # https://formulae.brew.sh/formula/autojump#:~:text=oriented%20programming%20language-,Add%20the%20following%20line,profile.d%2Fautojump.sh,-If%20you%20use
