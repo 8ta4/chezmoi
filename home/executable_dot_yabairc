@@ -37,6 +37,7 @@ yabai -m config                                 \
     split_ratio                  0.50           \
     split_type                   auto           \
     auto_balance                 off            \
+    # TODO: remove padding and gap in Yabai
     top_padding                  12             \
     bottom_padding               12             \
     left_padding                 12             \
