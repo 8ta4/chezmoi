@@ -158,10 +158,6 @@ n ()
     }
 }
 
-## The Fuck
-# https://formulae.brew.sh/formula/thefuck#:~:text=Add%20the%20following,eval%20%24(thefuck%20--alias)
-eval $(thefuck --alias)
-
 ## zsh-autocomplete
 # https://formulae.brew.sh/formula/zsh-autocomplete#:~:text=1.%20Add%20at,autocomplete.plugin.zsh
 source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
