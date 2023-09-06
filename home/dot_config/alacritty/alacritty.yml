@@ -1,3 +1,7 @@
+# https://github.com/lsd-rs/lsd/blob/762e724f2a64e90d850fd2358984affef9ab762d/README.md?plain=1#L25
+font:
+  normal:
+    family: FiraCode Nerd Font
 # https://github.com/alacritty/alacritty/wiki/Keyboard-mappings#:~:text=-%20%7B%20key%3A%20Back%2C%20mods,mode%3A%20AppCursor%20%20%20%7D%20%23%20End
 key_bindings:
   - { key: Back, mods: Super, chars: "\x15" } # delete word/line

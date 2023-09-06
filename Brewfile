@@ -44,9 +44,13 @@ tap "8ta4/extension"
 # https://github.com/Homebrew/brew/blob/3b3300546b5a4e40b74f4ee33cf225cca280defe/docs/Taps.md?plain=1#L59-L62
 brew "8ta4/extension/extension"
 
+tap "homebrew/cask-versions"
+cask "homebrew/cask-versions/visual-studio-code-insiders"
+
+# https://github.com/lsd-rs/lsd/blob/762e724f2a64e90d850fd2358984affef9ab762d/README.md?plain=1#L25
+tap "homebrew/cask-fonts"
+cask "homebrew/cask-fonts/font-fira-code-nerd-font"
+
 tap "koekeishiya/formulae"
 brew "koekeishiya/formulae/skhd"
 brew "koekeishiya/formulae/yabai"
-
-tap "homebrew/cask-versions"
-cask "homebrew/cask-versions/visual-studio-code-insiders"
