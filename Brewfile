@@ -48,7 +48,7 @@ brew "8ta4/extension/extension"
 tap "homebrew/cask-versions"
 cask "homebrew/cask-versions/visual-studio-code-insiders"
 
-# https://github.com/lsd-rs/lsd/blob/762e724f2a64e90d850fd2358984affef9ab762d/README.md?plain=1#L25
+# https://github.com/lsd-rs/lsd/blob/58a8723cfa699d426bc3933c8aca91ad19ffee25/README.md?plain=1#L25
 tap "homebrew/cask-fonts"
 cask "homebrew/cask-fonts/font-fira-code-nerd-font"
 
