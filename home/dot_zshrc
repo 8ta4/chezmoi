@@ -71,7 +71,13 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man-pages copyfile extract git)
+plugins=(colored-man-pages copyfile extract git tmux)
+
+## tmux
+# https://github.com/ohmyzsh/ohmyzsh/blob/bae577d6b2eb621fedc994d6309b6f819855c2f8/plugins/tmux/README.md?plain=1#L33
+ZSH_TMUX_AUTOSTART=true
+# https://github.com/ohmyzsh/ohmyzsh/blob/bae577d6b2eb621fedc994d6309b6f819855c2f8/plugins/tmux/README.md?plain=1#L35
+ZSH_TMUX_AUTOCONNECT=false
 
 source $ZSH/oh-my-zsh.sh
 
@@ -189,8 +195,3 @@ source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 ## zsh-you-should-use
 # https://formulae.brew.sh/formula/zsh-you-should-use#:~:text=To%20activate%20You,use.plugin.zsh
 source $HOMEBREW_PREFIX/share/zsh-you-should-use/you-should-use.plugin.zsh
-
-## tmux
-if [ -z "$TMUX" ]; then
-  tmux
-fi
