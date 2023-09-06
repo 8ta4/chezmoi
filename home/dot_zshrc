@@ -71,7 +71,13 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man-pages copyfile extract git)
+plugins=(colored-man-pages copyfile extract git tmux)
+
+## tmux
+# https://github.com/ohmyzsh/ohmyzsh/blob/bae577d6b2eb621fedc994d6309b6f819855c2f8/plugins/tmux/README.md?plain=1#L33
+ZSH_TMUX_AUTOSTART=true
+# https://github.com/ohmyzsh/ohmyzsh/blob/bae577d6b2eb621fedc994d6309b6f819855c2f8/plugins/tmux/README.md?plain=1#L35
+ZSH_TMUX_AUTOCONNECT=false
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,6 +118,21 @@ alias lg='lazygit'
 
 alias vi='nvim'
 alias vim='nvim'
+
+## zsh-vi-mode
+# zsh-vi-mode is initialized first to avoid conflicts with Atuin's key bindings
+# zsh-vi-mode is initialized first to avoid conflicts with zsh-autocomplete.
+# ZVM_INIT_MODE is set to "sourcing" to fix a lazy-loading behavior in zsh-vi-mode
+# that can cause unpredictable key binding behavior even when the load order is correctly set.
+ZVM_INIT_MODE=sourcing
+# https://formulae.brew.sh/formula/zsh-vi-mode#:~:text=To%20activate%20the,mode.plugin.zsh
+source $HOMEBREW_PREFIX/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
+## Atuin
+# Atuin is initialized after zsh-vi-mode, allowing it to override the Ctrl+r binding from zsh-vi-mode.
+# https://github.com/atuinsh/atuin/blob/a38fc6e8989d41772170165a8757f43e593c5e70/docs/docs/config/key-binding.md?plain=1#L11-L12
+# Bind ctrl-r but not up arrow
+eval "$(atuin init zsh --disable-up-arrow)"
 
 ## autojump
 # https://formulae.brew.sh/formula/autojump#:~:text=oriented%20programming%20language-,Add%20the%20following%20line,profile.d%2Fautojump.sh,-If%20you%20use
@@ -159,6 +180,7 @@ n ()
 }
 
 ## zsh-autocomplete
+# zsh-autocomplete is initialized after zsh-vi-mode, allowing it to override the arrow key binding from zsh-vi-mode.
 # https://formulae.brew.sh/formula/zsh-autocomplete#:~:text=1.%20Add%20at,autocomplete.plugin.zsh
 source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
@@ -173,22 +195,3 @@ source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 ## zsh-you-should-use
 # https://formulae.brew.sh/formula/zsh-you-should-use#:~:text=To%20activate%20You,use.plugin.zsh
 source $HOMEBREW_PREFIX/share/zsh-you-should-use/you-should-use.plugin.zsh
-
-## zsh-vi-mode
-# zsh-vi-mode is initialized first to avoid conflicts with Atuin's key bindings
-# ZVM_INIT_MODE is set to "sourcing" to fix a lazy-loading behavior in zsh-vi-mode
-# that can cause unpredictable key binding behavior even when the load order is correctly set.
-ZVM_INIT_MODE=sourcing
-# https://formulae.brew.sh/formula/zsh-vi-mode#:~:text=To%20activate%20the,mode.plugin.zsh
-source $HOMEBREW_PREFIX/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
-
-## Atuin
-# Atuin is initialized after zsh-vi-mode, allowing it to override the Ctrl+r binding from zsh-vi-mode.
-# https://github.com/atuinsh/atuin/blob/a38fc6e8989d41772170165a8757f43e593c5e70/docs/docs/config/key-binding.md?plain=1#L11-L12
-# Bind ctrl-r but not up arrow
-eval "$(atuin init zsh --disable-up-arrow)"
-
-## tmux
-if [ -z "$TMUX" ]; then
-  tmux
-fi

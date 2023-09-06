@@ -11,6 +11,7 @@ brew "git-delta"
 # I use imagemagick to create and set a black wallpaper
 brew "imagemagick"
 brew "lazygit"
+brew "lsd"
 brew "neovim"
 brew "nnn"
 brew "ripgrep"
@@ -44,9 +45,13 @@ tap "8ta4/extension"
 # https://github.com/Homebrew/brew/blob/3b3300546b5a4e40b74f4ee33cf225cca280defe/docs/Taps.md?plain=1#L59-L62
 brew "8ta4/extension/extension"
 
+tap "homebrew/cask-versions"
+cask "homebrew/cask-versions/visual-studio-code-insiders"
+
+# https://github.com/lsd-rs/lsd/blob/58a8723cfa699d426bc3933c8aca91ad19ffee25/README.md?plain=1#L25
+tap "homebrew/cask-fonts"
+cask "homebrew/cask-fonts/font-fira-code-nerd-font"
+
 tap "koekeishiya/formulae"
 brew "koekeishiya/formulae/skhd"
 brew "koekeishiya/formulae/yabai"
-
-tap "homebrew/cask-versions"
-cask "homebrew/cask-versions/visual-studio-code-insiders"
