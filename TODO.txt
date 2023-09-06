@@ -1,6 +1,5 @@
 Use Alfred to open a file with Neovim.
 Configure yabai to focus on the previous app's window when the current app's window is closed, and if there isn't any, focus on its previous window.
-Install and set up lsd. Install a specific font and configure Alacritty accordingly.
 Install and set up forgit. The shell alias didn't work during the last attempt.
 Install and set up Broot. The Alt + Enter command didn't work during the last attempt.
 Activate the tmux plugin. Set ZSH_TMUX_AUTOSTART to true and ZSH_TMUX_AUTOCONNECT to false.
