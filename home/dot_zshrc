@@ -98,7 +98,6 @@ source $ZSH/oh-my-zsh.sh
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -115,6 +114,9 @@ alias cat='bat --paging=never'
 
 # https://github.com/jesseduffield/lazygit/blob/7402be98b66fd5819e856a2771a49a889b5ba837/README.md?plain=1#L367-L368
 alias lg='lazygit'
+
+# https://github.com/lsd-rs/lsd/blob/58a8723cfa699d426bc3933c8aca91ad19ffee25/README.md?plain=1#L374-L379
+alias ls='lsd'
 
 alias vi='nvim'
 alias vim='nvim'
