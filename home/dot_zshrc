@@ -134,6 +134,9 @@ eval "$(atuin init zsh --disable-up-arrow)"
 # https://formulae.brew.sh/formula/autojump#:~:text=oriented%20programming%20language-,Add%20the%20following%20line,profile.d%2Fautojump.sh,-If%20you%20use
 [ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && . $HOMEBREW_PREFIX/etc/profile.d/autojump.sh
 
+## Broot
+source /Users/a/.config/broot/launcher/bash/br
+
 ## direnv
 # https://direnv.net/docs/hook.html#zsh
 eval "$(direnv hook zsh)"

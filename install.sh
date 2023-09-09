@@ -59,6 +59,10 @@ fi
 git clone https://github.com/gpakosz/.tmux.git
 ln -s -f "$HOME/.tmux/.tmux.conf" "$HOME/.tmux.conf"
 
+## broot
+# https://github.com/Canop/broot/blob/33c2b636fa170611c7c5698ee9e2219dd2cfd89a/website/docs/install-br.md?plain=1#L21-L23
+broot --install
+
 ## extension
 # Change directory to cloned repo
 cd "$chezmoi_directory"
