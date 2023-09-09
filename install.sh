@@ -42,12 +42,6 @@ cd "$chezmoi_directory"
 
 brew bundle
 
-# https://github.com/koekeishiya/skhd#:~:text=koekeishiya%2Fformulae%2Fskhd-,skhd%20--start-service
-skhd --start-service
-
-# https://github.com/koekeishiya/homebrew-formulae/blob/73dfc99a762d9adcf89611535f5a72f7f724fae5/yabai.rb#L28-L29
-yabai --start-service
-
 ## .tmux
 # https://github.com/gpakosz/.tmux#:~:text=~%2F.config%2Ftmux-,Installing%20in%20~%3A,f%20.tmux%2F.tmux.conf,-%24%20cp%20.tmux%2F.tmux
 cd
@@ -58,6 +52,10 @@ if [ -d "$HOME/.tmux" ]; then
 fi
 git clone https://github.com/gpakosz/.tmux.git
 ln -s -f "$HOME/.tmux/.tmux.conf" "$HOME/.tmux.conf"
+
+## broot
+# https://github.com/Canop/broot/blob/33c2b636fa170611c7c5698ee9e2219dd2cfd89a/website/docs/install-br.md?plain=1#L21-L23
+broot --install
 
 ## extension
 # Change directory to cloned repo
@@ -77,6 +75,10 @@ fi
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
+# skhd
+# https://github.com/koekeishiya/homebrew-formulae/blob/fcbe03cedeb3f533b9d8d1a0c25177002c4a8e9e/skhd.rb#L19-L20
+skhd --start-service
+
 ## vimrc
 # Check if the .vim_runtime directory exists and remove it if it does
 if [ -d "$HOME/.vim_runtime" ]; then
@@ -89,6 +91,10 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 ## Visual Studio Code
 "$chezmoi_directory/code.sh"
+
+# yabai
+# https://github.com/koekeishiya/homebrew-formulae/blob/73dfc99a762d9adcf89611535f5a72f7f724fae5/yabai.rb#L28-L29
+yabai --start-service
 
 ## chezmoi
 chezmoi apply --force

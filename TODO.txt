@@ -1,7 +1,6 @@
 Make Neovim the default application to open text files. https://github.com/moretension/duti/issues/51
 Configure yabai to focus on the previous app's window when the current app's window is closed, and if there isn't any, focus on its previous window.
 Install and set up forgit. The shell alias didn't work during the last attempt.
-Install and set up Broot. The Alt + Enter command didn't work during the last attempt.
 Set up Alacritty so that pressing Option-Shift-Delete deletes the next word.
 Keep track of the last used working directory and automatically jumps into it for new shells, unless the starting directory is not `$HOME`. https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/fe4b5659863c388786986d70fa6d1bb66b00afb6/plugins/last-working-dir/README.md
 Add a script to disable Karabiner-Elements and skhd before starting a livestream.
