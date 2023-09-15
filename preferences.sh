@@ -7,7 +7,6 @@
 # Disable Spotlight hotkey
 /usr/libexec/PlistBuddy -c "Delete ':AppleSymbolicHotKeys:64:enabled'" -c "Add ':AppleSymbolicHotKeys:64:enabled' bool 'false'" "$HOME/Library/Preferences/com.apple.symbolichotkeys.plist"
 
-# Disable the "press and hold" feature on macOS
 # https://apple.stackexchange.com/a/46363
 defaults write -g ApplePressAndHoldEnabled -bool false
 
@@ -21,13 +20,12 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 
 /usr/libexec/PlistBuddy -c "Delete ':AppleInterfaceStyle'" -c "Add ':AppleInterfaceStyle' string 'Dark'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
 
-# Create a solid black image with the resolution of your screen
+# Create a solid black image
 convert -size 1x1 xc:black "$HOME/.black.png"
 
 # Set the wallpaper to the black image
 osascript -e "tell application \"System Events\" to tell every desktop to set picture to \"$HOME/.black.png\""
 
-# Change the temperature unit to Celsius
 /usr/libexec/PlistBuddy -c "Delete ':AppleTemperatureUnit'" -c "Add ':AppleTemperatureUnit' string 'Celsius'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
 
 # Change the measurement system to metric
