@@ -3,9 +3,9 @@
 # Get git diff --cached output
 diff=$(git diff --cached)
 
+
 # Concatenate the output with the string
-# https://github.com/RomanHotsiy/commitgpt/blob/96411d1852e09ead16d1aa4cff40acddb1c8966d/index.ts#L54-L59
-output="Suggest me a few good commit messages for my commit.\n\`\`\`\n$diff\n\`\`\`\n\nOutput results as a list, not more than 6 items."
+output="Given the following code diff, write five clear, concise, and informative commit messages that accurately describe the change.\n\nEach message should begin with a capital letter and a verb in the imperative mood.\n\nOutput format:\n\`\`\`\nCommit message 1\nCommit message 2\nCommit message 3\nCommit message 4\nCommit message 5\n\`\`\`\n\nCode diff:\n\`\`\`\n$diff\n\`\`\`"
 
 # Output results as a list, not more than 6 items
 echo -e "$output" | pbcopy
