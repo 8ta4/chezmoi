@@ -11,6 +11,7 @@ brew "gibo"
 brew "git-delta"
 # I use imagemagick to create and set a black wallpaper
 brew "imagemagick"
+brew "killport"
 brew "lazygit"
 brew "lsd"
 brew "neovim"
