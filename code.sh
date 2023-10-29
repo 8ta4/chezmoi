@@ -7,6 +7,7 @@ function install_extensions() {
     "GitHub.vscode-github-actions"
     "asvetliakov.vscode-neovim"
     "betterthantomorrow.calva"
+    "castwide.solargraph"
     "esbenp.prettier-vscode"
     "haskell.haskell"
     "nwolverson.ide-purescript"
