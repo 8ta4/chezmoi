@@ -7,6 +7,7 @@
   # https://devenv.sh/packages/
   packages = [
     pkgs.git
+    pkgs.rubyPackages.solargraph
   ];
 
   # https://devenv.sh/scripts/
