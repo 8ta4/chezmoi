@@ -48,6 +48,7 @@ tap '8ta4/extension'
 # to avoid any possible name conflicts now or in the future.
 # https://github.com/Homebrew/brew/blob/3b3300546b5a4e40b74f4ee33cf225cca280defe/docs/Taps.md?plain=1#L59-L62
 brew '8ta4/extension/extension'
+brew '8ta4/say/say'
 
 tap 'homebrew/cask-versions'
 cask 'homebrew/cask-versions/visual-studio-code-insiders'
