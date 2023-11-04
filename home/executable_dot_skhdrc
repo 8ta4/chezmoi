@@ -175,3 +175,6 @@ shift + alt - r : yabai --stop-service; yabai --start-service
 
 ## Alfred
 cmd - space : open -a "Alfred 5"
+
+## say
+shift - space : say
