@@ -1,3 +1,4 @@
+Set up Shottr
 Install Old Reddit Redirect to always use old Reddit layout
 Enable word wrap in Visual Studio Code for text files
 Make Neovim the default application to open text files. https://github.com/moretension/duti/issues/51
