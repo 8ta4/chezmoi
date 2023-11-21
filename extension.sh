@@ -15,6 +15,9 @@ extension install chrome oboonakemofpalcgghocfoadofidjkkk
 # Link to Text Fragment
 extension install chrome pbcodcjpfjdpcineamnnmbkkmkdpajjg
 
+# Old Reddit Redirect
+extension install chrome dneaehbmnbhcippjikoajpoabadpodje
+
 # Password Alert
 extension install chrome noondiphcddnnabmjcihcjfbhfklnnep
 

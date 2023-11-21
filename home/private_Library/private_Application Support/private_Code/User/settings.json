@@ -1,15 +1,18 @@
 {
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.accessibilitySupport": "off",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "solargraph.formatting": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[plaintext]": {
+    "editor.wordWrap": "on"
+  },
+  "editor.accessibilitySupport": "off",
+  "editor.minimap.enabled": false,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "editor.minimap.enabled": false,
-  "files.readonlyFromPermissions": true
+  "files.readonlyFromPermissions": true,
+  "solargraph.formatting": true
 }
