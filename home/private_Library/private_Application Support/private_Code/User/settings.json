@@ -14,5 +14,8 @@
     "asvetliakov.vscode-neovim": 1
   },
   "files.readonlyFromPermissions": true,
-  "solargraph.formatting": true
+  "solargraph.formatting": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
