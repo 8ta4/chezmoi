@@ -4,6 +4,10 @@
 /usr/libexec/PlistBuddy -c "Delete ':Preferences.General.SingleKey'" -c "Add ':Preferences.General.SingleKey' string '1'" "$HOME/Library/Preferences/com.foxit-software.Foxit PDF Reader.plist"
 
 ## macOS
+# Disable input source switching hotkeys
+/usr/libexec/PlistBuddy -c "Delete ':AppleSymbolicHotKeys:60:enabled'" -c "Add ':AppleSymbolicHotKeys:60:enabled' bool 'false'" "$HOME/Library/Preferences/com.apple.symbolichotkeys.plist"
+/usr/libexec/PlistBuddy -c "Delete ':AppleSymbolicHotKeys:61:enabled'" -c "Add ':AppleSymbolicHotKeys:61:enabled' bool 'false'" "$HOME/Library/Preferences/com.apple.symbolichotkeys.plist"
+
 # Disable Spotlight hotkey
 /usr/libexec/PlistBuddy -c "Delete ':AppleSymbolicHotKeys:64:enabled'" -c "Add ':AppleSymbolicHotKeys:64:enabled' bool 'false'" "$HOME/Library/Preferences/com.apple.symbolichotkeys.plist"
 
