@@ -2,6 +2,9 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -14,8 +17,5 @@
     "asvetliakov.vscode-neovim": 1
   },
   "files.readonlyFromPermissions": true,
-  "solargraph.formatting": true,
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "solargraph.formatting": true
 }
