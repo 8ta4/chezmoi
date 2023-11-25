@@ -19,7 +19,8 @@ You can actually watch the whole development process of this configuration on [8
 > How do I install this configuration on my macOS?
 
 1. First, make sure that Nix is installed on your system. If not, just follow the instructions on the [Nix website](https://nixos.org/download.html#nix-install-macos) to install it.
-2. Next, run this command:
+
+1. Next, run this command:
    ```
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/8ta4/chezmoi/main/install.sh)"
    ```
