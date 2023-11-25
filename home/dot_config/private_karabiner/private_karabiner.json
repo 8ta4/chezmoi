@@ -220,6 +220,23 @@
             ]
           },
           {
+            "description": "fn does nothing when pressed alone",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "fn"
+                },
+                "to": [
+                  {
+                    "key_code": "fn",
+                    "lazy": true
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "vim-preview: map jk (down/up)",
             "manipulators": [
               {
@@ -418,23 +435,6 @@
                   }
                 ],
                 "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "fn does nothing when pressed alone",
-            "manipulators": [
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "fn"
-                },
-                "to": [
-                  {
-                    "key_code": "fn",
-                    "lazy": true
-                  }
-                ]
               }
             ]
           }
