@@ -420,6 +420,23 @@
                 "type": "basic"
               }
             ]
+          },
+          {
+            "description": "fn does nothing when pressed alone",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "fn"
+                },
+                "to": [
+                  {
+                    "key_code": "fn",
+                    "lazy": true
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
