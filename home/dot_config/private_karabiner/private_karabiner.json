@@ -220,6 +220,23 @@
             ]
           },
           {
+            "description": "fn does nothing when pressed alone",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "fn"
+                },
+                "to": [
+                  {
+                    "key_code": "fn",
+                    "lazy": true
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "vim-preview: map jk (down/up)",
             "manipulators": [
               {
@@ -551,18 +568,7 @@
         "delay_milliseconds_before_open_device": 1000
       },
       "selected": true,
-      "simple_modifications": [
-        {
-          "from": {
-            "key_code": "fn"
-          },
-          "to": [
-            {
-              "key_code": "vk_none"
-            }
-          ]
-        }
-      ],
+      "simple_modifications": [],
       "virtual_hid_keyboard": {
         "country_code": 0,
         "indicate_sticky_modifier_keys_state": true,
