@@ -38,3 +38,7 @@ osascript -e "tell application \"System Events\" to tell every desktop to set pi
 # Change the measurement system to metric
 /usr/libexec/PlistBuddy -c "Delete ':AppleMeasurementUnits'" -c "Add ':AppleMeasurementUnits' string 'Centimeters'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
 /usr/libexec/PlistBuddy -c "Delete ':AppleMetricUnits'" -c "Add ':AppleMetricUnits' bool 'true'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
+
+## Shottr
+# After Area Crop, show Editor
+/usr/libexec/PlistBuddy -c "Delete ':areaCaptureMode'" -c "Add ':areaCaptureMode' string 'editor'" "$HOME/Library/Containers/cc.ffitch.shottr/Data/Library/Preferences/cc.ffitch.shottr.plist"
