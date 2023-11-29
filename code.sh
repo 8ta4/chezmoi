@@ -13,6 +13,7 @@ function install_extensions() {
     "nwolverson.ide-purescript"
     "redhat.vscode-xml"
     "redhat.vscode-yaml"
+    "streetsidesoftware.code-spell-checker"
   )
   for extension in "${extensions[@]}"; do
     "$editor" --force --install-extension "$extension"
