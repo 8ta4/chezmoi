@@ -5,6 +5,8 @@ brew 'broot'
 brew 'chezmoi'
 brew 'direnv'
 brew 'fd'
+
+# ffmpeg is used to specify video segments when downloading videos with yt-dlp
 brew 'ffmpeg'
 brew 'fzf'
 brew 'gh'
