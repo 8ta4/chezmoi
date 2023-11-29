@@ -3,7 +3,6 @@
 function install_extensions() {
   editor=$1
   extensions=(
-    "GitHub.copilot-nightly"
     "GitHub.vscode-github-actions"
     "asvetliakov.vscode-neovim"
     "betterthantomorrow.calva"
