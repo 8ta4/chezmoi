@@ -1,23 +1,12 @@
 #!/bin/bash
 
-function install_extensions() {
-  editor=$1
-  extensions=(
-    "GitHub.vscode-github-actions"
-    "asvetliakov.vscode-neovim"
-    "betterthantomorrow.calva"
-    "castwide.solargraph"
-    "esbenp.prettier-vscode"
-    "haskell.haskell"
-    "nwolverson.ide-purescript"
-    "redhat.vscode-xml"
-    "redhat.vscode-yaml"
-    "streetsidesoftware.code-spell-checker"
-  )
-  for extension in "${extensions[@]}"; do
-    "$editor" --force --install-extension "$extension"
-  done
-}
-
-install_extensions "code"
-install_extensions "code-insiders"
+code --force --install-extension GitHub.vscode-github-actions
+code --force --install-extension asvetliakov.vscode-neovim
+code --force --install-extension betterthantomorrow.calva
+code --force --install-extension castwide.solargraph
+code --force --install-extension esbenp.prettier-vscode
+code --force --install-extension haskell.haskell
+code --force --install-extension nwolverson.ide-purescript
+code --force --install-extension redhat.vscode-xml
+code --force --install-extension redhat.vscode-yaml
+code --force --install-extension streetsidesoftware.code-spell-checker
