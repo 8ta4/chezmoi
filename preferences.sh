@@ -22,6 +22,9 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 
 /usr/libexec/PlistBuddy -c "Delete ':autohide'" -c "Add ':autohide' bool 'true'" "$HOME/Library/Preferences/com.apple.dock.plist"
 
+# Set the autohide-delay to a very large number to prevent the Dock from appearing
+defaults write com.apple.dock autohide-delay -float 100000
+
 /usr/libexec/PlistBuddy -c "Delete ':AppleInterfaceStyle'" -c "Add ':AppleInterfaceStyle' string 'Dark'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
 
 # Create a solid black image
