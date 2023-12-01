@@ -6,6 +6,9 @@ extension install chrome mpbjkejclgfgadiemmefgebjfooflfhl
 # Dark Reader
 extension install chrome eimadpbcbfnmbkopoojfekhnkhdbieeh extension/eimadpbcbfnmbkopoojfekhnkhdbieeh.js
 
+# Grammarly: Grammar Checker and AI Writing App
+extension install chrome kbfnbcaeplbcioakkpcpgfkobkghlhen
+
 # I still don't care about cookies
 extension install chrome edibdbjcniadpccecjdfdjjppcpchdlm
 
