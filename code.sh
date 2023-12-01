@@ -10,3 +10,4 @@ code --force --install-extension nwolverson.ide-purescript
 code --force --install-extension redhat.vscode-xml
 code --force --install-extension redhat.vscode-yaml
 code --force --install-extension streetsidesoftware.code-spell-checker
+code --force --install-extension vscode-icons-team.vscode-icons
