@@ -17,5 +17,6 @@
     "asvetliakov.vscode-neovim": 1
   },
   "files.readonlyFromPermissions": true,
-  "solargraph.formatting": true
+  "solargraph.formatting": true,
+  "workbench.iconTheme": "vscode-icons"
 }

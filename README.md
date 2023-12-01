@@ -12,7 +12,7 @@ No, I have CDO. It's like OCD, but with the letters in alphabetical order, like 
 
 > Where can I learn more about how this configuration is created and updated?
 
-You can actually watch the whole development process of this configuration on [8ta4's YouTube channel](https://www.youtube.com/@8ta4/streams).
+You can watch the whole development process of this configuration on [8ta4's YouTube channel](https://www.youtube.com/@8ta4/streams).
 
 ## Installation
 
