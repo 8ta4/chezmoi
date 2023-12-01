@@ -1,7 +1,7 @@
 Make Neovim the default application to open text files. https://github.com/moretension/duti/issues/51
 Install and set up forgit. The shell alias didn't work during the last attempt.
 Set up Alacritty so that pressing Option-Shift-Delete deletes the next word.
-Keep track of the last used working directory and automatically jumps into it for new shells, unless the starting directory is not `$HOME`. https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/fe4b5659863c388786986d70fa6d1bb66b00afb6/plugins/last-working-dir/README.md
+Keep track of the last used working directory and automatically jump into it for new shells, unless the starting directory is not `$HOME`. https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/fe4b5659863c388786986d70fa6d1bb66b00afb6/plugins/last-working-dir/README.md
 Set Shottr to autostart without opening the window. The previous attempt with LaunchAgents resulted in an opened window.
 Add a script to disable Karabiner-Elements and skhd before starting a livestream.
 Suppress the message printed by git cherry-pick about setting user.name and user.email by setting them explicitly. # https://stackoverflow.com/questions/10946893/git-name-and-email-address-configuration
