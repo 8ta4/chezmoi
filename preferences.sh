@@ -35,6 +35,12 @@ osascript -e "tell application \"System Events\" to tell every desktop to set pi
 
 /usr/libexec/PlistBuddy -c "Delete ':AppleTemperatureUnit'" -c "Add ':AppleTemperatureUnit' string 'Celsius'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
 
+# Set Finder to show all file extensions on macOS
+/usr/libexec/PlistBuddy -c "Delete ':AppleShowAllExtensions'" -c "Add ':AppleShowAllExtensions' bool 'true'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
+
+# Modify Finder preferences to always show the path bar
+/usr/libexec/PlistBuddy -c "Delete ':ShowPathbar'" -c "Add ':ShowPathbar' bool 'true'" "$HOME/Library/Preferences/com.apple.finder.plist"
+
 # Change the measurement system to metric
 /usr/libexec/PlistBuddy -c "Delete ':AppleMeasurementUnits'" -c "Add ':AppleMeasurementUnits' string 'Centimeters'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
 /usr/libexec/PlistBuddy -c "Delete ':AppleMetricUnits'" -c "Add ':AppleMetricUnits' bool 'true'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
