@@ -1,8 +1,10 @@
 #!/bin/bash
 
 ## Foxit PDF Reader
-/usr/libexec/PlistBuddy -c "Delete ':Preferences.General.SingleKey'" -c "Add ':Preferences.General.SingleKey' string '1'" "$HOME/Library/Preferences/com.foxit-software.Foxit PDF Reader.plist"
+# https://help.foxit.com/manuals/pdf-reader/foxit-reader-for-mac/en-us/12.1.0/Keyboard_Shortcuts_and_Single_key_Accelerators.html#Singel-key_Accelerators:~:text=to%20enable%20single-key%20accelerators%2C%20please%20choose%20file%20in%20the%20ribbon%20(or%20foxit%20pdf%20reader%20in%20the%20menu%20bar)%20%3E%20preferences%20%3E%20general%2C%20and%20check%20use%20single-key%20accelerators%20to%20access%20tools%20option%20in%20the%20basic%20tools%20group.
+/usr/libexec/PlistBuddy -c "Delete ':Preferences.General.SingleKey'" -c "Add ':Preferences.General.SingleKey' string '1'" "$HOME/Library/Preferences/com.foxit-software.Foxit.PDF.Reader.plist"
 
+# https://help.foxit.com/manuals/pdf-reader/foxit-reader-for-mac/en-us/12.1.0/View_PDF_Files.html#View_PDF_Files_Adjust_PDF_Views:~:text=custom%20margin%3A%20set%20the%20margins%20between%20pages%20with%20facing%20or%20continuous%20facing%20page%20layout.
 /usr/libexec/PlistBuddy -c "Delete ':Preferences.Display.bCustomMargin'" -c "Add ':Preferences.Display.bCustomMargin' string '1'" "$HOME/Library/Preferences/com.foxit-software.Foxit.PDF.Reader.plist"
 /usr/libexec/PlistBuddy -c "Delete ':Preferences.Display.nMarginSize'" -c "Add ':Preferences.Display.nMarginSize' string '1'" "$HOME/Library/Preferences/com.foxit-software.Foxit.PDF.Reader.plist"
 
