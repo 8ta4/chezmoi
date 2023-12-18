@@ -8,3 +8,7 @@ set clipboard^=unnamed,unnamedplus
 
 " https://github.com/neovim/neovim/issues/5683#issuecomment-886417209
 lang en_US.UTF-8
+
+" https://github.com/LunarVim/LunarVim/issues/1857#issuecomment-1013641928
+nnoremap <M-j> j
+nnoremap <M-k> k
