@@ -52,7 +52,7 @@ tap '8ta4/extension'
 brew '8ta4/extension/extension'
 
 tap '8ta4/say'
-brew '8ta4/say/say'
+cask '8ta4/say/say'
 
 # https://github.com/lsd-rs/lsd/blob/58a8723cfa699d426bc3933c8aca91ad19ffee25/README.md?plain=1#L25
 tap 'homebrew/cask-fonts'
