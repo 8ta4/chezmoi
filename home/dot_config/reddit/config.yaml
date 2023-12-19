@@ -186,4 +186,31 @@ https://www.reddit.com/r/speechrecognition/comments/16b6kd4/247_speechtotext_tra
     Offline Use: An offline mode would be a nice bonus. But since I'll mostly be using this at home, it's not a deal-breaker.
 
     I know there are some privacy concerns with this kind of tool. But since it'll be in my home, I'm not too worried about invading anyone else's privacy.
-  threshold: 0.48704591393470765
+  threshold: 0.5744444131851197
+https://old.reddit.com/r/speechrecognition/comments/186bk2q/looking_for_the_ideal_microphone_for_247/:
+  text: |
+    Looking for the Ideal Microphone for 24/7 Transcription (self.speechrecognition)
+
+    submitted 20 days ago by 8ta4
+
+    A couple of months ago, I embarked on a journey to find the perfect 24/7 speech-to-text transcription tool. It all started with a simple post on this subreddit. Now, I've got a question I'm hoping you can help with: What's the ideal microphone for this task? I'm all ears for feedback!
+
+    The biggest hurdle has been finding the right microphone. I have two main requirements: it needs to be comfortable enough to wear all day and precise enough to isolate and transcribe my voice.
+
+    u/Economics-Regular suggested an ear bone microphone, which sounds fascinating. But it seems that most ear bone mics are designed for military use, and they require a radio system to connect. I'm not sure if there is a consumer-friendly option that offers the same convenience as a standard headset, such as Bluetooth connectivity to a computer or phone.
+
+    I've put more than a dozen microphones to the test, and the Poly Voyager 5200 came out on top. However, it's not without its flaws:
+
+    Insufficient Noise Cancellation: It still picks up some background noise, especially loud announcements.
+    Excessive Noise Cancellation: It sometimes cancels out my voice when I'm in a small enclosed space.
+    Connectivity: There are occasional connectivity issues.
+    Battery Life: It only lasts for 7 hours.
+    Charging Port: It uses an old Micro USB instead of USB-C.
+    Aside from the microphone hunt, I'm also exploring speaker verification. u/rdesh26 recommended the pre-trained ECAPA-TDNN model from SpeechBrain, which looks promising. However, this isn't a replacement for a high-quality microphone.
+
+    I've also created a proof of concept. I have two branches:
+
+    Main Branch: You can try this software, but it's very buggy.
+    Develop Branch: This branch is my next rewrite and it's not working yet. Your feedback on this branch will help me improve this software.
+    My hope is that by sharing this early-stage concept, it might spark collaborative improvements. Whether it's refining this tool or exploring a completely new approach, I'd love to team up if you're working on something similar or have insights to share.
+  threshold: 0.4124291241168977
