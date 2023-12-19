@@ -376,6 +376,8 @@ tmux_conf_copy_to_os_clipboard=false
 # move status line to top
 #set -g status-position top
 
+# https://superuser.com/a/265324
+set -g status off
 
 # -- tpm -----------------------------------------------------------------------
 
