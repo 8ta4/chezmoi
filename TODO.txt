@@ -1,3 +1,4 @@
+Change the bundle identifier of Maccy from `com.maccy` to `app.maccy`.
 Make Neovim the default application to open text files. https://github.com/moretension/duti/issues/51
 Install and set up forgit. The shell alias didn't work during the last attempt.
 Set up Alacritty so that pressing Option-Shift-Delete deletes the next word.
