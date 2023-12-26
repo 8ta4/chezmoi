@@ -175,3 +175,7 @@ shift + alt - r : yabai --stop-service; yabai --start-service
 
 ## Alfred
 cmd - space : open -a "Alfred 5"
+
+.blacklist [
+    "utm"
+]
