@@ -10,5 +10,5 @@ set clipboard^=unnamed,unnamedplus
 lang en_US.UTF-8
 
 " https://github.com/LunarVim/LunarVim/issues/1857#issuecomment-1013641928
-nnoremap <M-j> j
-nnoremap <M-k> k
+noremap <M-j> j
+noremap <M-k> k
