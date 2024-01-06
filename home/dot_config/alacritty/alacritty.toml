@@ -1,0 +1,25 @@
+# https://github.com/lsd-rs/lsd/blob/58a8723cfa699d426bc3933c8aca91ad19ffee25/README.md?plain=1#L25
+[font.normal]
+family = "FiraCode Nerd Font"
+
+# https://github.com/alacritty/alacritty/issues/474#issuecomment-338803299
+[[keyboard.bindings]]
+chars = "\u001BOH"
+key = "Left"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001BOF"
+key = "Right"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0015"
+key = "Back"
+mods = "Command"
+
+# https://github.com/Canop/broot/blob/33c2b636fa170611c7c5698ee9e2219dd2cfd89a/website/docs/common-problems.md?plain=1#L49-L50
+[[keyboard.bindings]]
+chars = "\u001B\r"
+key = "Return"
+mods = "Alt"
