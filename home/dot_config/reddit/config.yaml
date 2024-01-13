@@ -211,3 +211,48 @@ https://old.reddit.com/r/speechrecognition/comments/186bk2q/looking_for_the_idea
     Develop Branch: This branch is my next rewrite and it's not working yet. Your feedback on this branch will help me improve this software.
     My hope is that by sharing this early-stage concept, it might spark collaborative improvements. Whether it's refining this tool or exploring a completely new approach, I'd love to team up if you're working on something similar or have insights to share.
   threshold: 0.5239646434783937
+https://old.reddit.com/r/HeadphoneAdvice/comments/18pfkgu/looking_for_a_headset_that_can_handle_247/:
+  text: |
+    Looking for a Headset that Can Handle 24/7 Transcription: OpenComm 2, You're Almost There
+    I've been working on a project to transcribe everything I say, all day, every day. You can check out the project goals.
+
+    For that, I need the perfect headset: comfortable enough for all-day wear and capable of capturing my voice with crystal clear quality. You can see the headset requirements for more details.
+
+    Do you know any good headsets that fit the bill?
+
+    Just to give you an idea, I'm not shy about shelling out a grand if it's the right gear. At first, I spent a lot on a fancy Shure headset. My partner said, "I'm sure that was a sound investment." I said, "Sure, if only it could cancel all the noise you make!"
+
+    Currently, I'm leaning toward Shokz's OpenComm 2. But it's not quite there yet. Here's why:
+
+    Background Noise: Its mic struggles with background noise, especially loud announcements. The Poly Voyager 5200 did better. I tested them with some noise at arm's length. Voyager barely picked it up, but OpenComm 2 did.
+    Voice Chat: Discord voice chat doesn't work at all.
+    Multiple Device Connectivity: The ability to connect multiple devices and transmit audio signals simultaneously would be a game-changer. Sadly, OpenComm 2 doesn't support this.
+    Reconnection: It doesn't automatically reconnect to my Mac when it comes back into range.
+    Wind Noise: The Poly Voyager 5200's mic handles wind noise better. I tested them by holding them near an air conditioner. The Voyager didn't pick up much wind noise, but the OpenComm 2 did, sometimes as loud as my voice. I don't want to use a windscreen, because that's too much hassle.
+    Muting: The mic doesn't auto-mute when I move the boom up.
+    Comfort: It's mostly comfortable, but it starts to bother me after wearing it for a while.
+    Charging: "The headset will automatically shut down when charging." This feature seems to be non-configurable.
+    Charging Cable: I get the proprietary charging port for waterproofing, but using outdated USB-A instead of USB-C is a bummer.
+    Audio Quality: I've noticed the sound starts to crackle even at medium volume.
+    Playback Button: Ideally, double-clicking should skip to the next track, and triple-clicking should go back one. But this doesn't work with YouTube or Dropbox.
+    Battery Display: The headset's battery level is visible when it's connected to my Mac via Bluetooth, but not when using a USB-C dongle. Plus, it's impossible to check my iPhone's battery level. Ideally, both my Mac and iPhone would display the headset's battery level consistently, just like they do for their batteries.
+    So, I'm still looking for a better headset. Any leads would be appreciated!
+  threshold: 0.49156641960144044
+https://old.reddit.com/r/slp/comments/193p53j/looking_for_a_tool_for_filler_word_analysis/:
+  text: |
+    Looking for a Tool for Filler Word Analysis
+    I'm working on a personal project to improve my spoken language skills. I've created an open-source tool that transcribes everything I say 24/7. My transcript revealed that "uh" and "huh" are my most frequent fillers. It was an "uh-huh" moment!
+
+    My goal now is to reduce the filler words I use.
+
+    I thought of making another tool to count and analyze filler words.
+
+    Does anyone know if there is something like this already, or a better way that experts in speech-language pathology would recommend? If it exists, I could just use it and save some time.
+
+    Filler Word Analysis: The tool should tally up common filler words and provide their frequency.
+    Baseline Comparison: It should compare my filler word usage with standard linguistic data (like Google's n-gram dataset) to determine if I'm above or below the norm.
+    Sorting: The tool should rank filler words based on how much their frequency surpasses the baseline.
+    Local Operation: The tool should operate locally to ensure privacy, as the transcripts are raw and unfiltered.
+    User Interface: I like a command line interface that takes a text file as input and can also read from standard input. But hey, a graphical user interface could work too.
+    Any suggestion is appreciated.
+  threshold: 0.12189308553934098
