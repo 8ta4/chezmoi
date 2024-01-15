@@ -255,4 +255,4 @@ https://old.reddit.com/r/slp/comments/193p53j/looking_for_a_tool_for_filler_word
     Local Operation: The tool should operate locally to ensure privacy, as the transcripts are raw and unfiltered.
     User Interface: I like a command line interface that takes a text file as input and can also read from standard input. But hey, a graphical user interface could work too.
     Any suggestion is appreciated.
-  threshold: 0.3833194375038148
+  threshold: 0.5055704116821290
