@@ -126,20 +126,6 @@ https://www.reddit.com/r/chrome_extensions/comments/15074p2/how_do_you_install_c
 
     To detect changes in an extension, it uses Playwright to get the extension ID with the chrome.management.getAll method. Then, it uses Playwright to listen for changes with the chrome.storage.sync.addListener method and other methods as needed, generating JavaScript code based on the changes. Finally, it uses WebSocket to send the generated code to a logger.
   threshold: 0.6333256959915162
-https://www.reddit.com/r/socialmedia/comments/15kbryt/the_best_social_media_content_discovery_tool/:
-  text: |
-    The Best Social Media content discovery tool
-    Professional Discussion
-    Hi,
-
-    I'm looking for a tool to use that helps us find relevant content from others on social media platforms in order to interact with them. An example usecase for us is;
-
-    We search for the hashtag #procurement and find people who are posting about this on Twitter. And from the app we can respond directly via our connected account.
-
-    We've been trying out Tweethunter briefly but it's only Twitter and it's not doing amazing.
-
-    Is anybody are of such a tool? Thank you!
-  threshold: 0.5693426132202149
 https://www.reddit.com/r/speechrecognition/comments/16b6kd4/247_speechtotext_transcription_tool_wanted/:
   text: |
     24/7 Speech-to-Text Transcription Tool Wanted
@@ -210,7 +196,7 @@ https://old.reddit.com/r/speechrecognition/comments/186bk2q/looking_for_the_idea
     Main Branch: You can try this software, but it's very buggy.
     Develop Branch: This branch is my next rewrite and it's not working yet. Your feedback on this branch will help me improve this software.
     My hope is that by sharing this early-stage concept, it might spark collaborative improvements. Whether it's refining this tool or exploring a completely new approach, I'd love to team up if you're working on something similar or have insights to share.
-  threshold: 0.5502476692199708
+  threshold: 0.5510760545730592
 https://old.reddit.com/r/HeadphoneAdvice/comments/18pfkgu/looking_for_a_headset_that_can_handle_247/:
   text: |
     Looking for a Headset that Can Handle 24/7 Transcription: OpenComm 2, You're Almost There
@@ -237,7 +223,7 @@ https://old.reddit.com/r/HeadphoneAdvice/comments/18pfkgu/looking_for_a_headset_
     Playback Button: Ideally, double-clicking should skip to the next track, and triple-clicking should go back one. But this doesn't work with YouTube or Dropbox.
     Battery Display: The headset's battery level is visible when it's connected to my Mac via Bluetooth, but not when using a USB-C dongle. Plus, it's impossible to check my iPhone's battery level. Ideally, both my Mac and iPhone would display the headset's battery level consistently, just like they do for their batteries.
     So, I'm still looking for a better headset. Any leads would be appreciated!
-  threshold: 0.6346771121025086
+  threshold: 0.6778861284255982
 https://old.reddit.com/r/slp/comments/193p53j/looking_for_a_tool_for_filler_word_analysis/:
   text: |
     Looking for a Tool for Filler Word Analysis
