@@ -172,7 +172,7 @@ https://www.reddit.com/r/speechrecognition/comments/16b6kd4/247_speechtotext_tra
     Offline Use: An offline mode would be a nice bonus. But since I'll mostly be using this at home, it's not a deal-breaker.
 
     I know there are some privacy concerns with this kind of tool. But since it'll be in my home, I'm not too worried about invading anyone else's privacy.
-  threshold: 0.5744444131851197
+  threshold: 0.6061338186264039
 https://old.reddit.com/r/speechrecognition/comments/186bk2q/looking_for_the_ideal_microphone_for_247/:
   text: |
     Looking for the Ideal Microphone for 24/7 Transcription
@@ -196,7 +196,7 @@ https://old.reddit.com/r/speechrecognition/comments/186bk2q/looking_for_the_idea
     Main Branch: You can try this software, but it's very buggy.
     Develop Branch: This branch is my next rewrite and it's not working yet. Your feedback on this branch will help me improve this software.
     My hope is that by sharing this early-stage concept, it might spark collaborative improvements. Whether it's refining this tool or exploring a completely new approach, I'd love to team up if you're working on something similar or have insights to share.
-  threshold: 0.5510760545730592
+  threshold: 0.5671316385269166
 https://old.reddit.com/r/HeadphoneAdvice/comments/18pfkgu/looking_for_a_headset_that_can_handle_247/:
   text: |
     Looking for a Headset that Can Handle 24/7 Transcription: OpenComm 2, You're Almost There
