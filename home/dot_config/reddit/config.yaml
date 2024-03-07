@@ -125,7 +125,7 @@ https://www.reddit.com/r/chrome_extensions/comments/15074p2/how_do_you_install_c
     To configure an extension, it uses Playwright to set the configuration values with the chrome.storage.sync.set method and other methods as needed.
 
     To detect changes in an extension, it uses Playwright to get the extension ID with the chrome.management.getAll method. Then, it uses Playwright to listen for changes with the chrome.storage.sync.addListener method and other methods as needed, generating JavaScript code based on the changes. Finally, it uses WebSocket to send the generated code to a logger.
-  threshold: 0.6333256959915162
+  threshold: 0.6378690600395204
 https://www.reddit.com/r/speechrecognition/comments/16b6kd4/247_speechtotext_transcription_tool_wanted/:
   text: |
     24/7 Speech-to-Text Transcription Tool Wanted
