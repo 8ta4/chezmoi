@@ -332,4 +332,4 @@ https://old.reddit.com/r/neovim/comments/1bn184l/looking_for_a_todo_app_that_wor
     Firenvim: Textarea doesn't expand as I type, so I have to scroll a lot. Sometimes it messes up the HTML elements. And it keeps the focus after editing, which breaks Vimium navigation.
     GhostText: It requires me to manually switch to Neovim every time I select a textarea.
     If you know of a tool that fits the bill or comes close, I'd love to hear about it! 🙏
-  threshold: 0.3424636721611024
+  threshold: 0.34816664457321168
