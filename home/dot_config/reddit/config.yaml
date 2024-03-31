@@ -333,3 +333,12 @@ https://old.reddit.com/r/neovim/comments/1bn184l/looking_for_a_todo_app_that_wor
     GhostText: It requires me to manually switch to Neovim every time I select a textarea.
     If you know of a tool that fits the bill or comes close, I'd love to hear about it! 🙏
   threshold: 0.44949567317962647
+https://old.reddit.com/r/AskProgramming/comments/1btmazw/looking_for_alternatives_to_deepgrams_whisper/:
+  text: |
+    Looking for Alternatives to Deepgram's Whisper Large for Transcription
+    Are there any transcription APIs that can quickly transcribe audio recordings in multiple languages, without the reliability issues of Deepgram's Whisper Large model?
+
+    Requirements: - Language Support: Strong in multiple languages at least on par with Deepgram's Whisper Large model. - Speed and Reliability: Looking to transcribe 60-second audio recordings within a second or slightly more. - Affordability: Competitively priced with Deepgram's $0.0048 per minute.
+
+    Considered Options: - Self-Hosted Whisper: I want to avoid setting up something like Whisper by myself. - Deepgram's Whisper Large: The varying speeds of Deepgram's Whisper Large, sometimes taking over 10 seconds for just a few seconds of audio, are problematic. I'm developing this app to be an always-on transcription tool. But with these delays, it's more like it's always on a coffee break. - Deepgram's Nova-2 Model: I've been using Deepgram's Nova-2 model for transcribing English audio, and it's been great because of how fast and accurate it is. But now, I need something that can handle more languages.
+  threshold: 0.17987939715385438
