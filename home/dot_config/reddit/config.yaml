@@ -342,3 +342,41 @@ https://old.reddit.com/r/AskProgramming/comments/1btmazw/looking_for_alternative
 
     Considered Options: - Self-Hosted Whisper: I want to avoid setting up something like Whisper by myself. - Deepgram's Whisper Large: The varying speeds of Deepgram's Whisper Large, sometimes taking over 10 seconds for just a few seconds of audio, are problematic. I'm developing this app to be an always-on transcription tool. But with these delays, it's more like it's always on a coffee break. - Deepgram's Nova-2 Model: I've been using Deepgram's Nova-2 model for transcribing English audio, and it's been great because of how fast and accurate it is. But now, I need something that can handle more languages.
   threshold: 0.4638389050960542
+https://old.reddit.com/r/PromptEngineering/comments/1c3e85q/seeking_an_uncensored_capable_language_model_for/:
+  text: |
+    Seeking an Uncensored, Capable Language Model for Joke Generation
+
+    Does anyone know of a language model that is uncensored but also has strong text-generation capabilities?
+
+    I'm working on this project to automatically generate jokes using language models.
+
+    The idea is to generate edgy punchlines, then for each punchline, generate a corresponding setup to misdirect the audience. After that, I'll filter out the duds by comparing the full jokes to a professional reference joke.
+
+    Here's an example of the kind of joke I'm using as a reference, from comedian Jimmy Carr:
+
+    Setup: "I would think about adoption. I don't have kids. But if I had kids,"
+
+    Punchline: "I think I would have them adopted."
+
+    My process looks like this:
+
+    Come up with an edgy punchline related to a given topic (currently using Dolphin 2.6 Mixtral 8x7b)
+
+    Create an innocent-sounding setup to misdirect the audience (using GPT-4 Turbo)
+
+    Compare the complete joke to a professional reference joke to see how it stacks up (using GPT-3.5 Turbo)
+
+    For more details on the goals of this project, check out my project documentation.
+
+    Now, step number one is where I'm running into the most trouble. To generate a really edgy punchline, you need an uncensored model. And that's where most models fall short.
+
+    Dolphin 2.6 Mixtral 8x7b is sweet because it's uncensored and can generate the kind of envelope-pushing humor I need for the punchlines. But in terms of raw language generation ability, it falls a bit short. The punchlines it generates often lack edge or coherence.
+
+    If there are too many jokes to evaluate, it starts getting pricey. And the evaluation step isn't foolproof either - there could be some false positives that slip through. So I need to keep the number of punchlines reasonable.
+
+    On the other hand, Claude Opus can generate some seriously high-quality text. But it's censored, even more than GPT-4. So it struggles with the darker topics that a lot of jokes revolve around.
+
+    What I'm after is the best of both worlds - the no-holds-barred style of Dolphin Mixtral with the general capability of Claude Opus.
+
+    If anyone has tips, I'm all ears!
+  threshold: 0.3268404006958009
