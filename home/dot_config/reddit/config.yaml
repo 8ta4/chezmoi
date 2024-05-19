@@ -479,7 +479,7 @@ https://old.reddit.com/r/languagelearning/comments/1cd0b5c/seeking_a_pronunciati
     I'm using English as an example, but this could work for any language.
 
     If you have any suggestions, let me know!
-  threshold: 0.4283791780471803
+  threshold: 0.4380028247833253
 https://old.reddit.com/r/LanguageTechnology/comments/1cd8p3u/found_a_way_to_keep_transcripts_going_247/:
   text: |
     Found a Way to Keep Transcripts Going 24/7
@@ -537,4 +537,4 @@ https://old.reddit.com/r/LanguageTechnology/comments/1cod8e1/can_llms_consistent
     I'd value any alternative approaches or tweaks to my strategies. All suggestions are welcome!
 
     The content above was something I posted on r/Standup first, but it got taken down. I'm pretty sure it's because they didn't like the whole machine learning and comedy angle, which can be touchy for folks who do comedy the traditional way. So, I figured I'd bring it over here instead, where folks might dig into the tech side of things more and give me some solid feedback on how to make these machine-generated jokes sharper.
-  threshold: 0.30740270018577577
+  threshold: 0.36194664239883424
