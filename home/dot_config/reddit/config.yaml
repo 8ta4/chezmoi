@@ -538,3 +538,70 @@ https://old.reddit.com/r/LanguageTechnology/comments/1cod8e1/can_llms_consistent
 
     The content above was something I posted on r/Standup first, but it got taken down. I'm pretty sure it's because they didn't like the whole machine learning and comedy angle, which can be touchy for folks who do comedy the traditional way. So, I figured I'd bring it over here instead, where folks might dig into the tech side of things more and give me some solid feedback on how to make these machine-generated jokes sharper.
   threshold: 0.36228203773498536
+https://old.reddit.com/r/AskProgramming/comments/1cxo5ch/seeking_speechtotext_api_recommendations/:
+  text: |
+    Seeking Speech-to-Text API Recommendations: Word-Level Probabilities, High Accuracy, Low Latency
+    Are there any speech-to-text APIs that can give word-level probabilities, match or beat Deepgram in accuracy, and have low latency for short audio?
+
+    About a month ago, I shared my experience with Deepgram on this subreddit, and the response was incredible. Recently, u/111ewe111 asked me what specific issues I was having with Deepgram. So, I thought I'd make this new post to answer those questions and the feedback I got since my needs have changed.
+
+    Here's what I need from a speech-to-text API, in order of importance:
+
+    Word-level probability: I need a probability for each word in the transcript.
+
+    Accuracy: The API must be accurate, especially for common words in clear audio, finalizing the transcription only after the user finishes a sentence to make sure full context is considered.
+
+    Latency: The API needs to be fast, ideally under 0.25 seconds per call for a single sentence.
+
+    Cost: It should be affordable, aiming for under $1.215 per hour.
+
+    Cross-origin resource sharing (CORS): This isn't a must-have, but it would be nice if the API supports CORS for direct use from the browser.
+
+    Comparing speech-to-text API accuracy has been fruitful, like comparing apples to oranges, as many providers claim their solution is the best. This self-serving marketing makes it hard to determine the true accuracy of each API.
+
+    I checked out a bunch of APIs that Deepgram mentioned in their blog post "Best Speech-to-Text APIs in 2024." Only the Nova-2 model from Deepgram and the Whisper API from OpenAI were able to return the API call within one second. But the Whisper API that OpenAI provides doesn't give you word-level probabilities. That's a dealbreaker.
+
+    Deepgram claims to be the most accurate and fastest API, but I ran into two issues:
+
+    Latency: Deepgram usually takes about 0.5 seconds to return a transcript for a single sentence. Most of this time is spent on TCP slow start, making the network the bottleneck.
+
+    CORS: Deepgram doesn't support CORS, which is a bummer for browser-based apps.
+
+    Most speech-to-text providers give you options like a streaming API and a prerecorded API. Take Deepgram, for example.
+
+    With their streaming API, you get low latency because it processes the audio bit by bit as it comes in. But it might end up finalizing the transcription in the middle of a sentence. When that happens, the API loses the context for the rest of what's being said, which can sacrifice accuracy.
+
+    Now, if you go with their prerecorded API, you'll probably get better accuracy since it looks at the full context of the audio. However, you're sending the whole audio file over, which can run into TCP slow start issues.
+
+    There are a few potential solutions:
+
+    A hybrid API that captures audio incrementally like streaming, but only finalizes transcriptions at the end of sentences.
+
+    On-device transcription to eliminate network latency.
+
+    To give you a bit more context, I'm designing an app that checks pronunciation. The goal is for the whole process to take less than a second. This involves three API calls: two for speech-to-text and one for text-to-speech. The text-to-speech call takes about 0.5 seconds, so each speech-to-text call needs to be around 0.25 seconds. I'm still figuring out if this is even possible. If you want to give me some feedback on the design, here's the link!
+
+    All the latency numbers in this post were tested using Google Colab. It runs on Google's infrastructure, which helps minimize network latency. This way, I can be pretty sure that the network itself isn't the bottleneck during these tests.
+
+    Now, let’s talk about cost. I have a budget of $100 per month, assuming 30 hours of usage each month. That gives me:
+
+    $$\frac{\$100}{30 \text{ hours}} \approx \$3.33 \text{ per hour}$$
+
+    I have three API calls: two for speech-to-text and one for text-to-speech. Let's estimate the number of characters processed in an hour. Assuming a fast speaker at 200 words per minute and 5 characters per word, I get:
+
+    $$200 \text{ words/min} \times 60 \text{ min/hour} \times 5 \text{ characters/word} = 60,000 \text{ characters/hour}$$
+
+    I'll use OpenAI's text-to-speech API, which costs $15 per million characters. The cost per hour for text-to-speech is:
+
+    $$60,000 \text{ characters/hour} \times \frac{\$15}{1,000,000 \text{ characters}} = \$0.90 \text{ per hour}$$
+
+    Next, I subtract the text-to-speech cost from my total hourly budget:
+
+    $$\$3.33 - \$0.90 = \$2.43 \text{ per hour}$$
+
+    This $2.43 covers my two speech-to-text API calls:
+
+    $$\frac{\$2.43}{2} = \$1.215 \text{ per hour}$$
+
+    Given all these requirements and challenges, I'm looking for recommendations for speech-to-text APIs.
+  threshold: 0.33884450793266297
