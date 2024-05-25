@@ -650,3 +650,40 @@ https://old.reddit.com/r/SaaS/comments/1cz4ek6/looking_for_a_service_to_automati
 
     (Note: avoid posting major sites like youtube, twitter, medium, etc., for this purpose, because the software classifies them alongside the promotional posts so they won't help 'dig you out'. Ditto for Show HNs and Ask HNs (text posts) - avoid those until you're in the clear.)
   threshold: 0.35370028018951417
+https://old.reddit.com/r/LanguageTechnology/comments/1cz6hk4/seeking_superior_texttospeech_api_alternatives_to/:
+  text: |
+    Seeking Superior Text-to-Speech API Alternatives to OpenAI
+    Is there a TTS (Text-to-Speech) API out there that outshines OpenAI's TTS in terms of quality, latency, and cost?
+
+    I have some specific criteria:
+
+    Quality
+
+    The most important aspect is how natural the generated speech sounds. For pronunciation practice, the naturalness of the speech is paramount.
+
+    OpenAI's TTS has been excellent in this regard, providing clear and consistent word articulation.
+
+    While Eleven Labs has speech that's full of emotion, it's pricier and isn't necessarily better for pronunciation practice.
+
+    I don't rely on quality scores for TTS APIs; the proof is in putting the words together.
+
+    Latency
+
+    OpenAI's TTS API typically processes a sentence in about 0.5 seconds, which is decent. But there's room for improvement.
+
+    Cost
+
+    I want to keep my total monthly cost under $100.
+
+    I prefer a pay-as-you-go model instead of a fixed-cost one with a usage cap.
+
+    For my pronunciation practice, I'm looking at using it for up to 30 hours each month. I use Deepgram for speech-to-text, which runs me $0.0043 per minute and needs two API calls for each pronunciation. Here's a quick cost breakdown:
+
+    Deepgram costs: 30 hours × 60 minutes/hour × 2 calls × $0.0043 per minute = $15.48
+
+    Remaining budget for TTS: $100 - $15.48 = $84.52
+
+    This project is all about instant feedback on pronunciation. You can check out the details to understand why these factors are crucial.
+
+    So, if you know of a TTS API that beats OpenAI's in at least one of these areas while matching it in the others, hit me up!
+  threshold: 0.12498068809509278
