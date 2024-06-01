@@ -1,4 +1,4 @@
-# https://devenv.sh/integrations/github-actions/
+# https://devenv.sh/integrations/github-actions/#complete-example:~:text=.github/workflows/test,devenv%20shell%20hello
 name: "Test"
 
 on:
