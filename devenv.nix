@@ -19,6 +19,11 @@
     git --version
   '';
 
+  # https://devenv.sh/tests/
+  enterTest = ''
+    echo "Running tests"
+  '';
+
   # https://devenv.sh/languages/
   # languages.nix.enable = true;
 
