@@ -537,7 +537,7 @@ https://old.reddit.com/r/LanguageTechnology/comments/1cod8e1/can_llms_consistent
     I'd value any alternative approaches or tweaks to my strategies. All suggestions are welcome!
 
     The content above was something I posted on r/Standup first, but it got taken down. I'm pretty sure it's because they didn't like the whole machine learning and comedy angle, which can be touchy for folks who do comedy the traditional way. So, I figured I'd bring it over here instead, where folks might dig into the tech side of things more and give me some solid feedback on how to make these machine-generated jokes sharper.
-  threshold: 0.36228203773498536
+  threshold: 0.3990370035171510
 https://old.reddit.com/r/AskProgramming/comments/1cxo5ch/seeking_speechtotext_api_recommendations/:
   text: |
     Seeking Speech-to-Text API Recommendations: Word-Level Probabilities, High Accuracy, Low Latency
