@@ -649,7 +649,7 @@ https://old.reddit.com/r/SaaS/comments/1cz4ek6/looking_for_a_service_to_automati
     If you dig up interesting things from a variety of places, things people haven't run into before, then you'll be perceived as a community contributor rather than someone trying to market something. Particularly good are stories on out-of-the-way topics that rarely or never get attention. The best submissions are the ones that can't be predicted from any existing sequence.
 
     (Note: avoid posting major sites like youtube, twitter, medium, etc., for this purpose, because the software classifies them alongside the promotional posts so they won't help 'dig you out'. Ditto for Show HNs and Ask HNs (text posts) - avoid those until you're in the clear.)
-  threshold: 0.3970116078853608
+  threshold: 0.4111687242984773
 https://old.reddit.com/r/LanguageTechnology/comments/1cz6hk4/seeking_superior_texttospeech_api_alternatives_to/:
   text: |
     Seeking Superior Text-to-Speech API Alternatives to OpenAI
