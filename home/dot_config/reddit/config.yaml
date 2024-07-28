@@ -699,4 +699,4 @@ https://old.reddit.com/r/SideProject/comments/1d220ah/accent_precise_feedback_on
     I've put together some documentation for the tool. But before I jump into development, I want to make sure I'm not reinventing the wheel. If you know of any tools that do this, please let me know! I'd really appreciate any feedback.
 
     Some people might think a tool like this could be perpetuating linguistic discrimination. I might be called an accentist or even worse, racist, for developing such an app. At least I'm not being hypocritical about it. TV presenters often preach about racism and diversity in the same perfect, standard accent. Accents speak louder than words!
-  threshold: 0.41442006826400758
+  threshold: 0.48187774419784547
