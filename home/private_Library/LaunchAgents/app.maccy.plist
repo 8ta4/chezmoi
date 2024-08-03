@@ -3,7 +3,7 @@
 <plist version="1.0">
     <dict>
         <key>Label</key>
-        <string>com.maccy</string>
+        <string>app.maccy</string>
         <key>ProgramArguments</key>
         <array>
             <string>/Applications/Maccy.app/Contents/MacOS/Maccy</string>

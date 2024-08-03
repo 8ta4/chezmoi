@@ -14,5 +14,4 @@ chrome.storage.sync.set({
     { action: "fast", force: "false", key: 71, predefined: true, value: 1.8 },
   ],
 });
-
 chrome.storage.sync.set({ audioBoolean: true });

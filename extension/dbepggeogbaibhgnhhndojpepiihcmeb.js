@@ -1,5 +1,8 @@
 chrome.storage.sync.set({
-  // Certain keys are disabled to prevent conflicting with Video Speed Controller's keybindings
-  exclusionRules:
-    '[{"pattern":"https?://mail.google.com/*","passKeys":""},{"pattern":"*","passKeys":"as"}]',
+  exclusionRules: [
+    { passKeys: "", pattern: "https?://mail.google.com/*" },
+    // 'a' and 's' conflict with Video Speed Controller's keybindings
+    // 't' conflicts with YouTube's theater mode
+    { passKeys: "ast", pattern: "*" },
+  ],
 });

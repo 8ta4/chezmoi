@@ -1,4 +1,4 @@
-# https://github.com/dandavison/delta#get-started
+# https://github.com/dandavison/delta/blob/841d559a840aad91d970699205b579330c010ded/README.md?plain=1#L21-L38
 [core]
     pager = delta
 
@@ -7,7 +7,10 @@
 
 [delta]
     navigate = true    # use n and N to move between diff sections
-    light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+
+    # delta detects terminal colors automatically; set one of these to disable auto-detection
+    # dark = true
+    # light = true
 
 [merge]
     conflictstyle = diff3

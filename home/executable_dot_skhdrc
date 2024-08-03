@@ -151,25 +151,20 @@ alt - h : yabai -m window --focus west || yabai -m display --focus west
 alt - j : yabai -m window --focus south || yabai -m display --focus south
 alt - k : yabai -m window --focus north || yabai -m display --focus north
 alt - l : yabai -m window --focus east || yabai -m display --focus east
-
 # Moving windows
 shift + alt - h : yabai -m window --warp west || (yabai -m window --display west && yabai -m display --focus west)
 shift + alt - j : yabai -m window --warp south || (yabai -m window --display sout && yabai -m display --focus south)
 shift + alt - k : yabai -m window --warp north || (yabai -m window --display nort && yabai -m display --focus north)
 shift + alt - l : yabai -m window --warp east || (yabai -m window --display east && yabai -m display --focus east)
-
 # https://github.com/julian-heng/yabai-config/blob/a3776dd27c32e02afecf3f2913c4ac9f65d29925/skhdrc#L48-L50
 # Rotate on X and Y Axis
 shift + alt - x : yabai -m space --mirror x-axis
 shift + alt - y : yabai -m space --mirror y-axis
-
 # https://github.com/julian-heng/yabai-config/blob/a3776dd27c32e02afecf3f2913c4ac9f65d29925/skhdrc#L73-L75
 # Make window native fullscreen
 shift + alt - f : yabai -m window --toggle native-fullscreen
-
 # https://i3wm.org/docs/refcard.html#:~:text=Modifying%20windows-,%2B,toggle%20fullscreen,-%2B
 alt - f         : yabai -m window --toggle zoom-fullscreen && yabai -m window --toggle float
-
 # https://i3wm.org/docs/refcard.html#:~:text=%2B%20Shift%20%2B%20r,restart%20i3%20inplace
 shift + alt - r : yabai --stop-service; yabai --start-service
 

@@ -10,7 +10,6 @@ brew 'fzf'
 brew 'gh'
 brew 'gibo'
 brew 'git-delta'
-
 # I use imagemagick to create and set a black wallpaper
 brew 'imagemagick'
 brew 'killport'
@@ -45,7 +44,6 @@ cask 'visual-studio-code'
 cask 'xmind'
 
 tap '8ta4/extension'
-
 # This Brewfile specifies each package with its fully qualified name
 # to avoid any possible name conflicts now or in the future.
 # https://github.com/Homebrew/brew/blob/3b3300546b5a4e40b74f4ee33cf225cca280defe/docs/Taps.md?plain=1#L59-L62
