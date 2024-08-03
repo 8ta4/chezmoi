@@ -47,8 +47,6 @@ yabai -m config                                 \
     mouse_action1                move           \
     mouse_action2                resize         \
     mouse_drop_action            swap
-
 # https://github.com/koekeishiya/yabai/issues/692#issuecomment-710810388:~:text=Oct%2017%2C%202020-,You%20can%20use%20the%20following%20signals%20to%20automatically%20focus%20the%20window,m%20query%20%2D%2Dwindows%20%2D%2Dwindow%20%26%3E%20/dev/null%20%7C%7C%20yabai%20%2Dm%20window%20%2D%2Dfocus%20mouse%22,-yabai%20%2Dm%20signal
 yabai -m signal --add event=window_destroyed app!=Alfred action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
-
 echo "yabai configuration loaded.."
