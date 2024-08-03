@@ -1,3 +1,4 @@
+Disable Chrome's ⌘ + d shortcut
 Unbind the 't' key shortcut in Vimium.
 Configure Foxit PDF Reader to open files in a new window by default.
 Eliminate extra blank lines before comments.
