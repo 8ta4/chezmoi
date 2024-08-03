@@ -1,4 +1,3 @@
-Disable Chrome's ⌘ + d shortcut
 Configure Foxit PDF Reader to open files in a new window by default.
 Eliminate extra blank lines before comments.
 Change the bundle identifier of Maccy from `com.maccy` to `app.maccy`.
