@@ -29,6 +29,7 @@ brew 'zsh-you-should-use'
 
 cask 'alacritty'
 cask 'alfred'
+cask 'blackhole-2ch'
 cask 'dropbox'
 cask 'foxitreader'
 cask 'google-chrome'
