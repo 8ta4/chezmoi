@@ -78,9 +78,6 @@ fi
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 
-## Visual Studio Code
-"$chezmoi_directory/code.sh"
-
 # yabai
 # https://github.com/koekeishiya/homebrew-formulae/blob/73dfc99a762d9adcf89611535f5a72f7f724fae5/yabai.rb#L28-L29
 yabai --start-service

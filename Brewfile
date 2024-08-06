@@ -60,3 +60,17 @@ cask 'homebrew/cask-fonts/font-fira-code-nerd-font'
 tap 'koekeishiya/formulae'
 brew 'koekeishiya/formulae/skhd'
 brew 'koekeishiya/formulae/yabai'
+
+vscode "GitHub.vscode-github-actions"
+vscode "asvetliakov.vscode-neovim"
+vscode "betterthantomorrow.calva"
+vscode "castwide.solargraph"
+vscode "eamodio.gitlens"
+vscode "esbenp.prettier-vscode"
+vscode "haskell.haskell"
+vscode "nwolverson.ide-purescript"
+vscode "redhat.vscode-xml"
+vscode "redhat.vscode-yaml"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "vscode-icons-team.vscode-icons"
+vscode "znck.grammarly"
