@@ -686,7 +686,7 @@ https://old.reddit.com/r/LanguageTechnology/comments/1cz6hk4/seeking_superior_te
     This project is all about instant feedback on pronunciation. You can check out the details to understand why these factors are crucial.
 
     So, if you know of a TTS API that beats OpenAI's in at least one of these areas while matching it in the others, hit me up!
-  threshold: 0.40995657444000245
+  threshold: 0.473311185836793
 https://old.reddit.com/r/SideProject/comments/1d220ah/accent_precise_feedback_on_pronunciation_for/:
   text: |
     accent - Precise Feedback on Pronunciation for Every Word in Any Sentence
