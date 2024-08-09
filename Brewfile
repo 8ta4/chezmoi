@@ -31,6 +31,8 @@ cask 'alacritty'
 cask 'alfred'
 cask 'blackhole-2ch'
 cask 'dropbox'
+# https://github.com/lsd-rs/lsd/blob/58a8723cfa699d426bc3933c8aca91ad19ffee25/README.md?plain=1#L25
+cask 'font-fira-code-nerd-font'
 cask 'foxitreader'
 cask 'google-chrome'
 cask 'karabiner-elements'
@@ -52,10 +54,6 @@ brew '8ta4/extension/extension'
 
 tap '8ta4/say'
 cask '8ta4/say/say'
-
-# https://github.com/lsd-rs/lsd/blob/58a8723cfa699d426bc3933c8aca91ad19ffee25/README.md?plain=1#L25
-tap 'homebrew/cask-fonts'
-cask 'homebrew/cask-fonts/font-fira-code-nerd-font'
 
 tap 'koekeishiya/formulae'
 brew 'koekeishiya/formulae/skhd'
