@@ -53,10 +53,6 @@ broot --install
 cd "$chezmoi_directory"
 ./extension.sh
 
-## Neovim
-# https://github.com/neovim/neovim/blob/d48cd9a0aa9dc2c79a218174708c7c7278a6e6f3/runtime/doc/provider.txt#L37C14-L40
-python3 -m pip install --user --upgrade pynvim
-
 ## Oh My Zsh
 # Check if the .oh-my-zsh directory exists and remove it if it does
 if [ -d "$HOME/.oh-my-zsh" ]; then
