@@ -18,7 +18,7 @@ You can watch the whole development process of this configuration on [8ta4's You
 
 > How do I install this configuration on my macOS?
 
-1. First, make sure that Nix is installed on your system. If not, just follow the instructions on the [Nix website](https://nixos.org/download.html#nix-install-macos) to install it.
+1. First, make sure that Nix is installed on your system. If not, just follow the instructions on the [devenv website](https://devenv.sh/getting-started/#1-install-nix) to install it.
 
 1. Next, run this command:
    ```
