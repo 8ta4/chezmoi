@@ -604,7 +604,7 @@ https://old.reddit.com/r/AskProgramming/comments/1cxo5ch/seeking_speechtotext_ap
     $$\frac{\$2.43}{2} = \$1.215 \text{ per hour}$$
 
     Given all these requirements and challenges, I'm looking for recommendations for speech-to-text APIs.
-  threshold: 0.415683776140214
+  threshold: 0.4326614439487458
 https://old.reddit.com/r/SaaS/comments/1cz4ek6/looking_for_a_service_to_automatically_publish/:
   text: |
     Looking for a Service to Automatically Publish Email Correspondence
