@@ -44,6 +44,7 @@ cask 'obs'
 cask 'shottr'
 cask 'utm'
 cask 'visual-studio-code'
+cask 'whatsapp'
 cask 'xmind'
 
 tap '8ta4/extension'
