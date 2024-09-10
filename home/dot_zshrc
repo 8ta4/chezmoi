@@ -124,11 +124,17 @@ ZVM_INIT_MODE=sourcing
 # https://formulae.brew.sh/formula/zsh-vi-mode#:~:text=To%20activate%20the,mode.plugin.zsh
 source $HOMEBREW_PREFIX/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
+## zsh-autocomplete
+# zsh-autocomplete is initialized after zsh-vi-mode, allowing it to override the arrow key binding from zsh-vi-mode.
+# zsh-autocomplete is initialized first to avoid conflicts with Atuin's key bindings
+# https://formulae.brew.sh/formula/zsh-autocomplete#:~:text=1.%20Add%20at,autocomplete.plugin.zsh
+source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
 ## Atuin
 # Atuin is initialized after zsh-vi-mode, allowing it to override the Ctrl+r binding from zsh-vi-mode.
-# https://github.com/atuinsh/atuin/blob/a38fc6e8989d41772170165a8757f43e593c5e70/docs/docs/config/key-binding.md?plain=1#L11-L12
-# Bind ctrl-r but not up arrow
-eval "$(atuin init zsh --disable-up-arrow)"
+# Atuin is initialized after zsh-autocomplete, allowing it to override the up arrow key binding from zsh-autocomplete.
+# https://github.com/atuinsh/docs/blob/7cea0d6d77a1aee4a895d5b1653c9fba50845202/src/content/docs/guide/installation.mdx?plain=1#L131
+eval "$(atuin init zsh)"
 
 ## autojump
 # https://formulae.brew.sh/formula/autojump#:~:text=oriented%20programming%20language-,Add%20the%20following%20line,profile.d%2Fautojump.sh,-If%20you%20use
@@ -143,11 +149,6 @@ eval "$(direnv hook zsh)"
 
 ## fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-## zsh-autocomplete
-# zsh-autocomplete is initialized after zsh-vi-mode, allowing it to override the arrow key binding from zsh-vi-mode.
-# https://formulae.brew.sh/formula/zsh-autocomplete#:~:text=1.%20Add%20at,autocomplete.plugin.zsh
-source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 ## zsh-autosuggestions
 # https://formulae.brew.sh/formula/zsh-autosuggestions#:~:text=To%20activate%20the,zsh-autosuggestions.zsh
