@@ -48,3 +48,6 @@ extension install chrome nffaoalbilbmmfgbnbgppjihopabppdk extension/nffaoalbilbm
 
 # Vimium
 extension install chrome dbepggeogbaibhgnhhndojpepiihcmeb extension/dbepggeogbaibhgnhhndojpepiihcmeb.js
+
+# Wayback Machine
+extension install chrome fpnmgdkabkmnadcjpehmlllkndpkmiak extension/fpnmgdkabkmnadcjpehmlllkndpkmiak.js
