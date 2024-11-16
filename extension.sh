@@ -12,6 +12,9 @@ extension install chrome kbfnbcaeplbcioakkpcpgfkobkghlhen
 # I still don't care about cookies
 extension install chrome edibdbjcniadpccecjdfdjjppcpchdlm
 
+# 'Improve YouTube!' 🎧 (for YouTube & Videos)
+extension install chrome bnomihfieiccainjcjblhegjgglakjdd
+
 # KeePassXC-Browser
 extension install chrome oboonakemofpalcgghocfoadofidjkkk
 
