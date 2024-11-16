@@ -13,7 +13,7 @@ extension install chrome kbfnbcaeplbcioakkpcpgfkobkghlhen
 extension install chrome edibdbjcniadpccecjdfdjjppcpchdlm
 
 # 'Improve YouTube!' 🎧 (for YouTube & Videos)
-extension install chrome bnomihfieiccainjcjblhegjgglakjdd
+extension install chrome bnomihfieiccainjcjblhegjgglakjdd extension/bnomihfieiccainjcjblhegjgglakjdd.js
 
 # KeePassXC-Browser
 extension install chrome oboonakemofpalcgghocfoadofidjkkk
