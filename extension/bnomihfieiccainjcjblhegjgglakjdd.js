@@ -5,7 +5,6 @@ chrome.storage.local.set({ related_videos: "hidden" });
 chrome.storage.local.set({ player_play_button: true });
 chrome.storage.local.set({ player_previous_button: true });
 chrome.storage.local.set({ player_next_button: true });
-chrome.storage.local.set({ player_volume_button: true });
 chrome.storage.local.set({ player_subtitles_button: true });
 chrome.storage.local.set({ player_miniplayer_button: true });
 chrome.storage.local.set({ player_view_button: true });
