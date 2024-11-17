@@ -10,3 +10,21 @@ chrome.storage.local.set({ player_miniplayer_button: true });
 chrome.storage.local.set({ player_view_button: true });
 chrome.storage.local.set({ player_screen_button: true });
 chrome.storage.local.set({ subscribe: "hidden" });
+chrome.storage.local.set({
+  shortcut_chapters: {
+    alt: false,
+    ctrl: false,
+    keys: { 67: { code: "KeyC", key: "C" } },
+    shift: true,
+    wheel: 0,
+  },
+});
+chrome.storage.local.set({
+  shortcut_transcript: {
+    alt: false,
+    ctrl: false,
+    keys: { 84: { code: "KeyT", key: "T" } },
+    shift: true,
+    wheel: 0,
+  },
+});
