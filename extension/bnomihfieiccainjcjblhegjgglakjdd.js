@@ -10,3 +10,4 @@ chrome.storage.local.set({ player_subtitles_button: true });
 chrome.storage.local.set({ player_miniplayer_button: true });
 chrome.storage.local.set({ player_view_button: true });
 chrome.storage.local.set({ player_screen_button: true });
+chrome.storage.local.set({ subscribe: "hidden" });
