@@ -1,3 +1,4 @@
+// The key 'C' is chosen as a mnemonic for 'Chapters'
 chrome.storage.local.set({
   shortcut_chapters: {
     alt: false,
@@ -7,6 +8,7 @@ chrome.storage.local.set({
     wheel: 0,
   },
 });
+// The key 'T' is chosen as a mnemonic for 'Transcript'
 chrome.storage.local.set({
   shortcut_transcript: {
     alt: false,
