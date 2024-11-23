@@ -40,6 +40,8 @@ osascript -e "tell application \"System Events\" to tell every desktop to set pi
 # https://support.apple.com/guide/mac-help/change-language-region-settings-on-mac-intl163/mac#:~:text=Measurement%20system,preferred%20measurement%20system.
 /usr/libexec/PlistBuddy -c "Delete ':AppleMeasurementUnits'" -c "Add ':AppleMeasurementUnits' string 'Centimeters'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
 /usr/libexec/PlistBuddy -c "Delete ':AppleMetricUnits'" -c "Add ':AppleMetricUnits' bool 'true'" "$HOME/Library/Preferences/.GlobalPreferences.plist"
+# https://superuser.com/questions/670252/cmdtab-app-switcher-is-on-the-wrong-monitor
+defaults write com.apple.dock appswitcher-all-displays -bool true
 
 ## Shottr
 # After Area Crop, show Editor
