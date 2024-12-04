@@ -8,7 +8,7 @@ This repository contains a macOS configuration managed by [chezmoi](https://gith
 
 > Do you have OCD?
 
-No, I have CDO. It's like OCD, but with the letters in alphabetical order, like they should be.
+No, [I have CDO... It's like OCD but all the letters are in alphabetical order... as they should be.](https://old.reddit.com/r/Jokes/comments/5wgvil/i_have_cdo/)
 
 > Where can I learn more about how this configuration is created and updated?
 
