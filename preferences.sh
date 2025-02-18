@@ -7,6 +7,10 @@
 /usr/libexec/PlistBuddy -c "Delete ':Preferences.Display.bCustomMargin'" -c "Add ':Preferences.Display.bCustomMargin' string '1'" "$HOME/Library/Preferences/com.foxit-software.Foxit.PDF.Reader.plist"
 /usr/libexec/PlistBuddy -c "Delete ':Preferences.Display.nMarginSize'" -c "Add ':Preferences.Display.nMarginSize' string '1'" "$HOME/Library/Preferences/com.foxit-software.Foxit.PDF.Reader.plist"
 
+## IINA
+# Disable autoplay for the next item in the playlist
+/usr/libexec/PlistBuddy -c "Delete ':playlistAutoPlayNext'" -c "Add ':playlistAutoPlayNext' bool 'false'" "$HOME/Library/Preferences/com.colliderli.iina.plist"
+
 ## macOS
 # Disable input source switching hotkeys
 /usr/libexec/PlistBuddy -c "Delete ':AppleSymbolicHotKeys:60:enabled'" -c "Add ':AppleSymbolicHotKeys:60:enabled' bool 'false'" "$HOME/Library/Preferences/com.apple.symbolichotkeys.plist"
