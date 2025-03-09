@@ -27,9 +27,6 @@ extension install chrome dneaehbmnbhcippjikoajpoabadpodje
 # Password Alert
 extension install chrome noondiphcddnnabmjcihcjfbhfklnnep
 
-# Redirector
-extension install chrome ocgpenflpmgnfapjedencafcfakcekcd extension/ocgpenflpmgnfapjedencafcfakcekcd.js
-
 # Return YouTube Dislike
 extension install chrome gebbhagfogifgggkldgodflihgfeippi
 
@@ -43,8 +40,8 @@ extension install chrome mnjggcdmjocbbbhaepdhchncahnbgone
 extension install chrome hipekcciheckooncpjeljhnekcoolahp extension/hipekcciheckooncpjeljhnekcoolahp.js
 extension install edge lklaendlmlfkaabeleddanafeinnenih extension/hipekcciheckooncpjeljhnekcoolahp.js
 
-# uBlock Origin
-extension install chrome cjpalhdlnbpafiamejdnhcphjbkeiagm
+# uBlock Origin Lite
+extension install chrome ddkjiahejlhfcafbddmgiahcphecmpfh
 
 # Video Speed Controller
 extension install chrome nffaoalbilbmmfgbnbgppjihopabppdk extension/nffaoalbilbmmfgbnbgppjihopabppdk.js
