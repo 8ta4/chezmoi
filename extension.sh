@@ -40,6 +40,9 @@ extension install chrome mnjggcdmjocbbbhaepdhchncahnbgone
 extension install chrome hipekcciheckooncpjeljhnekcoolahp extension/hipekcciheckooncpjeljhnekcoolahp.js
 extension install edge lklaendlmlfkaabeleddanafeinnenih extension/hipekcciheckooncpjeljhnekcoolahp.js
 
+# uBlock Origin Lite
+extension install chrome ddkjiahejlhfcafbddmgiahcphecmpfh
+
 # Video Speed Controller
 extension install chrome nffaoalbilbmmfgbnbgppjihopabppdk extension/nffaoalbilbmmfgbnbgppjihopabppdk.js
 
