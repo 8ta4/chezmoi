@@ -11,6 +11,10 @@ duti -s com.colliderli.iina public.mp3 all
 /usr/libexec/PlistBuddy -c "Delete ':Preferences.Display.bCustomMargin'" -c "Add ':Preferences.Display.bCustomMargin' string '1'" "$HOME/Library/Preferences/com.foxit-software.Foxit.PDF.Reader.plist"
 /usr/libexec/PlistBuddy -c "Delete ':Preferences.Display.nMarginSize'" -c "Add ':Preferences.Display.nMarginSize' string '1'" "$HOME/Library/Preferences/com.foxit-software.Foxit.PDF.Reader.plist"
 
+## Homerow
+# Set Homerow to launch at login
+/usr/libexec/PlistBuddy -c "Delete ':launch-at-login'" -c "Add ':launch-at-login' bool 'true'" "$HOME/Library/Preferences/com.superultra.Homerow.plist"
+
 ## IINA
 # Disable autoplay for the next item in the playlist
 /usr/libexec/PlistBuddy -c "Delete ':playlistAutoPlayNext'" -c "Add ':playlistAutoPlayNext' bool 'false'" "$HOME/Library/Preferences/com.colliderli.iina.plist"
