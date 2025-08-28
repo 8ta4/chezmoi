@@ -50,6 +50,7 @@
       # https://github.com/cachix/pre-commit-hooks.nix/issues/105
       types_or = [ "shell" ];
     };
+    stylua.enable = true;
     # https://github.com/cachix/pre-commit-hooks.nix/issues/31#issuecomment-744657870
     trailing-whitespace = {
       enable = true;
