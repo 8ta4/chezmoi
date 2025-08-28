@@ -64,16 +64,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # https://github.com/koekeishiya/homebrew-formulae/blob/fcbe03cedeb3f533b9d8d1a0c25177002c4a8e9e/skhd.rb#L19-L20
 skhd --start-service
 
-## vimrc
-# Check if the .vim_runtime directory exists and remove it if it does
-if [ -d "$HOME/.vim_runtime" ]; then
-  rm -rf "$HOME/.vim_runtime"
-fi
-
-# https://github.com/amix/vimrc/blob/8bf90b12d004e5bf9be3bd69139fabef3d4361ac/README.md?plain=1#L19-L20
-git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
-sh ~/.vim_runtime/install_awesome_vimrc.sh
-
 # yabai
 # https://github.com/koekeishiya/homebrew-formulae/blob/73dfc99a762d9adcf89611535f5a72f7f724fae5/yabai.rb#L28-L29
 yabai --start-service
