@@ -147,6 +147,7 @@ eval "$(direnv hook zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 ## zoxide
+# https://github.com/ajeetdsouza/zoxide/blob/2299f2834bcc6e1c07a0118460a638577a890d89/README.md?plain=1#L313
 eval "$(zoxide init zsh)"
 
 ## zsh-autosuggestions
