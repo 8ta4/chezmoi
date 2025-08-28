@@ -1,9 +1,9 @@
 -- https://github.com/folke/flash.nvim/blob/54b70a91b1d116fffe974d69dae05a32c74b0ab0/README.md?plain=1#L64-L77
 return {
-  "folke/flash.nvim",
-  event = "VeryLazy",
-  ---@type Flash.Config
-  opts = {},
+	"folke/flash.nvim",
+	event = "VeryLazy",
+	---@type Flash.Config
+	opts = {},
   -- stylua: ignore
   keys = {
     { "s", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
