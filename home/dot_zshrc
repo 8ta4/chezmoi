@@ -136,10 +136,6 @@ source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # https://github.com/atuinsh/docs/blob/7cea0d6d77a1aee4a895d5b1653c9fba50845202/src/content/docs/guide/installation.mdx?plain=1#L131
 eval "$(atuin init zsh)"
 
-## autojump
-# https://formulae.brew.sh/formula/autojump#:~:text=oriented%20programming%20language-,Add%20the%20following%20line,profile.d%2Fautojump.sh,-If%20you%20use
-[ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && . $HOMEBREW_PREFIX/etc/profile.d/autojump.sh
-
 ## Broot
 source /Users/a/.config/broot/launcher/bash/br
 
@@ -149,6 +145,9 @@ eval "$(direnv hook zsh)"
 
 ## fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+## zoxide
+eval "$(zoxide init zsh)"
 
 ## zsh-autosuggestions
 # https://formulae.brew.sh/formula/zsh-autosuggestions#:~:text=To%20activate%20the,zsh-autosuggestions.zsh
