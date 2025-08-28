@@ -19,5 +19,6 @@
   "files.readonlyFromPermissions": true,
   "solargraph.formatting": true,
   "workbench.iconTheme": "vscode-icons",
-  "editor.lineNumbers": "relative"
+  "editor.lineNumbers": "relative",
+  "editor.renderWhitespace": "all"
 }
