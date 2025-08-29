@@ -31,6 +31,9 @@ vim.keymap.set("n", "<M-k>", "k", { noremap = true })
 
 -- https://stackoverflow.com/questions/30691466/what-is-difference-between-vims-clipboard-unnamed-and-unnamedplus-settings
 vim.opt.clipboard = "unnamed,unnamedplus"
+-- https://stackoverflow.com/questions/2287440/how-to-do-case-insensitive-search-in-vim/2288438#2288438:~:text=%3Aset%20ignorecase%0A%3Aset%20smartcase
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 vim.opt.undofile = true
 vim.opt.relativenumber = true
 
