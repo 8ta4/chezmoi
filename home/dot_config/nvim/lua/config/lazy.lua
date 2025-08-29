@@ -21,11 +21,14 @@ vim.opt.rtp:prepend(lazypath)
 -- This is also a good place to setup other settings (vim.opt)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
+
 -- https://github.com/neovim/neovim/issues/5683#issuecomment-886417209
 vim.cmd("lang en_US.UTF-8")
+
 -- https://github.com/LunarVim/LunarVim/issues/1857#issuecomment-1013641928
 vim.keymap.set("n", "<M-j>", "j", { noremap = true })
 vim.keymap.set("n", "<M-k>", "k", { noremap = true })
+
 -- https://stackoverflow.com/questions/30691466/what-is-difference-between-vims-clipboard-unnamed-and-unnamedplus-settings
 vim.opt.clipboard = "unnamed,unnamedplus"
 vim.opt.relativenumber = true
