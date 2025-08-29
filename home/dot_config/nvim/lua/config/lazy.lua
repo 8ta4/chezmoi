@@ -31,6 +31,7 @@ vim.keymap.set("n", "<M-k>", "k", { noremap = true })
 
 -- https://stackoverflow.com/questions/30691466/what-is-difference-between-vims-clipboard-unnamed-and-unnamedplus-settings
 vim.opt.clipboard = "unnamed,unnamedplus"
+vim.opt.undofile = true
 vim.opt.relativenumber = true
 
 -- Setup lazy.nvim
