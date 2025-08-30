@@ -369,6 +369,7 @@ tmux_conf_copy_to_os_clipboard=false
 # unbind C-b
 # set -g prefix C-a
 # bind C-a send-prefix
+# disable C-a as a prefix key as it conflicts with neovim's increment number keybinding.
 set -gu prefix2
 
 # if you don't want Oh my tmux! to alter a binding, use #!important
