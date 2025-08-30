@@ -65,6 +65,7 @@ brew 'koekeishiya/formulae/skhd'
 brew 'koekeishiya/formulae/yabai'
 
 vscode 'GitHub.vscode-github-actions'
+vscode 'JohnnyMorganz.stylua'
 vscode 'asvetliakov.vscode-neovim'
 vscode 'betterthantomorrow.calva'
 vscode 'castwide.solargraph'
