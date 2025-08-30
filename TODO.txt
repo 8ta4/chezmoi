@@ -6,3 +6,4 @@ Keep track of the last used working directory and automatically jump into it for
 Set Shottr to autostart without opening the window. The previous attempt with LaunchAgents resulted in an opened window.
 Add a script to disable Karabiner-Elements and skhd before starting a livestream.
 Suppress the message printed by git cherry-pick about setting user.name and user.email by setting them explicitly. # https://stackoverflow.com/questions/10946893/git-name-and-email-address-configuration
+Configure lua-ls properly instead of disabling diagnostics.
