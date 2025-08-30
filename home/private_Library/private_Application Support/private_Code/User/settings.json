@@ -20,5 +20,8 @@
   "solargraph.formatting": true,
   "workbench.iconTheme": "vscode-icons",
   "editor.lineNumbers": "relative",
-  "editor.renderWhitespace": "all"
+  "editor.renderWhitespace": "all",
+  "[lua]": {
+    "editor.defaultFormatter": "JohnnyMorganz.stylua"
+  }
 }
