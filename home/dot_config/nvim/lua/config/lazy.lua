@@ -22,6 +22,24 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- https://github.com/NvChad/nvchad.github.io/blob/e91c729e86b0b34aabb7d3c91e1e4c4bff6ac035/src/routes/docs/recipes.mdx?plain=1#L61-L76
+local autocmd = vim.api.nvim_create_autocmd
+
+autocmd("BufReadPost", {
+	pattern = "*",
+	callback = function()
+		local line = vim.fn.line("'\"")
+		if
+			line > 1
+			and line <= vim.fn.line("$")
+			and vim.bo.filetype ~= "commit"
+			and vim.fn.index({ "xxd", "gitrebase" }, vim.bo.filetype) == -1
+		then
+			vim.cmd('normal! g`"zz')
+		end
+	end,
+})
+
 -- https://github.com/neovim/neovim/issues/5683#issuecomment-886417209
 vim.cmd("lang en_US.UTF-8")
 

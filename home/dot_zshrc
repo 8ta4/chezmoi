@@ -116,17 +116,23 @@ alias vi='nvim'
 alias vim='nvim'
 
 ## zsh-vi-mode
-# zsh-vi-mode is initialized first to avoid conflicts with Atuin's key bindings
-# zsh-vi-mode is initialized first to avoid conflicts with zsh-autocomplete.
+# zsh-vi-mode is initialized before Atuin to avoid conflicts with Atuin's key bindings.
+# zsh-vi-mode is initialized before zsh-autocomplete to avoid conflicts with zsh-autocomplete.
 # ZVM_INIT_MODE is set to "sourcing" to fix a lazy-loading behavior in zsh-vi-mode
 # that can cause unpredictable key binding behavior even when the load order is correctly set.
 ZVM_INIT_MODE=sourcing
 # https://formulae.brew.sh/formula/zsh-vi-mode#:~:text=To%20activate%20the,mode.plugin.zsh
 source $HOMEBREW_PREFIX/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
+## Television
+# Television is initialized after zsh-vi-mode because Television's `Ctrl-T` doesn't work otherwise.
+# Television is initialized before Atuin to resolve a `Ctrl-R` key binding conflict and keep Atuin's binding.
+# https://github.com/alexpasmantier/television/blob/19e4bc27283874969e7ec389d8dd72c4f3c18bf0/docs/01-Users/05-shell-integration.md?plain=1#L19
+eval "$(tv init zsh)"
+
 ## zsh-autocomplete
 # zsh-autocomplete is initialized after zsh-vi-mode, allowing it to override the arrow key binding from zsh-vi-mode.
-# zsh-autocomplete is initialized first to avoid conflicts with Atuin's key bindings
+# zsh-autocomplete is initialized before Atuin to avoid conflicts with Atuin's key bindings.
 # https://formulae.brew.sh/formula/zsh-autocomplete#:~:text=1.%20Add%20at,autocomplete.plugin.zsh
 source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
