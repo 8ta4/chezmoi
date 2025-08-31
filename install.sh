@@ -64,6 +64,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # https://github.com/koekeishiya/homebrew-formulae/blob/fcbe03cedeb3f533b9d8d1a0c25177002c4a8e9e/skhd.rb#L19-L20
 skhd --start-service
 
+# Television
+# https://github.com/alexpasmantier/television/blob/19e4bc27283874969e7ec389d8dd72c4f3c18bf0/README.md?plain=1#L72-L73
+tv update-channels
+
 # yabai
 # https://github.com/koekeishiya/homebrew-formulae/blob/73dfc99a762d9adcf89611535f5a72f7f724fae5/yabai.rb#L28-L29
 yabai --start-service
