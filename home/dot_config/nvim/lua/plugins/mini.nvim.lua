@@ -60,6 +60,7 @@ return {
 			-- mini.pairs is redundant inside VSCode because VSCode already handles auto-pairing.
 			-- https://github.com/nvim-mini/mini.nvim/blob/ddb70da6ec6aa896cfde87350d1e8dffb57ddef0/readmes/mini-pairs.md?plain=1#L126
 			require("mini.pairs").setup()
+			-- mini.trailspace doesn't work inside VSCode.
 			-- https://github.com/nvim-mini/mini.nvim/blob/ddb70da6ec6aa896cfde87350d1e8dffb57ddef0/readmes/mini-trailspace.md?plain=1#L126
 			require("mini.trailspace").setup()
 		end
