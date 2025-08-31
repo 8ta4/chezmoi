@@ -124,6 +124,10 @@ ZVM_INIT_MODE=sourcing
 # https://formulae.brew.sh/formula/zsh-vi-mode#:~:text=To%20activate%20the,mode.plugin.zsh
 source $HOMEBREW_PREFIX/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
+## Television
+# https://github.com/alexpasmantier/television/blob/19e4bc27283874969e7ec389d8dd72c4f3c18bf0/docs/01-Users/05-shell-integration.md?plain=1#L19
+eval "$(tv init zsh)"
+
 ## zsh-autocomplete
 # zsh-autocomplete is initialized after zsh-vi-mode, allowing it to override the arrow key binding from zsh-vi-mode.
 # zsh-autocomplete is initialized first to avoid conflicts with Atuin's key bindings
