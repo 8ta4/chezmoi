@@ -10,6 +10,10 @@ return {
 		require("mini.bracketed").setup()
 		-- https://github.com/nvim-mini/mini.nvim/blob/ddb70da6ec6aa896cfde87350d1e8dffb57ddef0/readmes/mini-operators.md?plain=1#L136
 		require("mini.operators").setup()
+		if not vim.g.vscode then
+			-- https://github.com/nvim-mini/mini.nvim/blob/ddb70da6ec6aa896cfde87350d1e8dffb57ddef0/readmes/mini-pairs.md?plain=1#L126
+			require("mini.pairs").setup()
+		end
 	end,
 	version = "*",
 }
