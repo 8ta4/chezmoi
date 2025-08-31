@@ -11,6 +11,7 @@ return {
 		-- https://github.com/nvim-mini/mini.nvim/blob/ddb70da6ec6aa896cfde87350d1e8dffb57ddef0/readmes/mini-operators.md?plain=1#L136
 		require("mini.operators").setup()
 		if not vim.g.vscode then
+			-- mini.clue doesn't work inside VSCode.
 			-- https://github.com/nvim-mini/mini.nvim/blob/ddb70da6ec6aa896cfde87350d1e8dffb57ddef0/readmes/mini-clue.md?plain=1#L92-L135
 			local miniclue = require("mini.clue")
 			miniclue.setup({
@@ -56,6 +57,7 @@ return {
 					miniclue.gen_clues.z(),
 				},
 			})
+			-- mini.pairs is redundant inside VSCode because VSCode already handles auto-pairing.
 			-- https://github.com/nvim-mini/mini.nvim/blob/ddb70da6ec6aa896cfde87350d1e8dffb57ddef0/readmes/mini-pairs.md?plain=1#L126
 			require("mini.pairs").setup()
 		end
