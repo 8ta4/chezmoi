@@ -35,7 +35,7 @@ autocmd("BufReadPost", {
 			and vim.bo.filetype ~= "commit"
 			and vim.fn.index({ "xxd", "gitrebase" }, vim.bo.filetype) == -1
 		then
-			vim.cmd('normal! g`"')
+			vim.cmd('normal! g`"zz')
 		end
 	end,
 })
