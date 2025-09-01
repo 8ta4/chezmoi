@@ -35,6 +35,10 @@
     "branch": "main",
     "commit": "057ef5d260c1931f1dffd0f052c685dcd14100a3"
   },
+  "undotree": {
+    "branch": "master",
+    "commit": "fe9a9d0645f0f5532360b5e5f5c550d7bb4f1869"
+  },
   "yanky.nvim": {
     "branch": "main",
     "commit": "04775cc6e10ef038c397c407bc17f00a2f52b378"
