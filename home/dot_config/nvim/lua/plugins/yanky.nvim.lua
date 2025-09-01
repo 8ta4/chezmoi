@@ -8,7 +8,20 @@ return {
 		ring = { storage = "sqlite" },
 	},
 	keys = {
-		{ "<leader>p", "<cmd>YankyRingHistory<cr>", mode = { "n", "x" }, desc = "Open Yank History" },
+		{
+			"<leader>p",
+			function()
+				if vim.g.vscode then
+					-- telescope doesn't work inside Visual Studio Code.
+					vim.cmd("YankyRingHistory")
+				else
+					-- https://github.com/gbprod/yanky.nvim/blob/04775cc6e10ef038c397c407bc17f00a2f52b378/README.md?plain=1#L377
+					require("telescope").extensions.yank_history.yank_history()
+				end
+			end,
+			mode = { "n", "x" },
+			desc = "Open Yank History",
+		},
 		{ "y", "<Plug>(YankyYank)", mode = { "n", "x" }, desc = "Yank text" },
 		{ "p", "<Plug>(YankyPutAfter)", mode = { "n", "x" }, desc = "Put yanked text after cursor" },
 		{ "P", "<Plug>(YankyPutBefore)", mode = { "n", "x" }, desc = "Put yanked text before cursor" },
