@@ -94,4 +94,6 @@ return {
 		"hrsh7th/cmp-vsnip",
 		"hrsh7th/vim-vsnip",
 	},
+	-- nvim-cmp doesn't work inside Visual Studio Code.
+	enabled = not vim.g.vscode,
 }
