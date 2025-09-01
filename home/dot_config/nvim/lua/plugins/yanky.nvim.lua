@@ -12,7 +12,7 @@ return {
 			"<leader>p",
 			function()
 				if vim.g.vscode then
-					-- telescope doesn't work inside Visual Studio Code.
+					-- telescope.nvim doesn't work inside Visual Studio Code.
 					vim.cmd("YankyRingHistory")
 				else
 					-- https://github.com/gbprod/yanky.nvim/blob/04775cc6e10ef038c397c407bc17f00a2f52b378/README.md?plain=1#L377
