@@ -3,6 +3,26 @@
     "branch": "master",
     "commit": "e30b7f2008e52442154b66f7c519bfd2f1e32acb"
   },
+  "cmp-buffer": {
+    "branch": "main",
+    "commit": "b74fab3656eea9de20a9b8116afa3cfc4ec09657"
+  },
+  "cmp-cmdline": {
+    "branch": "main",
+    "commit": "d126061b624e0af6c3a556428712dd4d4194ec6d"
+  },
+  "cmp-nvim-lsp": {
+    "branch": "main",
+    "commit": "bd5a7d6db125d4654b50eeae9f5217f24bb22fd3"
+  },
+  "cmp-path": {
+    "branch": "main",
+    "commit": "c642487086dbd9a93160e1679a1327be111cbc25"
+  },
+  "cmp-vsnip": {
+    "branch": "main",
+    "commit": "989a8a73c44e926199bfd05fa7a516d51f2d2752"
+  },
   "flash.nvim": {
     "branch": "main",
     "commit": "3c942666f115e2811e959eabbdd361a025db8b63"
@@ -14,6 +34,14 @@
   "mini.nvim": {
     "branch": "main",
     "commit": "94cae4660a8b2d95dbbd56e1fbc6fcfa2716d152"
+  },
+  "nvim-cmp": {
+    "branch": "main",
+    "commit": "b5311ab3ed9c846b585c0c15b7559be131ec4be9"
+  },
+  "nvim-lspconfig": {
+    "branch": "master",
+    "commit": "5f550bbb4d58bb2bfbbed4633fc69c3f0eccaf3a"
   },
   "nvim-surround": {
     "branch": "main",
@@ -38,6 +66,10 @@
   "undotree": {
     "branch": "master",
     "commit": "fe9a9d0645f0f5532360b5e5f5c550d7bb4f1869"
+  },
+  "vim-vsnip": {
+    "branch": "master",
+    "commit": "0a4b8419e44f47c57eec4c90df17567ad4b1b36e"
   },
   "yanky.nvim": {
     "branch": "main",
