@@ -9,5 +9,11 @@
     "key": "space f g",
     "command": "television.ToggleTextFinder",
     "when": "editorTextFocus && neovim.mode == 'normal' || !editorTextFocus && !inputFocus"
+  },
+  {
+    "key": "space p",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && (neovim.mode == 'normal' || neovim.mode == 'visual')",
+    "args": "<Space>p"
   }
 ]
