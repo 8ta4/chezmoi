@@ -1,2 +1,13 @@
 // Place your key bindings in this file to override the defaults
-[]
+[
+  {
+    "key": "space f f",
+    "command": "television.ToggleFileFinder",
+    "when": "editorTextFocus && neovim.mode == 'normal' || !editorTextFocus && !inputFocus"
+  },
+  {
+    "key": "space f g",
+    "command": "television.ToggleTextFinder",
+    "when": "editorTextFocus && neovim.mode == 'normal' || !editorTextFocus && !inputFocus"
+  }
+]
