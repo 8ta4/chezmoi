@@ -1,5 +1,7 @@
 // Place your key bindings in this file to override the defaults
 [
+  // These Television keybindings are defined here instead of in Neovim's configuration for a specific reason:
+  // We want them to be accessible globally, not just when the text editor is active.
   {
     "key": "space f f",
     "command": "television.ToggleFileFinder",
