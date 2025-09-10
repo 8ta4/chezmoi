@@ -1,5 +1,7 @@
 return {
 	"hrsh7th/nvim-cmp",
+	-- nvim-cmp doesn't work inside Visual Studio Code.
+	cond = not vim.g.vscode,
 	config = function()
 		-- https://github.com/hrsh7th/nvim-cmp/blob/b5311ab3ed9c846b585c0c15b7559be131ec4be9/README.md?plain=1#L33-L142
 		-- Set up nvim-cmp.
@@ -87,6 +89,4 @@ return {
 		"hrsh7th/cmp-vsnip",
 		"hrsh7th/vim-vsnip",
 	},
-	-- nvim-cmp doesn't work inside Visual Studio Code.
-	cond = not vim.g.vscode,
 }
