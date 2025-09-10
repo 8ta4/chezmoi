@@ -1,6 +1,10 @@
 -- https://github.com/folke/flash.nvim/blob/54b70a91b1d116fffe974d69dae05a32c74b0ab0/README.md?plain=1#L64-L77
 return {
 	"folke/flash.nvim",
+	-- https://github.com/vscode-neovim/vscode-neovim/wiki/Plugins/996cac1464fe73750faee0ea4ad51577410e66f0#:~:text=cond%20%3D%20(function()%20return%20vim.g.vscode%20end)
+	cond = function()
+		return vim.g.vscode
+	end,
 	event = "VeryLazy",
 	---@type Flash.Config
 	opts = {
