@@ -65,5 +65,6 @@ require("lazy").setup({
 	-- colorscheme that will be used when installing plugins.
 	install = { colorscheme = { "habamax" } },
 	-- automatically check for plugin updates
-	checker = { enabled = true },
+	-- https://github.com/LazyVim/LazyVim/discussions/3298#discussioncomment-9544197
+	checker = { enabled = true, notify = false },
 })
