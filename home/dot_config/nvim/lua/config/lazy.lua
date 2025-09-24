@@ -44,8 +44,16 @@ autocmd("BufReadPost", {
 vim.cmd("lang en_US.UTF-8")
 
 -- https://github.com/LunarVim/LunarVim/issues/1857#issuecomment-1013641928
-vim.keymap.set("n", "<M-j>", "j", { noremap = true })
-vim.keymap.set("n", "<M-k>", "k", { noremap = true })
+vim.keymap.set("n", "<M-j>", "j")
+vim.keymap.set("n", "<M-k>", "k")
+if vim.g.vscode then
+	vim.keymap.set("n", "<leader>ff", function()
+		require("vscode").action("television.ToggleFileFinder")
+	end)
+	vim.keymap.set("n", "<leader>fg", function()
+		require("vscode").action("television.ToggleTextFinder")
+	end)
+end
 
 -- https://stackoverflow.com/questions/30691466/what-is-difference-between-vims-clipboard-unnamed-and-unnamedplus-settings
 vim.opt.clipboard = "unnamed,unnamedplus"
