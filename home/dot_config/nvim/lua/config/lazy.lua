@@ -46,6 +46,9 @@ vim.cmd("lang en_US.UTF-8")
 -- https://github.com/LunarVim/LunarVim/issues/1857#issuecomment-1013641928
 vim.keymap.set("n", "<M-j>", "j")
 vim.keymap.set("n", "<M-k>", "k")
+-- If you map leader-prefixed commands in Visual Studio Code's `keybindings.json`, Visual Studio Code's keybinding handler takes precedence.
+-- Pressing `space` causes Visual Studio Code to pause and wait for the next key to see if it forms a valid key chord.
+-- By defining these mappings within the neovim configuration itself, the key presses are sent directly to neovim, which handles the leader key without interfering with motions like `f<space>`.
 if vim.g.vscode then
 	vim.keymap.set("n", "<leader>ff", function()
 		require("vscode").action("television.ToggleFileFinder")
