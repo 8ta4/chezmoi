@@ -24,5 +24,6 @@
   "[lua]": {
     "editor.defaultFormatter": "JohnnyMorganz.stylua"
   },
-  "terminal.integrated.defaultProfile.osx": "tmux"
+  "terminal.integrated.defaultProfile.osx": "tmux",
+  "haskell.plugin.rename.config.crossModule": true
 }
