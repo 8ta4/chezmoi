@@ -38,12 +38,6 @@
     lua-ls.enable = true;
     nixpkgs-fmt.enable = true;
     prettier.enable = true;
-    rubocop = {
-      enable = true;
-      # https://github.com/rubocop/rubocop/blob/d67dd0334edeec9ca9d9ac1d625b8da2d46e622a/.pre-commit-hooks.yaml
-      entry = "${pkgs.rubyPackages.rubocop}/bin/rubocop --autocorrect --force-exclusion";
-      types = [ "ruby" ];
-    };
     shellcheck = {
       enable = true;
       # https://www.shellcheck.net/wiki/SC1071
