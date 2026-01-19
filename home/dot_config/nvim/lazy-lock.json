@@ -67,14 +67,6 @@
     "branch": "master",
     "commit": "fe9a9d0645f0f5532360b5e5f5c550d7bb4f1869"
   },
-  "vim-textobj-sentence": {
-    "branch": "master",
-    "commit": "c5dd562aff2c389dfc8cd55e6499854d352a80b8"
-  },
-  "vim-textobj-user": {
-    "branch": "master",
-    "commit": "41a675ddbeefd6a93664a4dc52f302fe3086a933"
-  },
   "vim-vsnip": {
     "branch": "master",
     "commit": "0a4b8419e44f47c57eec4c90df17567ad4b1b36e"
