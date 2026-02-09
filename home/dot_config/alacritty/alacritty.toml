@@ -8,6 +8,4 @@ bindings = [
     { chars = "\u001BOH", key = "Left", mods = "Command" },
     { chars = "\u001BOF", key = "Right", mods = "Command" },
     { chars = "\u0015", key = "Back", mods = "Command" },
-    # https://github.com/Canop/broot/blob/33c2b636fa170611c7c5698ee9e2219dd2cfd89a/website/docs/common-problems.md?plain=1#L49-L50
-    { chars = "\u001B\r", key = "Return", mods = "Alt" },
 ]
