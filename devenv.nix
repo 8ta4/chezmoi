@@ -8,6 +8,7 @@
   packages = [
     pkgs.git
     pkgs.gitleaks
+    pkgs.nil
     pkgs.rubyPackages.solargraph
   ];
 
@@ -36,7 +37,8 @@
       entry = "${pkgs.gitleaks}/bin/gitleaks protect --verbose --redact --staged";
     };
     lua-ls.enable = true;
-    nixpkgs-fmt.enable = true;
+    # https://github.com/NixOS/nixfmt/blob/5513ad83a6e8e203d76215ed17c9e0bccbe5b55c/README.md?plain=1#L169
+    nixfmt.enable = true;
     prettier.enable = true;
     shellcheck = {
       enable = true;
