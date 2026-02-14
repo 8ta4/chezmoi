@@ -36,7 +36,7 @@
       entry = "${pkgs.gitleaks}/bin/gitleaks protect --verbose --redact --staged";
     };
     lua-ls.enable = true;
-    nixpkgs-fmt.enable = true;
+    nixfmt.enable = true;
     prettier.enable = true;
     shellcheck = {
       enable = true;
