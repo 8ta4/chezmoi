@@ -8,6 +8,7 @@
   packages = [
     pkgs.git
     pkgs.gitleaks
+    pkgs.nil
     pkgs.rubyPackages.solargraph
   ];
 
