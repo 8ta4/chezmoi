@@ -2,8 +2,18 @@
 return {
 	"nvim-mini/mini.nvim",
 	config = function()
+		-- https://github.com/nvim-mini/mini.nvim/blob/cad365c212fb1e332cb93fa8f72697125799d00a/doc/mini-extra.txt#L80-L89
+		local gen_ai_spec = require("mini.extra").gen_ai_spec
 		-- https://github.com/nvim-mini/mini.nvim/blob/ddb70da6ec6aa896cfde87350d1e8dffb57ddef0/readmes/mini-ai.md?plain=1#L145
-		require("mini.ai").setup()
+		require("mini.ai").setup({
+			custom_textobjects = {
+				B = gen_ai_spec.buffer(),
+				D = gen_ai_spec.diagnostic(),
+				I = gen_ai_spec.indent(),
+				L = gen_ai_spec.line(),
+				N = gen_ai_spec.number(),
+			},
+		})
 		-- https://github.com/nvim-mini/mini.nvim/blob/ddb70da6ec6aa896cfde87350d1e8dffb57ddef0/readmes/mini-align.md?plain=1#L142
 		require("mini.align").setup()
 		-- https://github.com/nvim-mini/mini.nvim/blob/ddb70da6ec6aa896cfde87350d1e8dffb57ddef0/readmes/mini-bracketed.md?plain=1#L160
