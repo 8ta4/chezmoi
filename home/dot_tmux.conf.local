@@ -450,6 +450,7 @@ tmux_conf_uninstall_plugins_on_reload=true
 # "$@"
 # # /!\ do not remove the previous line
 
+# https://github.com/mrjones2014/smart-splits.nvim/blob/25bf40abf79720ebfa98e09259b7c42942055f4c/README.md?plain=1#L275-L279
 bind-key -n M-h if -F "#{@pane-is-vim}" { send-keys M-h } { if -F "#{pane_at_left}"   { run "yabai -m window --focus west || yabai -m display --focus west" }   { select-pane -L } }
 bind-key -n M-j if -F "#{@pane-is-vim}" { send-keys M-j } { if -F "#{pane_at_bottom}" { run "yabai -m window --focus south || yabai -m display --focus south" } { select-pane -D } }
 bind-key -n M-k if -F "#{@pane-is-vim}" { send-keys M-k } { if -F "#{pane_at_top}"    { run "yabai -m window --focus north || yabai -m display --focus north" } { select-pane -U } }
