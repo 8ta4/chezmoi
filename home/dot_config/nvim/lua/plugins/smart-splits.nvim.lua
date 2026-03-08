@@ -33,4 +33,16 @@ return {
 	},
 	-- https://github.com/mrjones2014/smart-splits.nvim/blob/25bf40abf79720ebfa98e09259b7c42942055f4c/README.md?plain=1#L236-L237
 	lazy = false,
+	opts = {
+		-- https://github.com/mrjones2014/smart-splits.nvim/blob/25bf40abf79720ebfa98e09259b7c42942055f4c/lua/smart-splits/api.lua#L398-L410
+		at_edge = function(ctx)
+			local direction = ({
+				left = "west",
+				right = "east",
+				up = "north",
+				down = "south",
+			})[ctx.direction]
+			vim.fn.system("yabai -m window --focus " .. direction .. " || yabai -m display --focus " .. direction)
+		end,
+	},
 }
