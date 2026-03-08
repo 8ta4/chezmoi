@@ -23,6 +23,10 @@
     "branch": "main",
     "commit": "989a8a73c44e926199bfd05fa7a516d51f2d2752"
   },
+  "dial.nvim": {
+    "branch": "master",
+    "commit": "f2634758455cfa52a8acea6f142dcd6271a1bf57"
+  },
   "flash.nvim": {
     "branch": "main",
     "commit": "3c942666f115e2811e959eabbdd361a025db8b63"
