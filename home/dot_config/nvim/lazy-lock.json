@@ -43,6 +43,10 @@
     "branch": "main",
     "commit": "b5311ab3ed9c846b585c0c15b7559be131ec4be9"
   },
+  "nvim-colorizer.lua": {
+    "branch": "master",
+    "commit": "a065833f35a3a7cc3ef137ac88b5381da2ba302e"
+  },
   "nvim-lspconfig": {
     "branch": "master",
     "commit": "5f550bbb4d58bb2bfbbed4633fc69c3f0eccaf3a"
