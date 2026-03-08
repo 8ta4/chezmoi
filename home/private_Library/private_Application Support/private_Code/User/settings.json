@@ -26,5 +26,6 @@
   },
   "terminal.integrated.defaultProfile.osx": "tmux",
   "haskell.plugin.rename.config.crossModule": true,
-  "nix.enableLanguageServer": true
+  "nix.enableLanguageServer": true,
+  "editor.allowVariableFontsInAccessibilityMode": true
 }
