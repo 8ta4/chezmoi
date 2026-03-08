@@ -10,6 +10,7 @@ return {
 			},
 		})
 	end,
+	-- https://github.com/monaqa/dial.nvim/blob/f2634758455cfa52a8acea6f142dcd6271a1bf57/README.md?plain=1#L58-L81
 	keys = {
 		{
 			"<C-a>",
