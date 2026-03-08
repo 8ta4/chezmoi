@@ -9,6 +9,7 @@
     pkgs.git
     pkgs.gitleaks
     pkgs.nil
+    pkgs.pre-commit
     pkgs.rubyPackages.solargraph
   ];
 
