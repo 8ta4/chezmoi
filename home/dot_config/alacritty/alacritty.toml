@@ -9,3 +9,6 @@ bindings = [
     { chars = "\u001BOF", key = "Right", mods = "Command" },
     { chars = "\u0015", key = "Back", mods = "Command" },
 ]
+
+[window]
+option_as_alt = "Both"
