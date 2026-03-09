@@ -37,7 +37,7 @@
   },
   "mini.nvim": {
     "branch": "main",
-    "commit": "94cae4660a8b2d95dbbd56e1fbc6fcfa2716d152"
+    "commit": "a995fe9cd4193fb492b5df69175a351a74b3d36b"
   },
   "nvim-cmp": {
     "branch": "main",
