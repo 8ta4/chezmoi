@@ -43,6 +43,14 @@ autocmd("BufReadPost", {
 -- https://github.com/neovim/neovim/issues/5683#issuecomment-886417209
 vim.cmd("lang en_US.UTF-8")
 
+-- https://github.com/neovide/neovide/blob/1f376b7a0385345cd764689b62fe9f2c5020573e/website/docs/configuration.md?plain=1#L26-L28
+if vim.g.neovide then
+	-- Put anything you want to happen only in Neovide here
+	vim.g.neovide_cursor_animation_length = 0
+	vim.g.neovide_position_animation_length = 0
+	vim.g.neovide_scroll_animation_length = 0
+end
+
 -- If you map leader-prefixed commands in Visual Studio Code's `keybindings.json`, Visual Studio Code's keybinding handler takes precedence.
 -- Pressing `space` causes Visual Studio Code to pause and wait for the next key to see if it forms a valid key chord.
 -- By defining these mappings within the neovim configuration itself, the key presses are sent directly to neovim, which handles the leader key without interfering with motions like `f<space>`.
