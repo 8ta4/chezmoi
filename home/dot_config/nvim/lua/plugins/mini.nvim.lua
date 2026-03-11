@@ -18,8 +18,6 @@ return {
 		require("mini.align").setup()
 		-- https://github.com/nvim-mini/mini.nvim/blob/ddb70da6ec6aa896cfde87350d1e8dffb57ddef0/readmes/mini-bracketed.md?plain=1#L160
 		require("mini.bracketed").setup()
-		-- https://github.com/nvim-mini/mini.nvim/blob/cad365c212fb1e332cb93fa8f72697125799d00a/readmes/mini-notify.md?plain=1#L109
-		require("mini.notify").setup()
 		-- https://github.com/nvim-mini/mini.nvim/blob/ddb70da6ec6aa896cfde87350d1e8dffb57ddef0/readmes/mini-operators.md?plain=1#L136
 		require("mini.operators").setup()
 		if not vim.g.vscode then
@@ -69,6 +67,9 @@ return {
 					miniclue.gen_clues.z(),
 				},
 			})
+			-- mini.notify doesn't work inside Visual Studio Code.
+			-- https://github.com/nvim-mini/mini.nvim/blob/cad365c212fb1e332cb93fa8f72697125799d00a/readmes/mini-notify.md?plain=1#L109
+			require("mini.notify").setup()
 			-- mini.pairs is redundant inside Visual Studio Code because Visual Studio Code already handles auto-pairing.
 			-- https://github.com/nvim-mini/mini.nvim/blob/ddb70da6ec6aa896cfde87350d1e8dffb57ddef0/readmes/mini-pairs.md?plain=1#L126
 			require("mini.pairs").setup()
