@@ -67,6 +67,9 @@ return {
 					miniclue.gen_clues.z(),
 				},
 			})
+			-- mini.diff doesn't work inside Visual Studio Code.
+			-- https://github.com/nvim-mini/mini.nvim/blob/9d359222b3643f1fccbd8f3180445842e1cae00b/readmes/mini-diff.md?plain=1#L202
+			require("mini.diff").setup()
 			-- mini.notify doesn't work inside Visual Studio Code.
 			-- https://github.com/nvim-mini/mini.nvim/blob/cad365c212fb1e332cb93fa8f72697125799d00a/readmes/mini-notify.md?plain=1#L109
 			require("mini.notify").setup()
