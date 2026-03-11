@@ -1,5 +1,4 @@
-# https://github.com/jesseduffield/lazygit/blob/master/docs/Custom_Pagers.md#delta
+# https://github.com/jesseduffield/lazygit/blob/2f6d20275afd5fc9b623500c9194a2c732936014/docs/Custom_Pagers.md?plain=1#L25-L27
 git:
-  paging:
-    colorArg: always
-    pager: delta --dark --paging=never
+  pagers:
+    - pager: delta --dark --paging=never
