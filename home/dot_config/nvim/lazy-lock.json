@@ -35,6 +35,10 @@
     "branch": "main",
     "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a"
   },
+  "mini.icons": {
+    "branch": "main",
+    "commit": "5b9076dae1bfbe47ba4a14bc8b967cde0ab5d77e"
+  },
   "mini.nvim": {
     "branch": "main",
     "commit": "a995fe9cd4193fb492b5df69175a351a74b3d36b"
@@ -54,6 +58,10 @@
   "nvim-surround": {
     "branch": "main",
     "commit": "a868c256c861044beb9794b4dd126480dcdfbdad"
+  },
+  "oil.nvim": {
+    "branch": "master",
+    "commit": "0fcc83805ad11cf714a949c98c605ed717e0b83e"
   },
   "plenary.nvim": {
     "branch": "master",
