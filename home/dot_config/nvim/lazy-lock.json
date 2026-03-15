@@ -27,6 +27,10 @@
     "branch": "master",
     "commit": "f2634758455cfa52a8acea6f142dcd6271a1bf57"
   },
+  "fennel.vim": {
+    "branch": "master",
+    "commit": "30b9beabad2c4f09b9b284caf5cd5666b6b4dc89"
+  },
   "flash.nvim": {
     "branch": "main",
     "commit": "3c942666f115e2811e959eabbdd361a025db8b63"
