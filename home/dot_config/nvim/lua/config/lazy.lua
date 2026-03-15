@@ -63,6 +63,9 @@ if vim.g.vscode then
 	end)
 end
 
+-- https://github.com/neovim/nvim-lspconfig/blob/938cf79b8a983e67c3212af6a45509e496beb8cc/doc/configs.md?plain=1#L4276
+vim.lsp.enable("fennel_ls")
+
 -- https://stackoverflow.com/questions/30691466/what-is-difference-between-vims-clipboard-unnamed-and-unnamedplus-settings
 vim.opt.clipboard = "unnamed,unnamedplus"
 -- https://stackoverflow.com/questions/2287440/how-to-do-case-insensitive-search-in-vim/2288438#2288438:~:text=%3Aset%20ignorecase%0A%3Aset%20smartcase
