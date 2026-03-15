@@ -47,6 +47,10 @@
     "branch": "main",
     "commit": "a995fe9cd4193fb492b5df69175a351a74b3d36b"
   },
+  "nfnl": {
+    "branch": "main",
+    "commit": "f39a7ec6fe0ace2b2ea108ce04d954549e36c76d"
+  },
   "nvim-cmp": {
     "branch": "main",
     "commit": "b5311ab3ed9c846b585c0c15b7559be131ec4be9"
