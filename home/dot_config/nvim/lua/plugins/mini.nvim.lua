@@ -20,9 +20,12 @@ return {
 		require("mini.bracketed").setup()
 		-- https://github.com/nvim-mini/mini.nvim/blob/ddb70da6ec6aa896cfde87350d1e8dffb57ddef0/readmes/mini-operators.md?plain=1#L136
 		-- https://github.com/nvim-mini/mini.nvim/blob/9990c41f10f54f29a888d13024c9f765037bde23/doc/mini-operators.txt#L140-L142
-		-- Disable default `gr` mappings to prevent mini.operators from overriding
-		-- Neovim's default LSP rename mapping `grn`.
-		require("mini.operators").setup({ replace = { prefix = "" } })
+		require("mini.operators").setup({
+			-- Disable default `gx` mapping to prevent mini.operators from overriding Neovim's built-in `gx` handler.
+			exchange = { prefix = "" },
+			-- Disable default `gr` mappings to prevent mini.operators from overriding Neovim's default LSP rename mapping `grn`.
+			replace = { prefix = "" },
+		})
 		if not vim.g.vscode then
 			-- mini.clue doesn't work inside Visual Studio Code.
 			-- https://github.com/nvim-mini/mini.nvim/blob/ddb70da6ec6aa896cfde87350d1e8dffb57ddef0/readmes/mini-clue.md?plain=1#L92-L135
