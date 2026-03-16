@@ -1,3 +1,4 @@
+-- https://github.com/folke/trouble.nvim/blob/bd67efe408d4816e25e8491cc5ad4088e708a69a/README.md?plain=1#L61-L97
 return {
 	"folke/trouble.nvim",
 	opts = {}, -- for default options, refer to the configuration section for custom setup.
