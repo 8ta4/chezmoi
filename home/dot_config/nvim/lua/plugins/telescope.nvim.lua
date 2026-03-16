@@ -30,6 +30,16 @@ return {
 			desc = "Telescope help tags",
 		},
 	},
+	opts = {
+		pickers = {
+			find_files = {
+				find_command = { "fd", "-E", ".git", "-H", "-t", "f" },
+			},
+			live_grep = {
+				additional_args = { "-.", "-g", "!.git" },
+			},
+		},
+	},
 	tag = "0.1.8",
 	-- or                              , branch = '0.1.x',
 }
