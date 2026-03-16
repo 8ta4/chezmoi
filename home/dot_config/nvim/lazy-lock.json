@@ -27,6 +27,10 @@
     "branch": "master",
     "commit": "086a40dc7ed8242c03be9f47fbcee68699cc2395"
   },
+  "conjure": {
+    "branch": "main",
+    "commit": "23718a259a03be9d72a05bef6d76bea789e46b5c"
+  },
   "dial.nvim": {
     "branch": "master",
     "commit": "f2634758455cfa52a8acea6f142dcd6271a1bf57"
