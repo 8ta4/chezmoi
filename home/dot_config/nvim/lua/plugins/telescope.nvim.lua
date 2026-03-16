@@ -11,22 +11,31 @@ return {
 	keys = {
 		{
 			"<leader>ff",
-			require("telescope.builtin").find_files,
+			-- https://github.com/nvim-telescope/telescope.nvim/issues/3503#issuecomment-3085977386
+			function()
+				require("telescope.builtin").find_files()
+			end,
 			desc = "Telescope find files",
 		},
 		{
 			"<leader>fg",
-			require("telescope.builtin").live_grep,
+			function()
+				require("telescope.builtin").live_grep()
+			end,
 			desc = "Telescope live grep",
 		},
 		{
 			"<leader>fb",
-			require("telescope.builtin").buffers,
+			function()
+				require("telescope.builtin").buffers()
+			end,
 			desc = "Telescope buffers",
 		},
 		{
 			"<leader>fh",
-			require("telescope.builtin").help_tags,
+			function()
+				require("telescope.builtin").help_tags()
+			end,
 			desc = "Telescope help tags",
 		},
 	},
