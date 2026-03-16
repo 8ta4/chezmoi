@@ -51,20 +51,21 @@ if vim.g.neovide then
 	vim.g.neovide_scroll_animation_length = 0
 end
 
--- If you map leader-prefixed commands in Visual Studio Code's `keybindings.json`, Visual Studio Code's keybinding handler takes precedence.
--- Pressing `space` causes Visual Studio Code to pause and wait for the next key to see if it forms a valid key chord.
--- By defining these mappings within the neovim configuration itself, the key presses are sent directly to neovim, which handles the leader key without interfering with motions like `f<space>`.
 if vim.g.vscode then
+	-- If you map leader-prefixed commands in Visual Studio Code's `keybindings.json`, Visual Studio Code's keybinding handler takes precedence.
+	-- Pressing `space` causes Visual Studio Code to pause and wait for the next key to see if it forms a valid key chord.
+	-- By defining these mappings within the neovim configuration itself, the key presses are sent directly to neovim, which handles the leader key without interfering with motions like `f<space>`.
 	vim.keymap.set("n", "<leader>ff", function()
 		require("vscode").action("television.ToggleFileFinder")
 	end)
 	vim.keymap.set("n", "<leader>fg", function()
 		require("vscode").action("television.ToggleTextFinder")
 	end)
+else
+	-- When using the vscode-neovim extension, enabling the Neovim-native LSP would have no effect.
+	-- https://github.com/neovim/nvim-lspconfig/blob/938cf79b8a983e67c3212af6a45509e496beb8cc/doc/configs.md?plain=1#L4276
+	vim.lsp.enable("fennel_ls")
 end
-
--- https://github.com/neovim/nvim-lspconfig/blob/938cf79b8a983e67c3212af6a45509e496beb8cc/doc/configs.md?plain=1#L4276
-vim.lsp.enable("fennel_ls")
 
 -- https://stackoverflow.com/questions/30691466/what-is-difference-between-vims-clipboard-unnamed-and-unnamedplus-settings
 vim.opt.clipboard = "unnamed,unnamedplus"

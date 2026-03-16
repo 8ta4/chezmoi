@@ -11,7 +11,7 @@ return {
 	keys = {
 		{
 			"<leader>ff",
-			-- https://github.com/nvim-telescope/telescope.nvim/issues/3503#issuecomment-3085977386
+			-- https://github.com/nvim-telescope/telescope.nvim/issues/3503#issuecomment-3085977386:~:text=%7B%20%27%3Cleader%3Etf%27%2C%20function()%20require(%27telescope.builtin%27).find_files()%20end%2C%20mode%20%3D%20%27n%27%2C%20desc%20%3D%20%27Find%20files%27%20%7D%2C
 			function()
 				require("telescope.builtin").find_files()
 			end,
