@@ -30,6 +30,7 @@ return {
 			desc = "Telescope help tags",
 		},
 	},
+	-- Configure Telescope to include hidden files in searches
 	opts = {
 		pickers = {
 			find_files = {
