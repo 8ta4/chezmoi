@@ -11,30 +11,22 @@ return {
 	keys = {
 		{
 			"<leader>ff",
-			function()
-				require("telescope.builtin").find_files()
-			end,
+			require("telescope.builtin").find_files,
 			desc = "Telescope find files",
 		},
 		{
 			"<leader>fg",
-			function()
-				require("telescope.builtin").live_grep()
-			end,
+			require("telescope.builtin").live_grep,
 			desc = "Telescope live grep",
 		},
 		{
 			"<leader>fb",
-			function()
-				require("telescope.builtin").buffers()
-			end,
+			require("telescope.builtin").buffers,
 			desc = "Telescope buffers",
 		},
 		{
 			"<leader>fh",
-			function()
-				require("telescope.builtin").help_tags()
-			end,
+			require("telescope.builtin").help_tags,
 			desc = "Telescope help tags",
 		},
 	},
