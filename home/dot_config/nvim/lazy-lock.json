@@ -47,6 +47,10 @@
     "branch": "main",
     "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a"
   },
+  "lsp_signature.nvim": {
+    "branch": "master",
+    "commit": "af7e4074d85d785cf6614352ba9ad3b28a1f8a56"
+  },
   "mini.icons": {
     "branch": "main",
     "commit": "5b9076dae1bfbe47ba4a14bc8b967cde0ab5d77e"
