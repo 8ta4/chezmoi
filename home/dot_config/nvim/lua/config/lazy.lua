@@ -22,6 +22,12 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- https://github.com/LazyVim/LazyVim/blob/96f4f18d7d81c786ac0df5723bc7aca058bf2165/lua/lazyvim/config/keymaps.lua#L8-L11
+vim.keymap.set({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { desc = "Down", expr = true, silent = true })
+vim.keymap.set({ "n", "x" }, "<Down>", "v:count == 0 ? 'gj' : 'j'", { desc = "Down", expr = true, silent = true })
+vim.keymap.set({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", { desc = "Up", expr = true, silent = true })
+vim.keymap.set({ "n", "x" }, "<Up>", "v:count == 0 ? 'gk' : 'k'", { desc = "Up", expr = true, silent = true })
+
 -- https://github.com/NvChad/nvchad.github.io/blob/e91c729e86b0b34aabb7d3c91e1e4c4bff6ac035/src/routes/docs/recipes.mdx?plain=1#L61-L76
 local autocmd = vim.api.nvim_create_autocmd
 
