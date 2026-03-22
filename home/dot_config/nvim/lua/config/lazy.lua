@@ -22,6 +22,12 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- https://github.com/LazyVim/LazyVim/blob/96f4f18d7d81c786ac0df5723bc7aca058bf2165/lua/lazyvim/config/keymaps.lua#L8-L11
+vim.keymap.set({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { desc = "Down", expr = true, silent = true })
+vim.keymap.set({ "n", "x" }, "<Down>", "v:count == 0 ? 'gj' : 'j'", { desc = "Down", expr = true, silent = true })
+vim.keymap.set({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", { desc = "Up", expr = true, silent = true })
+vim.keymap.set({ "n", "x" }, "<Up>", "v:count == 0 ? 'gk' : 'k'", { desc = "Up", expr = true, silent = true })
+
 -- https://github.com/NvChad/nvchad.github.io/blob/e91c729e86b0b34aabb7d3c91e1e4c4bff6ac035/src/routes/docs/recipes.mdx?plain=1#L61-L76
 local autocmd = vim.api.nvim_create_autocmd
 
@@ -65,6 +71,9 @@ else
 	-- When using the vscode-neovim extension, enabling the Neovim-native LSP would have no effect.
 	-- https://github.com/neovim/nvim-lspconfig/blob/938cf79b8a983e67c3212af6a45509e496beb8cc/doc/configs.md?plain=1#L4276
 	vim.lsp.enable("fennel_ls")
+	-- When using the vscode-neovim extension, enabling linebreak would have no effect.
+	-- https://github.com/LazyVim/LazyVim/blob/96f4f18d7d81c786ac0df5723bc7aca058bf2165/lua/lazyvim/config/options.lua#L82
+	vim.opt.linebreak = true -- Wrap lines at convenient points
 end
 
 -- https://stackoverflow.com/questions/30691466/what-is-difference-between-vims-clipboard-unnamed-and-unnamedplus-settings
@@ -72,8 +81,8 @@ vim.opt.clipboard = "unnamed,unnamedplus"
 -- https://stackoverflow.com/questions/2287440/how-to-do-case-insensitive-search-in-vim/2288438#2288438:~:text=%3Aset%20ignorecase%0A%3Aset%20smartcase
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-vim.opt.undofile = true
 vim.opt.relativenumber = true
+vim.opt.undofile = true
 
 -- Setup lazy.nvim
 require("lazy").setup({
