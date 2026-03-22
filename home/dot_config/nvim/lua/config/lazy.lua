@@ -72,8 +72,10 @@ vim.opt.clipboard = "unnamed,unnamedplus"
 -- https://stackoverflow.com/questions/2287440/how-to-do-case-insensitive-search-in-vim/2288438#2288438:~:text=%3Aset%20ignorecase%0A%3Aset%20smartcase
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-vim.opt.undofile = true
+-- https://github.com/LazyVim/LazyVim/blob/96f4f18d7d81c786ac0df5723bc7aca058bf2165/lua/lazyvim/config/options.lua#L82
+vim.opt.linebreak = true -- Wrap lines at convenient points
 vim.opt.relativenumber = true
+vim.opt.undofile = true
 
 -- Setup lazy.nvim
 require("lazy").setup({
