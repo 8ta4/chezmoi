@@ -7,6 +7,13 @@ return {
 		return not vim.g.vscode
 	end,
 	config = function()
+		vim.api.nvim_create_autocmd("BufReadPost", {
+			callback = function()
+				if vim.api.nvim_buf_line_count(0) > 100000 then
+					vim.cmd("Codeium DisableBuffer")
+				end
+			end,
+		})
 		-- Change '<C-g>' here to any keycode you like.
 		vim.keymap.set("i", "<C-g>", function()
 			return vim.fn["codeium#Accept"]()
