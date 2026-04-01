@@ -123,6 +123,8 @@ alias vim='nvim'
 ZVM_INIT_MODE=sourcing
 # https://formulae.brew.sh/formula/zsh-vi-mode#:~:text=To%20activate%20the,mode.plugin.zsh
 source $HOMEBREW_PREFIX/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+# https://github.com/jeffreytse/zsh-vi-mode/blob/08bd1c04520418faee2b9d1afbc410ee1a59a8f1/README.md?plain=1#L480
+ZVM_SYSTEM_CLIPBOARD_ENABLED=true
 
 ## Television
 # Television is initialized after zsh-vi-mode because Television's `Ctrl-T` doesn't work otherwise.
