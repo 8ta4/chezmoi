@@ -1,6 +1,10 @@
 -- https://github.com/nvim-mini/mini.nvim/blob/ddb70da6ec6aa896cfde87350d1e8dffb57ddef0/README.md?plain=1#L54
 return {
 	"nvim-mini/mini.nvim",
+	dependencies = {
+		"8ta4/sentence",
+		build = "./install.sh",
+	},
 	config = function()
 		-- https://github.com/nvim-mini/mini.nvim/blob/cad365c212fb1e332cb93fa8f72697125799d00a/doc/mini-extra.txt#L80-L89
 		local gen_ai_spec = require("mini.extra").gen_ai_spec
@@ -12,6 +16,7 @@ return {
 				I = gen_ai_spec.indent(),
 				L = gen_ai_spec.line(),
 				N = gen_ai_spec.number(),
+				s = require("sentence").ai,
 			},
 		})
 		-- https://github.com/nvim-mini/mini.nvim/blob/ddb70da6ec6aa896cfde87350d1e8dffb57ddef0/readmes/mini-align.md?plain=1#L142
