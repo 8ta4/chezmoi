@@ -27,5 +27,10 @@
   "terminal.integrated.defaultProfile.osx": "tmux",
   "haskell.plugin.rename.config.crossModule": true,
   "nix.enableLanguageServer": true,
-  "editor.allowVariableFontsInAccessibilityMode": true
+  "editor.allowVariableFontsInAccessibilityMode": true,
+  "calva.outputDestinations": {
+    "evalResults": "repl-window",
+    "evalOutput": "repl-window",
+    "otherOutput": "repl-window"
+  }
 }
