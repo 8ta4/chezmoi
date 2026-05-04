@@ -32,5 +32,8 @@
     "evalResults": "repl-window",
     "evalOutput": "repl-window",
     "otherOutput": "repl-window"
+  },
+  "workbench.view.showQuietly": {
+    "workbench.panel.output": true
   }
 }
