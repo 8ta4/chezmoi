@@ -10,8 +10,23 @@ return {
 	-- https://github.com/nvim-telescope/telescope.nvim/blob/b4da76be54691e854d3e0e02c36b0245f945c2c7/README.md?plain=1#L160-L164
 	keys = {
 		{
-			"<leader>ff",
+			-- Consistent with native '/' search
+			"<leader>f/",
 			-- https://github.com/nvim-telescope/telescope.nvim/issues/3503#issuecomment-3085977386:~:text=%7B%20%27%3Cleader%3Etf%27%2C%20function()%20require(%27telescope.builtin%27).find_files()%20end%2C%20mode%20%3D%20%27n%27%2C%20desc%20%3D%20%27Find%20files%27%20%7D%2C
+			function()
+				require("telescope.builtin").current_buffer_fuzzy_find()
+			end,
+			desc = "Telescope find lines",
+		},
+		{
+			"<leader>fb",
+			function()
+				require("telescope.builtin").buffers()
+			end,
+			desc = "Telescope buffers",
+		},
+		{
+			"<leader>ff",
 			function()
 				require("telescope.builtin").find_files()
 			end,
@@ -25,18 +40,19 @@ return {
 			desc = "Telescope live grep",
 		},
 		{
-			"<leader>fb",
-			function()
-				require("telescope.builtin").buffers()
-			end,
-			desc = "Telescope buffers",
-		},
-		{
 			"<leader>fh",
 			function()
 				require("telescope.builtin").help_tags()
 			end,
 			desc = "Telescope help tags",
+		},
+		{
+			-- "r" for resume
+			"<leader>fr",
+			function()
+				require("telescope.builtin").resume()
+			end,
+			desc = "Telescope resume search",
 		},
 	},
 	-- Configure Telescope to include hidden files in searches
