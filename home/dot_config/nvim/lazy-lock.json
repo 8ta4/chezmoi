@@ -23,21 +23,9 @@
     "branch": "main",
     "commit": "989a8a73c44e926199bfd05fa7a516d51f2d2752"
   },
-  "conform.nvim": {
-    "branch": "master",
-    "commit": "086a40dc7ed8242c03be9f47fbcee68699cc2395"
-  },
-  "conjure": {
-    "branch": "main",
-    "commit": "23718a259a03be9d72a05bef6d76bea789e46b5c"
-  },
   "dial.nvim": {
     "branch": "master",
     "commit": "f2634758455cfa52a8acea6f142dcd6271a1bf57"
-  },
-  "fennel.vim": {
-    "branch": "master",
-    "commit": "30b9beabad2c4f09b9b284caf5cd5666b6b4dc89"
   },
   "flash.nvim": {
     "branch": "main",
@@ -51,10 +39,6 @@
     "branch": "main",
     "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a"
   },
-  "lsp_signature.nvim": {
-    "branch": "master",
-    "commit": "af7e4074d85d785cf6614352ba9ad3b28a1f8a56"
-  },
   "mini.icons": {
     "branch": "main",
     "commit": "5b9076dae1bfbe47ba4a14bc8b967cde0ab5d77e"
@@ -62,10 +46,6 @@
   "mini.nvim": {
     "branch": "main",
     "commit": "a995fe9cd4193fb492b5df69175a351a74b3d36b"
-  },
-  "nfnl": {
-    "branch": "main",
-    "commit": "f39a7ec6fe0ace2b2ea108ce04d954549e36c76d"
   },
   "nvim-cmp": {
     "branch": "main",
@@ -114,10 +94,6 @@
   "tokyonight.nvim": {
     "branch": "main",
     "commit": "057ef5d260c1931f1dffd0f052c685dcd14100a3"
-  },
-  "trouble.nvim": {
-    "branch": "main",
-    "commit": "bd67efe408d4816e25e8491cc5ad4088e708a69a"
   },
   "undotree": {
     "branch": "master",
