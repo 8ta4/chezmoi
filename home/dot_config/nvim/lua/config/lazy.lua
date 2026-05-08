@@ -68,9 +68,6 @@ if vim.g.vscode then
 		require("vscode").action("television.ToggleTextFinder")
 	end)
 else
-	-- When using the vscode-neovim extension, enabling the Neovim-native LSP would have no effect.
-	-- https://github.com/neovim/nvim-lspconfig/blob/938cf79b8a983e67c3212af6a45509e496beb8cc/doc/configs.md?plain=1#L4276
-	vim.lsp.enable("fennel_ls")
 	-- When using the vscode-neovim extension, enabling linebreak would have no effect.
 	-- https://github.com/LazyVim/LazyVim/blob/96f4f18d7d81c786ac0df5723bc7aca058bf2165/lua/lazyvim/config/options.lua#L82
 	vim.opt.linebreak = true -- Wrap lines at convenient points
