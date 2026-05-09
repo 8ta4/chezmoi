@@ -1,3 +1,6 @@
+-- https://github.com/neovim/neovim/blob/ffe87d91f72a4e9c0e72597d42a2a3fd1f0081c7/runtime/doc/map.txt#L396-L408
+local modes = { "n", "i", "c", "v", "o", "t", "l" }
+
 return {
 	"mrjones2014/smart-splits.nvim",
 	-- smart-splits.nvim doesn't work inside Visual Studio Code.
@@ -11,24 +14,28 @@ return {
 			function()
 				require("smart-splits").move_cursor_left()
 			end,
+			mode = modes,
 		},
 		{
 			"<A-j>",
 			function()
 				require("smart-splits").move_cursor_down()
 			end,
+			mode = modes,
 		},
 		{
 			"<A-k>",
 			function()
 				require("smart-splits").move_cursor_up()
 			end,
+			mode = modes,
 		},
 		{
 			"<A-l>",
 			function()
 				require("smart-splits").move_cursor_right()
 			end,
+			mode = modes,
 		},
 	},
 	-- https://github.com/mrjones2014/smart-splits.nvim/blob/25bf40abf79720ebfa98e09259b7c42942055f4c/README.md?plain=1#L236-L237
