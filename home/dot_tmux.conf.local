@@ -455,3 +455,6 @@ bind-key -n M-h if -F "#{@pane-is-vim}" { send-keys M-h } { if -F "#{pane_at_lef
 bind-key -n M-j if -F "#{@pane-is-vim}" { send-keys M-j } { if -F "#{pane_at_bottom}" { run "yabai -m window --focus south || yabai -m display --focus south || true" } { select-pane -D } }
 bind-key -n M-k if -F "#{@pane-is-vim}" { send-keys M-k } { if -F "#{pane_at_top}"    { run "yabai -m window --focus north || yabai -m display --focus north || true" } { select-pane -U } }
 bind-key -n M-l if -F "#{@pane-is-vim}" { send-keys M-l } { if -F "#{pane_at_right}"  { run "yabai -m window --focus east || yabai -m display --focus east || true" }   { select-pane -R } }
+
+# https://github.com/AstroNvim/AstroNvim/issues/1336#issuecomment-1317609457
+set -as terminal-overrides ',*:Setulc=\E[58::2::%p1%{65536}%/%d::%p1%{256}%/%{255}%&%d::%p1%{255}%&%d%;m'  # underscore colours - needs tmux-3.0
