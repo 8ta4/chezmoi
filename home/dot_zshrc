@@ -121,10 +121,16 @@ alias vim='nvim'
 # ZVM_INIT_MODE is set to "sourcing" to fix a lazy-loading behavior in zsh-vi-mode
 # that can cause unpredictable key binding behavior even when the load order is correctly set.
 ZVM_INIT_MODE=sourcing
-# https://formulae.brew.sh/formula/zsh-vi-mode#:~:text=To%20activate%20the,mode.plugin.zsh
-source $HOMEBREW_PREFIX/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 # https://github.com/jeffreytse/zsh-vi-mode/blob/08bd1c04520418faee2b9d1afbc410ee1a59a8f1/README.md?plain=1#L480
 ZVM_SYSTEM_CLIPBOARD_ENABLED=true
+function zvm_after_lazy_keybindings() {
+  bindkey -M vicmd -s 'p' 'gp'
+  bindkey -M vicmd -s 'P' 'gP'
+  bindkey -M visual -s 'p' 'gp'
+  bindkey -M visual -s 'P' 'gP'
+}
+# https://formulae.brew.sh/formula/zsh-vi-mode#:~:text=To%20activate%20the,mode.plugin.zsh
+source $HOMEBREW_PREFIX/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 ## Television
 # Television is initialized after zsh-vi-mode because Television's `Ctrl-T` doesn't work otherwise.
