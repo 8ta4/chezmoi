@@ -67,6 +67,13 @@ if vim.g.vscode then
 	vim.keymap.set("n", "<leader>fg", function()
 		require("vscode").action("television.ToggleTextFinder")
 	end)
+	-- https://github.com/nvim-mini/mini.nvim/blob/17c448b0f3f29c0857a3436fc64e1d7cb9267ec3/readmes/mini-diff.md?plain=1#L104
+	vim.keymap.set("n", "]h", function()
+		require("vscode").action("workbench.action.editor.nextChange")
+	end)
+	vim.keymap.set("n", "[h", function()
+		require("vscode").action("workbench.action.editor.previousChange")
+	end)
 else
 	-- When using the vscode-neovim extension, enabling linebreak would have no effect.
 	-- https://github.com/LazyVim/LazyVim/blob/96f4f18d7d81c786ac0df5723bc7aca058bf2165/lua/lazyvim/config/options.lua#L82
