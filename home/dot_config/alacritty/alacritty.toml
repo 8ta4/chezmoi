@@ -5,9 +5,9 @@ family = "FiraCode Nerd Font"
 [keyboard]
 bindings = [
     # https://github.com/alacritty/alacritty/issues/474#issuecomment-338803299
-    { chars = "\u001BOH", key = "Left", mods = "Command" },
-    { chars = "\u001BOF", key = "Right", mods = "Command" },
     { chars = "\u0015", key = "Back", mods = "Command" },
+    { chars = "\u001BOF", key = "Right", mods = "Command" },
+    { chars = "\u001BOH", key = "Left", mods = "Command" },
 ]
 
 [window]
