@@ -77,7 +77,7 @@
   },
   "sentence": {
     "branch": "main",
-    "commit": "7cfda7177a96f789eb026dde560ebf41931d70a3"
+    "commit": "8372df009fd5bbe7eb8f59f55dfb60db68ff7b4c"
   },
   "smart-splits.nvim": {
     "branch": "master",
