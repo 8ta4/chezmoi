@@ -8,6 +8,11 @@ bindings = [
     { chars = "\u0015", key = "Back", mods = "Command" },
     { chars = "\u001BOF", key = "Right", mods = "Command" },
     { chars = "\u001BOH", key = "Left", mods = "Command" },
+    { chars = "\u001bw1", key = "Key1", mods = "Command" },
+    { chars = "\u001bw2", key = "Key2", mods = "Command" },
+    { chars = "\u001bwf", key = "F", mods = "Command" },
+    { chars = "\u001bwj", key = "J", mods = "Command" },
+    { chars = "\u001bwk", key = "K", mods = "Command" },
 ]
 
 [window]
