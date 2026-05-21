@@ -1,5 +1,4 @@
-local base =
-	" Use correct grammar. Check if the sentence meets these requirements. Explain any failures. Give two rewrites of the sentence."
+local base = "Check if the sentence is grammatically correct. Explain any errors. Keep the formatting. "
 
 return {
 	"8ta4/word",
@@ -47,8 +46,8 @@ return {
 	},
 	opts = {
 		styles = {
-			{ name = "casual", prompt = "Use a casual tone." .. base },
-			{ name = "formal", prompt = "Use a formal tone." .. base },
+			{ name = "casual", prompt = base .. "Give two casual rewrites." },
+			{ name = "formal", prompt = base .. "Give two formal rewrites." },
 		},
 	},
 }
