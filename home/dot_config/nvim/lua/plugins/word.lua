@@ -46,8 +46,8 @@ return {
 	},
 	opts = {
 		styles = {
-			{ name = "casual", prompt = base .. "Give two casual rewrites." },
-			{ name = "formal", prompt = base .. "Give two formal rewrites." },
+			{ name = "casual", prompt = base .. "Give two casual rewrites, keeping markup." },
+			{ name = "formal", prompt = base .. "Give two formal rewrites, keeping markup." },
 		},
 	},
 }
