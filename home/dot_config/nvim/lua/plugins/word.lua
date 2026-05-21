@@ -1,4 +1,4 @@
-local base = "Check if the sentence is grammatically correct. Explain any errors. Keep the formatting. "
+local base = "Check if the sentence is grammatically correct. Explain any errors. "
 
 return {
 	"8ta4/word",
