@@ -77,7 +77,7 @@
   },
   "sentence": {
     "branch": "main",
-    "commit": "8372df009fd5bbe7eb8f59f55dfb60db68ff7b4c"
+    "commit": "24008f269a6b4331967190a02d5509ec9ebef662"
   },
   "smart-splits.nvim": {
     "branch": "master",
@@ -109,7 +109,7 @@
   },
   "word": {
     "branch": "main",
-    "commit": "fbab361995eea3893850fc7d727b246578a200be"
+    "commit": "bb169de8689877e0666edc041668317f6526ea74"
   },
   "yanky.nvim": {
     "branch": "main",
