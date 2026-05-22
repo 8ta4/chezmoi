@@ -3,6 +3,11 @@ local base = "Check if the sentence is grammatically correct. Explain any errors
 return {
 	"8ta4/word",
 	build = "./install.sh",
+	-- word doesn't work inside Visual Studio Code.
+	-- https://github.com/vscode-neovim/vscode-neovim/wiki/Plugins/996cac1464fe73750faee0ea4ad51577410e66f0#:~:text=cond%20%3D%20(function()%20return%20not%20vim.g.vscode%20end)
+	cond = function()
+		return not vim.g.vscode
+	end,
 	dependencies = {
 		"8ta4/sentence",
 		build = "./install.sh",
