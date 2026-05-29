@@ -17,6 +17,8 @@ brew 'lazygit'
 brew 'lsd'
 brew 'neovide'
 brew 'neovim'
+# https://github.com/8ta4/sentence/blob/24008f269a6b4331967190a02d5509ec9ebef662/README.md?plain=1#L41
+brew 'node'
 brew 'ripgrep'
 brew 'television'
 brew 'tldr'

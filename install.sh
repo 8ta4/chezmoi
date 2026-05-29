@@ -87,5 +87,10 @@ echo "trusted-users = root $USER" | sudo tee -a /etc/nix/nix.conf && sudo pkill 
 cachix use devenv
 nix profile install --accept-flake-config nixpkgs#devenv
 
+## sentence
+# https://github.com/8ta4/sentence/blob/24008f269a6b4331967190a02d5509ec9ebef662/README.md?plain=1#L42-L43
+npm install -g neovim
+nvim --headless +UpdateRemotePlugins +qa!
+
 ## preferences
 "$chezmoi_directory/preferences.sh"
