@@ -153,9 +153,9 @@ eval "$(atuin init zsh)"
 ## Broot
 source "$HOME"/.config/broot/launcher/bash/br
 
-## direnv
-# https://direnv.net/docs/hook.html#zsh
-eval "$(direnv hook zsh)"
+## devenv
+# https://github.com/cachix/devenv/blob/f693b472c731e7dda69402daa88c06369d54fd3a/docs/src/auto-activation.md?plain=1#L20
+eval "$(devenv hook zsh)"
 
 ## fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
