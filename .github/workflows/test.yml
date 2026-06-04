@@ -9,17 +9,17 @@ jobs:
   tests:
     strategy:
       matrix:
-        os: [macos-14]
+        os: [macos-15]
     runs-on: ${{ matrix.os }}
 
     steps:
-      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # pin@v4
-      - uses: cachix/install-nix-action@8887e596b4ee1134dae06b98d573bd674693f47c # pin@v26
-      - uses: cachix/cachix-action@18cf96c7c98e048e10a83abd92116114cd8504be # pin@v14
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
+      - uses: cachix/install-nix-action@8aa03977d8d733052d78f4e008a241fd1dbf36b3 # v31
+      - uses: cachix/cachix-action@5f2d7c5294214f71b873db4b969586b980625e71 # v17
         with:
           name: devenv
       - name: Install devenv.sh
-        run: nix profile install nixpkgs/871b9fd269ff6246794583ce4ee1031e1da71895#devenv
+        run: nix profile add nixpkgs/8c50a710ddca43d7a530fb805ad55bde8d0141c5#devenv
 
       - name: Build the devenv shell and run any pre-commit hooks
         run: devenv test
