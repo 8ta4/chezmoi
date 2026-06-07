@@ -160,6 +160,10 @@ eval "$(devenv hook zsh)"
 ## fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+## GHCup
+# https://github.com/NixOS/nixpkgs/issues/227966#issuecomment-1521073421
+[ -f "$HOME/.ghcup/env" ] && . "$HOME/.ghcup/env" # ghcup-env
+
 ## zoxide
 # https://github.com/ajeetdsouza/zoxide/blob/2299f2834bcc6e1c07a0118460a638577a890d89/README.md?plain=1#L313
 eval "$(zoxide init zsh)"
