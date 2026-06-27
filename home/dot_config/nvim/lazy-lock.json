@@ -81,7 +81,7 @@
   },
   "sift": {
     "branch": "main",
-    "commit": "0863aab965f40c964b71b5ed97937b37f0d018b7"
+    "commit": "6db95051d02dbe66ea0937b5242128c390cb0b4f"
   },
   "smart-splits.nvim": {
     "branch": "master",
