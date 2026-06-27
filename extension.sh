@@ -30,6 +30,9 @@ extension install chrome noondiphcddnnabmjcihcjfbhfklnnep
 # Return YouTube Dislike
 extension install chrome gebbhagfogifgggkldgodflihgfeippi
 
+# sift
+extension install chrome cnicmidgcjdhmjjgjhannfikdeplcfme
+
 # SingleFile
 extension install chrome mpiodijhokgodhhofbcjdecpffjipkle
 
