@@ -37,7 +37,7 @@
   },
   "lazy.nvim": {
     "branch": "main",
-    "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a"
+    "commit": "85c7ff3711b730b4030d03144f6db6375044ae82"
   },
   "mini.icons": {
     "branch": "main",
@@ -78,6 +78,10 @@
   "sentence": {
     "branch": "main",
     "commit": "24008f269a6b4331967190a02d5509ec9ebef662"
+  },
+  "sift": {
+    "branch": "main",
+    "commit": "0863aab965f40c964b71b5ed97937b37f0d018b7"
   },
   "smart-splits.nvim": {
     "branch": "master",
