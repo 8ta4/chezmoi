@@ -35,5 +35,6 @@
   },
   "workbench.view.showQuietly": {
     "workbench.panel.output": true
-  }
+  },
+  "chat.disableAIFeatures": true
 }
